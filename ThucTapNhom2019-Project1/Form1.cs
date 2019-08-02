@@ -15,11 +15,12 @@ namespace ThucTapNhom2019_Project1
     {
         SqlConnection conn = ConnectSQLServer.getConnection();
         int soNhanVien;
+        DataTable dtDanhSach;
         public Form1()
         {
             InitializeComponent();
-            comboBox1.Enabled = false;
-            comboBox2.Enabled = false;
+            txPhong.Enabled = false;
+            txTo.Enabled = false;
             
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -30,22 +31,27 @@ namespace ThucTapNhom2019_Project1
                 "Luong as [Lương], TenChucVu AS [Tên chức vụ] from NhanVien, dbo.ChucVu " +
                 "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
             SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            soNhanVien = dt.Rows.Count;
+            dtDanhSach = new DataTable();
+            da.Fill(dtDanhSach);
+            dataGridView1.DataSource = dtDanhSach;
+            soNhanVien = dtDanhSach.Rows.Count;
             conn.Close();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex <7) {
-                conn.Open();
+            conn.Open();
+            if (e.RowIndex <6 && e.RowIndex >=0) {
+                string manv = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 string strQuery = "SELECT a.TenTo, b.TenPhong FROM (SELECT TenTo,MaNhanVien FROM [dbo].[To], dbo.NhanVien WHERE NhanVien.MaTo = [To].MaTo) AS a," +
-            "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = 'NV0001' AND a.MaNhanVien = b.MaNhanVien ";
-                
+            "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = b.MaNhanVien and a.MaNhanVien = "+"'"+manv+"'";
+                SqlDataAdapter da1 = new SqlDataAdapter(strQuery, conn);
+                DataSet ds1 = new DataSet();
+                da1.Fill(ds1);
+                txPhong.Text = ds1.Tables[0].Rows[0]["TenPhong"].ToString();
+                txTo.Text = ds1.Tables[0].Rows[0]["TenTo"].ToString();
             }
-
+            conn.Close();
         }
     }
 }

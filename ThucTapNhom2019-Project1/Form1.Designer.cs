@@ -30,10 +30,8 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,6 +43,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txPhong = new System.Windows.Forms.TextBox();
+            this.txTo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,10 +68,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Beige;
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.txTo);
+            this.panel1.Controls.Add(this.txPhong);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -79,14 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(331, 178);
             this.panel1.TabIndex = 1;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 67);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(226, 28);
-            this.comboBox2.TabIndex = 6;
             // 
             // label2
             // 
@@ -105,14 +97,6 @@
             this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Phòng";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(90, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(226, 28);
-            this.comboBox1.TabIndex = 3;
             // 
             // button3
             // 
@@ -216,6 +200,20 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // txPhong
+            // 
+            this.txPhong.Location = new System.Drawing.Point(90, 17);
+            this.txPhong.Name = "txPhong";
+            this.txPhong.Size = new System.Drawing.Size(226, 26);
+            this.txPhong.TabIndex = 6;
+            // 
+            // txTo
+            // 
+            this.txTo.Location = new System.Drawing.Point(90, 69);
+            this.txTo.Name = "txTo";
+            this.txTo.Size = new System.Drawing.Size(226, 26);
+            this.txTo.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -247,10 +245,8 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -262,6 +258,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.TextBox txTo;
+        private System.Windows.Forms.TextBox txPhong;
     }
 }
 
