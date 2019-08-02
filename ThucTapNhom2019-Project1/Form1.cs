@@ -14,6 +14,7 @@ namespace ThucTapNhom2019_Project1
     public partial class Form1 : Form
     {
         SqlConnection conn = ConnectSQLServer.getConnection();
+        int soNhanVien;
         public Form1()
         {
             InitializeComponent();
@@ -24,21 +25,27 @@ namespace ThucTapNhom2019_Project1
         private void Form1_Load(object sender, EventArgs e)
         {
             conn.Open();
-            //Lay ten cac phong;
-            //string strQueryPhong = "Select * from Phong";
-            //SqlDataAdapter da = new SqlDataAdapter(strQueryPhong, conn);//SQL là câu truy vấn bảng trong cơ sở dữ liệu, cn là connection đến cơ sở dữ liệu
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //comboBox1.DataSource = dt;
-            //comboBox1.DisplayMember = "TenPhong";
-            //comboBox1.ValueMember = "MaPhong";
-            //
             string strQueryDanhSach = "Select MaNhanVien as Mã, HoTen as [Họ và tên], " +
-                "NgaySinh as [Ngày Sinh], DiaChi as [Địa Chỉ], SoDienThoai as [Số Điện Thoại], Email, Luong as [Lương] from NhanVien";
+                "NgaySinh as [Ngày Sinh], DiaChi as [Địa Chỉ], SoDienThoai as [Số Điện Thoại], Email, " +
+                "Luong as [Lương], TenChucVu AS [Tên chức vụ] from NhanVien, dbo.ChucVu " +
+                "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
             SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+            soNhanVien = dt.Rows.Count;
+            conn.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex <7) {
+                conn.Open();
+                string strQuery = "SELECT a.TenTo, b.TenPhong FROM (SELECT TenTo,MaNhanVien FROM [dbo].[To], dbo.NhanVien WHERE NhanVien.MaTo = [To].MaTo) AS a," +
+            "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = 'NV0001' AND a.MaNhanVien = b.MaNhanVien ";
+                
+            }
+
         }
     }
 }
