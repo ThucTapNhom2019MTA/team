@@ -39,13 +39,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txbHoten = new System.Windows.Forms.TextBox();
+            this.txbDiachi = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // txbManv
             // 
             this.txbManv.Location = new System.Drawing.Point(60, 60);
             this.txbManv.Name = "txbManv";
-            this.txbManv.Size = new System.Drawing.Size(153, 22);
+            this.txbManv.Size = new System.Drawing.Size(222, 22);
             this.txbManv.TabIndex = 0;
             // 
             // label1
@@ -72,18 +74,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(57, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.label3.Text = "Ngày sinh";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(474, 133);
+            this.label4.Location = new System.Drawing.Point(474, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(51, 17);
             this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.label4.Text = "Địa chỉ";
             // 
             // label5
             // 
@@ -132,16 +134,32 @@
             // 
             // txbHoten
             // 
-            this.txbHoten.Location = new System.Drawing.Point(467, 69);
+            this.txbHoten.Location = new System.Drawing.Point(467, 60);
             this.txbHoten.Name = "txbHoten";
-            this.txbHoten.Size = new System.Drawing.Size(153, 22);
+            this.txbHoten.Size = new System.Drawing.Size(216, 22);
             this.txbHoten.TabIndex = 10;
+            // 
+            // txbDiachi
+            // 
+            this.txbDiachi.Location = new System.Drawing.Point(467, 156);
+            this.txbDiachi.Name = "txbDiachi";
+            this.txbDiachi.Size = new System.Drawing.Size(216, 22);
+            this.txbDiachi.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(60, 156);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
+            this.dateTimePicker1.TabIndex = 12;
             // 
             // frmSuanv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txbDiachi);
             this.Controls.Add(this.txbHoten);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -173,5 +191,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txbHoten;
+        private System.Windows.Forms.TextBox txbDiachi;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
