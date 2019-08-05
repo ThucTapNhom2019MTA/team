@@ -44,6 +44,8 @@
             this.txbSodienthoai = new System.Windows.Forms.TextBox();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.txbLuong = new System.Windows.Forms.TextBox();
+            this.cbbTo = new System.Windows.Forms.ComboBox();
+            this.cbbChucvu = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txbManv
@@ -111,7 +113,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 317);
+            this.label7.Location = new System.Drawing.Point(57, 305);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 17);
             this.label7.TabIndex = 7;
@@ -120,7 +122,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(474, 317);
+            this.label8.Location = new System.Drawing.Point(474, 305);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 8;
@@ -177,11 +179,29 @@
             this.txbLuong.Size = new System.Drawing.Size(216, 22);
             this.txbLuong.TabIndex = 15;
             // 
+            // cbbTo
+            // 
+            this.cbbTo.FormattingEnabled = true;
+            this.cbbTo.Location = new System.Drawing.Point(60, 338);
+            this.cbbTo.Name = "cbbTo";
+            this.cbbTo.Size = new System.Drawing.Size(216, 24);
+            this.cbbTo.TabIndex = 16;
+            // 
+            // cbbChucvu
+            // 
+            this.cbbChucvu.FormattingEnabled = true;
+            this.cbbChucvu.Location = new System.Drawing.Point(467, 338);
+            this.cbbChucvu.Name = "cbbChucvu";
+            this.cbbChucvu.Size = new System.Drawing.Size(216, 24);
+            this.cbbChucvu.TabIndex = 17;
+            // 
             // frmSuanv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbbChucvu);
+            this.Controls.Add(this.cbbTo);
             this.Controls.Add(this.txbLuong);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbSodienthoai);
@@ -223,5 +243,7 @@
         private System.Windows.Forms.TextBox txbSodienthoai;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.TextBox txbLuong;
+        private System.Windows.Forms.ComboBox cbbTo;
+        private System.Windows.Forms.ComboBox cbbChucvu;
     }
 }
