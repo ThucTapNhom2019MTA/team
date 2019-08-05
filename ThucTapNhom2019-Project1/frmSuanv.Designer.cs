@@ -41,6 +41,9 @@
             this.txbHoten = new System.Windows.Forms.TextBox();
             this.txbDiachi = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txbSodienthoai = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.txbLuong = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txbManv
@@ -92,45 +95,45 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(57, 231);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(91, 17);
             this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.label5.Text = "Số điện thoại";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(474, 231);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(42, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.label6.Text = "Email";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(57, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(25, 17);
             this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
+            this.label7.Text = "Tổ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(474, 317);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.label8.Text = "Chức vụ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 401);
+            this.label9.Location = new System.Drawing.Point(57, 374);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 17);
+            this.label9.Size = new System.Drawing.Size(48, 17);
             this.label9.TabIndex = 9;
-            this.label9.Text = "label9";
+            this.label9.Text = "Lương";
             // 
             // txbHoten
             // 
@@ -153,11 +156,35 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
             this.dateTimePicker1.TabIndex = 12;
             // 
+            // txbSodienthoai
+            // 
+            this.txbSodienthoai.Location = new System.Drawing.Point(60, 270);
+            this.txbSodienthoai.Name = "txbSodienthoai";
+            this.txbSodienthoai.Size = new System.Drawing.Size(216, 22);
+            this.txbSodienthoai.TabIndex = 13;
+            // 
+            // txbEmail
+            // 
+            this.txbEmail.Location = new System.Drawing.Point(467, 270);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(216, 22);
+            this.txbEmail.TabIndex = 14;
+            // 
+            // txbLuong
+            // 
+            this.txbLuong.Location = new System.Drawing.Point(60, 407);
+            this.txbLuong.Name = "txbLuong";
+            this.txbLuong.Size = new System.Drawing.Size(216, 22);
+            this.txbLuong.TabIndex = 15;
+            // 
             // frmSuanv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txbLuong);
+            this.Controls.Add(this.txbEmail);
+            this.Controls.Add(this.txbSodienthoai);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txbDiachi);
             this.Controls.Add(this.txbHoten);
@@ -193,5 +220,8 @@
         private System.Windows.Forms.TextBox txbHoten;
         private System.Windows.Forms.TextBox txbDiachi;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txbSodienthoai;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.TextBox txbLuong;
     }
 }
