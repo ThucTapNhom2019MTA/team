@@ -53,5 +53,19 @@ namespace ThucTapNhom2019_Project1
             }
             conn.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int selectRow = dataGridView1.SelectedRows[0].Index;
+            if ( 0<selectRow && selectRow < dataGridView1.RowCount - 1)
+            {
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
