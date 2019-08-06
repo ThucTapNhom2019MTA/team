@@ -13,8 +13,8 @@ namespace ThucTapNhom2019_Project1
         public static SqlConnection getConnection()
         {
             string connString = "Data Source=HQH;Initial Catalog = QuanLiNhanSu; Integrated Security = True";
-            string datconnString = @"Data Source=.\SQLSERVER;Initial Catalog=QuanLiNhanSu;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(datconnString);
+            //string datconnString = @"Data Source=.\SQLSERVER;Initial Catalog=QuanLiNhanSu;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connString);
             return conn;
         }
     }
