@@ -57,9 +57,9 @@ namespace ThucTapNhom2019_Project1
         private void button2_Click(object sender, EventArgs e)
         {
             int selectRow = dataGridView1.SelectedRows[0].Index;
-            if ( 0<selectRow && selectRow < dataGridView1.RowCount - 1)
+            if ( 0<selectRow && selectRow < dtDanhSach.Rows.Count)
             {
-
+                //do something
             }
         }
 
