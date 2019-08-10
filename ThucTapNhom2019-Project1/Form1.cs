@@ -59,7 +59,7 @@ namespace ThucTapNhom2019_Project1
             int selectRow = dataGridView1.SelectedRows[0].Index;
             if ( 0<selectRow && selectRow < dataGridView1.RowCount - 1)
             {
-
+                int i = 0;
             }
         }
 
