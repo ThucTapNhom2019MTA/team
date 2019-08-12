@@ -15,14 +15,15 @@ namespace ThucTapNhom2019_Project1
     {
         SqlConnection conn = ConnectSQLServer.getConnection();
         int soNhanVien;
-        string xoa;
         DataTable dtDanhSach;
         public Form1()
         {
             InitializeComponent();
             txPhong.Enabled = false;
             txTo.Enabled = false;
-            
+
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -44,7 +45,6 @@ namespace ThucTapNhom2019_Project1
             conn.Open();
             if (e.RowIndex <6 && e.RowIndex >=0) {
                 string manv = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                xoa = manv;
                 string strQuery = "SELECT a.TenTo, b.TenPhong FROM (SELECT TenTo,MaNhanVien FROM [dbo].[To], dbo.NhanVien WHERE NhanVien.MaTo = [To].MaTo) AS a," +
             "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = b.MaNhanVien and a.MaNhanVien = "+"'"+manv+"'";
                 SqlDataAdapter da1 = new SqlDataAdapter(strQuery, conn);
@@ -61,32 +61,13 @@ namespace ThucTapNhom2019_Project1
             int selectRow = dataGridView1.SelectedRows[0].Index;
             if ( 0<selectRow && selectRow < dataGridView1.RowCount - 1)
             {
-                
+                int i = 0;
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            string query = "DELETE FROM [dbo].[NhanVien] WHERE MaNhanVien = " + "'" + xoa + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-            sda.SelectCommand.ExecuteNonQuery();
-
-            string strQueryDanhSach = "Select MaNhanVien as Mã, HoTen as [Họ và tên], " +
-                "NgaySinh as [Ngày Sinh], DiaChi as [Địa Chỉ], SoDienThoai as [Số Điện Thoại], Email, " +
-                "Luong as [Lương], TenChucVu AS [Tên chức vụ] from NhanVien, dbo.ChucVu " +
-                "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
-            SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
-            dtDanhSach = new DataTable();
-            da.Fill(dtDanhSach);
-            dataGridView1.DataSource = dtDanhSach;
-            soNhanVien = dtDanhSach.Rows.Count;
-            conn.Close();
         }
     }
 }
