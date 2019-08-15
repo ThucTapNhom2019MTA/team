@@ -25,7 +25,7 @@ namespace ThucTapNhom2019_Project1
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
         }
-        private void Form1_Load(object sender, EventArgs e)
+        public void ReloadForm(SqlConnection conn)
         {
             conn.Open();
             string strQueryDanhSach = "Select MaNhanVien as Mã, HoTen as [Họ và tên], " +
@@ -38,6 +38,10 @@ namespace ThucTapNhom2019_Project1
             dataGridView1.DataSource = dtDanhSach;
             soNhanVien = dtDanhSach.Rows.Count;
             conn.Close();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ReloadForm(conn);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
