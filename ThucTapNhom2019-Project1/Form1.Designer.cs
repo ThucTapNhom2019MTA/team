@@ -63,6 +63,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(684, 395);
             this.dataGridView1.TabIndex = 0;
@@ -170,6 +171,9 @@
             // cbTimKiem
             // 
             this.cbTimKiem.FormattingEnabled = true;
+            this.cbTimKiem.Items.AddRange(new object[] {
+            "ID",
+            "Họ tên"});
             this.cbTimKiem.Location = new System.Drawing.Point(3, 30);
             this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTimKiem.Name = "cbTimKiem";
@@ -195,6 +199,7 @@
             this.label3.Size = new System.Drawing.Size(95, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tìm kiếm";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // panel3
             // 
@@ -220,13 +225,13 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // Form1

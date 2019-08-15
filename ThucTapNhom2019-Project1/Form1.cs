@@ -71,6 +71,19 @@ namespace ThucTapNhom2019_Project1
                 ReloadForm(conn);
             }
         }
-
+        SqlCommand cmd;
+        private void Label3_Click(object sender, EventArgs e)
+        {
+            if (cbTimKiem.Text == "ID")
+            {
+                string ID = textBox1.Text;
+                conn.Open();
+                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien= '"+ID+"'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+            }
+        }
     }
 }
