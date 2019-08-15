@@ -68,6 +68,7 @@ namespace ThucTapNhom2019_Project1
                 string manv = dataGridView1.Rows[selectRow].Cells[0].Value.ToString();
                 frmSuanv formSuanv = new frmSuanv(manv,selectRow, dataGridView1);
                 formSuanv.ShowDialog();
+                ReloadForm(conn);
             }
         }
 
