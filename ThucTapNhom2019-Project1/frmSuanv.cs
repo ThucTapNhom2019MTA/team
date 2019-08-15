@@ -40,5 +40,6 @@ namespace ThucTapNhom2019_Project1
             cbbChucvu.ValueMember = "TenChucVu";
             conn.Close();
         }
+
     }
 }
