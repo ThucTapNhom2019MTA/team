@@ -52,7 +52,7 @@
             this.txbManv.Location = new System.Drawing.Point(60, 60);
             this.txbManv.Name = "txbManv";
             this.txbManv.ReadOnly = true;
-            this.txbManv.Size = new System.Drawing.Size(222, 22);
+            this.txbManv.Size = new System.Drawing.Size(265, 22);
             this.txbManv.TabIndex = 0;
             // 
             // label1
@@ -95,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 204);
+            this.label5.Location = new System.Drawing.Point(57, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 17);
             this.label5.TabIndex = 5;
@@ -104,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(474, 204);
+            this.label6.Location = new System.Drawing.Point(474, 199);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 17);
             this.label6.TabIndex = 6;
@@ -132,42 +132,42 @@
             // 
             this.txbHoten.Location = new System.Drawing.Point(467, 60);
             this.txbHoten.Name = "txbHoten";
-            this.txbHoten.Size = new System.Drawing.Size(216, 22);
+            this.txbHoten.Size = new System.Drawing.Size(257, 22);
             this.txbHoten.TabIndex = 10;
             // 
             // txbDiachi
             // 
             this.txbDiachi.Location = new System.Drawing.Point(467, 156);
             this.txbDiachi.Name = "txbDiachi";
-            this.txbDiachi.Size = new System.Drawing.Size(216, 22);
+            this.txbDiachi.Size = new System.Drawing.Size(257, 22);
             this.txbDiachi.TabIndex = 11;
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(60, 156);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(222, 22);
+            this.dateTimePicker.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker.TabIndex = 12;
             // 
             // txbSodienthoai
             // 
-            this.txbSodienthoai.Location = new System.Drawing.Point(60, 243);
+            this.txbSodienthoai.Location = new System.Drawing.Point(60, 238);
             this.txbSodienthoai.Name = "txbSodienthoai";
-            this.txbSodienthoai.Size = new System.Drawing.Size(216, 22);
+            this.txbSodienthoai.Size = new System.Drawing.Size(265, 22);
             this.txbSodienthoai.TabIndex = 13;
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(467, 243);
+            this.txbEmail.Location = new System.Drawing.Point(467, 238);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(216, 22);
+            this.txbEmail.Size = new System.Drawing.Size(257, 22);
             this.txbEmail.TabIndex = 14;
             // 
             // txbLuong
             // 
             this.txbLuong.Location = new System.Drawing.Point(61, 313);
             this.txbLuong.Name = "txbLuong";
-            this.txbLuong.Size = new System.Drawing.Size(216, 22);
+            this.txbLuong.Size = new System.Drawing.Size(264, 22);
             this.txbLuong.TabIndex = 15;
             // 
             // cbbChucvu
@@ -175,24 +175,25 @@
             this.cbbChucvu.FormattingEnabled = true;
             this.cbbChucvu.Location = new System.Drawing.Point(467, 313);
             this.cbbChucvu.Name = "cbbChucvu";
-            this.cbbChucvu.Size = new System.Drawing.Size(216, 24);
+            this.cbbChucvu.Size = new System.Drawing.Size(257, 24);
             this.cbbChucvu.TabIndex = 17;
             // 
             // btnSaveInsert
             // 
             this.btnSaveInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveInsert.Location = new System.Drawing.Point(298, 394);
+            this.btnSaveInsert.Location = new System.Drawing.Point(326, 390);
             this.btnSaveInsert.Name = "btnSaveInsert";
             this.btnSaveInsert.Size = new System.Drawing.Size(139, 30);
             this.btnSaveInsert.TabIndex = 18;
             this.btnSaveInsert.Text = "Lưu";
             this.btnSaveInsert.UseVisualStyleBackColor = true;
+            this.btnSaveInsert.Click += new System.EventHandler(this.btnSaveInsert_Click);
             // 
             // frmSuanv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 450);
+            this.ClientSize = new System.Drawing.Size(766, 450);
             this.Controls.Add(this.btnSaveInsert);
             this.Controls.Add(this.cbbChucvu);
             this.Controls.Add(this.txbLuong);
