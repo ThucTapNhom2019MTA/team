@@ -16,7 +16,9 @@ namespace ThucTapNhom2019_Project1
         private string email;
         private string to;
         private string chucvu;
-        int luong;
+        private int luong;
+
+        public NhanVien() { }
 
         public NhanVien(string manv, string hoten, DateTime ngaysinh, 
                         string diachi, string sdt, string email, 
@@ -32,6 +34,19 @@ namespace ThucTapNhom2019_Project1
             this.chucvu = chucvu;
         }
 
+        public NhanVien(string manv, string hoten, DateTime ngaysinh, string diachi, string sdt, string email, string to, string chucvu, int luong)
+        {
+            this.manv = manv;
+            this.hoten = hoten;
+            this.ngaysinh = ngaysinh;
+            this.diachi = diachi;
+            this.sdt = sdt;
+            this.email = email;
+            this.to = to;
+            this.chucvu = chucvu;
+            this.luong = luong;
+        }
+
         public string Manv { get => manv; set => manv = value; }
         public string Hoten { get => hoten; set => hoten = value; }
         public DateTime Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
@@ -40,5 +55,6 @@ namespace ThucTapNhom2019_Project1
         public string Email { get => email; set => email = value; }
         public string To { get => to; set => to = value; }
         public string Chucvu { get => chucvu; set => chucvu = value; }
+        public int Luong { get => luong; set => luong = value; }
     }
 }

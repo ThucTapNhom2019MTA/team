@@ -35,17 +35,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txbHoten = new System.Windows.Forms.TextBox();
             this.txbDiachi = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txbSodienthoai = new System.Windows.Forms.TextBox();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.txbLuong = new System.Windows.Forms.TextBox();
-            this.cbbTo = new System.Windows.Forms.ComboBox();
             this.cbbChucvu = new System.Windows.Forms.ComboBox();
+            this.btnSaveInsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbManv
@@ -74,7 +73,6 @@
             this.label2.Size = new System.Drawing.Size(50, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Họ tên";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -97,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 231);
+            this.label5.Location = new System.Drawing.Point(57, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 17);
             this.label5.TabIndex = 5;
@@ -106,25 +104,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(474, 231);
+            this.label6.Location = new System.Drawing.Point(474, 204);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 17);
             this.label6.TabIndex = 6;
             this.label6.Text = "Email";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 305);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Tổ";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(474, 305);
+            this.label8.Location = new System.Drawing.Point(474, 280);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 17);
             this.label8.TabIndex = 8;
@@ -133,7 +122,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 374);
+            this.label9.Location = new System.Drawing.Point(58, 280);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 17);
             this.label9.TabIndex = 9;
@@ -153,66 +142,67 @@
             this.txbDiachi.Size = new System.Drawing.Size(216, 22);
             this.txbDiachi.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(60, 156);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(222, 22);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dateTimePicker.Location = new System.Drawing.Point(60, 156);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(222, 22);
+            this.dateTimePicker.TabIndex = 12;
             // 
             // txbSodienthoai
             // 
-            this.txbSodienthoai.Location = new System.Drawing.Point(60, 270);
+            this.txbSodienthoai.Location = new System.Drawing.Point(60, 243);
             this.txbSodienthoai.Name = "txbSodienthoai";
             this.txbSodienthoai.Size = new System.Drawing.Size(216, 22);
             this.txbSodienthoai.TabIndex = 13;
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(467, 270);
+            this.txbEmail.Location = new System.Drawing.Point(467, 243);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(216, 22);
             this.txbEmail.TabIndex = 14;
             // 
             // txbLuong
             // 
-            this.txbLuong.Location = new System.Drawing.Point(60, 407);
+            this.txbLuong.Location = new System.Drawing.Point(61, 313);
             this.txbLuong.Name = "txbLuong";
             this.txbLuong.Size = new System.Drawing.Size(216, 22);
             this.txbLuong.TabIndex = 15;
             // 
-            // cbbTo
-            // 
-            this.cbbTo.FormattingEnabled = true;
-            this.cbbTo.Location = new System.Drawing.Point(60, 338);
-            this.cbbTo.Name = "cbbTo";
-            this.cbbTo.Size = new System.Drawing.Size(216, 24);
-            this.cbbTo.TabIndex = 16;
-            // 
             // cbbChucvu
             // 
             this.cbbChucvu.FormattingEnabled = true;
-            this.cbbChucvu.Location = new System.Drawing.Point(467, 338);
+            this.cbbChucvu.Location = new System.Drawing.Point(467, 313);
             this.cbbChucvu.Name = "cbbChucvu";
             this.cbbChucvu.Size = new System.Drawing.Size(216, 24);
             this.cbbChucvu.TabIndex = 17;
+            // 
+            // btnSaveInsert
+            // 
+            this.btnSaveInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveInsert.Location = new System.Drawing.Point(298, 394);
+            this.btnSaveInsert.Name = "btnSaveInsert";
+            this.btnSaveInsert.Size = new System.Drawing.Size(139, 30);
+            this.btnSaveInsert.TabIndex = 18;
+            this.btnSaveInsert.Text = "Lưu";
+            this.btnSaveInsert.UseVisualStyleBackColor = true;
             // 
             // frmSuanv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.ClientSize = new System.Drawing.Size(736, 450);
+            this.Controls.Add(this.btnSaveInsert);
             this.Controls.Add(this.cbbChucvu);
-            this.Controls.Add(this.cbbTo);
             this.Controls.Add(this.txbLuong);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbSodienthoai);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.txbDiachi);
             this.Controls.Add(this.txbHoten);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -220,7 +210,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbManv);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "frmSuanv";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa thông tin nhân viên";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -236,16 +229,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txbHoten;
         private System.Windows.Forms.TextBox txbDiachi;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.TextBox txbSodienthoai;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.TextBox txbLuong;
-        private System.Windows.Forms.ComboBox cbbTo;
         private System.Windows.Forms.ComboBox cbbChucvu;
+        private System.Windows.Forms.Button btnSaveInsert;
     }
 }

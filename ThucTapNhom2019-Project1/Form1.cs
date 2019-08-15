@@ -56,18 +56,16 @@ namespace ThucTapNhom2019_Project1
             conn.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSuaNhanVien_Click(object sender, EventArgs e)
         {
             int selectRow = dataGridView1.SelectedRows[0].Index;
-            if ( 0<selectRow && selectRow < dataGridView1.RowCount - 1)
+            if ( selectRow >= 0 && selectRow < dataGridView1.RowCount - 1)
             {
-                int i = 0;
+                string manv = dataGridView1.Rows[selectRow].Cells[0].Value.ToString();
+                frmSuanv formSuanv = new frmSuanv(manv,selectRow, dataGridView1);
+                formSuanv.ShowDialog();
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
