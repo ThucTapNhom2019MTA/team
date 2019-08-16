@@ -40,8 +40,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbTimKiem = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.tb_timkiem = new System.Windows.Forms.TextBox();
+            this.lb_timkiem = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -160,8 +160,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Beige;
             this.panel2.Controls.Add(this.cbTimKiem);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.tb_timkiem);
+            this.panel2.Controls.Add(this.lb_timkiem);
             this.panel2.Location = new System.Drawing.Point(11, 238);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
@@ -170,36 +170,41 @@
             // 
             // cbTimKiem
             // 
+            this.cbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTimKiem.FormattingEnabled = true;
             this.cbTimKiem.Items.AddRange(new object[] {
             "ID",
-            "Họ tên"});
+            "Name",
+            "Date",
+            "Address",
+            "Phone",
+            "Position"});
             this.cbTimKiem.Location = new System.Drawing.Point(3, 30);
             this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTimKiem.Name = "cbTimKiem";
             this.cbTimKiem.Size = new System.Drawing.Size(108, 24);
             this.cbTimKiem.TabIndex = 2;
             // 
-            // textBox1
+            // tb_timkiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 30);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 23);
-            this.textBox1.TabIndex = 1;
+            this.tb_timkiem.Location = new System.Drawing.Point(116, 30);
+            this.tb_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_timkiem.Multiline = true;
+            this.tb_timkiem.Name = "tb_timkiem";
+            this.tb_timkiem.Size = new System.Drawing.Size(176, 23);
+            this.tb_timkiem.TabIndex = 1;
             // 
-            // label3
+            // lb_timkiem
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(100, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tìm kiếm";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
+            this.lb_timkiem.AutoSize = true;
+            this.lb_timkiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lb_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_timkiem.Location = new System.Drawing.Point(100, 0);
+            this.lb_timkiem.Name = "lb_timkiem";
+            this.lb_timkiem.Size = new System.Drawing.Size(95, 24);
+            this.lb_timkiem.TabIndex = 0;
+            this.lb_timkiem.Text = "Tìm kiếm";
+            this.lb_timkiem.Click += new System.EventHandler(this.Lb_timkiem_Click);
             // 
             // panel3
             // 
@@ -271,8 +276,8 @@
         private System.Windows.Forms.Button btnSuaNhanVien;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_timkiem;
+        private System.Windows.Forms.Label lb_timkiem;
         private System.Windows.Forms.ComboBox cbTimKiem;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.MenuStrip menuStrip1;

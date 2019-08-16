@@ -71,19 +71,54 @@ namespace ThucTapNhom2019_Project1
                 ReloadForm(conn);
             }
         }
-        SqlCommand cmd;
-        private void Label3_Click(object sender, EventArgs e)
+        private void Lb_timkiem_Click(object sender, EventArgs e)
         {
             if (cbTimKiem.Text == "ID")
             {
-                string ID = textBox1.Text;
+                string ID = tb_timkiem.Text;
                 conn.Open();
-                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien= '"+ID+"'";
+                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien like '%" + ID + "%'";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
                 dataGridView1.DataSource = dtDanhSach;
+                conn.Close();
             }
+            if (cbTimKiem.Text == "Name")
+            {
+                string Name = tb_timkiem.Text;
+                conn.Open();
+                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien like '%" + Name + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+                conn.Close();
+            }
+            if (cbTimKiem.Text == "Phone")
+            {
+                string Phone = tb_timkiem.Text;
+                conn.Open();
+                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien like '%" + Phone + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+                conn.Close();
+            }
+            if (cbTimKiem.Text == "Position")
+            {
+                string position = tb_timkiem.Text;
+                conn.Open();
+                string strQueryDanhSach = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien like '%" + position + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+                conn.Close();
+            }
+
         }
+
     }
 }
