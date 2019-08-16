@@ -242,6 +242,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ttNhanVien";
             this.Text = "ttNhanVien";
+            this.Load += new System.EventHandler(this.ttNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

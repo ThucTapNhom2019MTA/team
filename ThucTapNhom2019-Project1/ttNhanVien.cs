@@ -21,5 +21,10 @@ namespace ThucTapNhom2019_Project1
         {
 
         }
+
+        private void ttNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
