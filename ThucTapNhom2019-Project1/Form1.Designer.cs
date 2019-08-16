@@ -39,13 +39,11 @@
             this.btnSuaNhanVien = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbTimKiem = new System.Windows.Forms.ComboBox();
-            this.tb_timkiem = new System.Windows.Forms.TextBox();
-            this.lb_timkiem = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_timkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -160,51 +158,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Beige;
-            this.panel2.Controls.Add(this.cbTimKiem);
-            this.panel2.Controls.Add(this.tb_timkiem);
-            this.panel2.Controls.Add(this.lb_timkiem);
+            this.panel2.Controls.Add(this.bt_timkiem);
             this.panel2.Location = new System.Drawing.Point(11, 238);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(294, 65);
             this.panel2.TabIndex = 2;
-            // 
-            // cbTimKiem
-            // 
-            this.cbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTimKiem.FormattingEnabled = true;
-            this.cbTimKiem.Items.AddRange(new object[] {
-            "ID",
-            "Name",
-            "Date",
-            "Address",
-            "Position"});
-            this.cbTimKiem.Location = new System.Drawing.Point(3, 30);
-            this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(108, 24);
-            this.cbTimKiem.TabIndex = 2;
-            // 
-            // tb_timkiem
-            // 
-            this.tb_timkiem.Location = new System.Drawing.Point(116, 30);
-            this.tb_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_timkiem.Multiline = true;
-            this.tb_timkiem.Name = "tb_timkiem";
-            this.tb_timkiem.Size = new System.Drawing.Size(176, 23);
-            this.tb_timkiem.TabIndex = 1;
-            // 
-            // lb_timkiem
-            // 
-            this.lb_timkiem.AutoSize = true;
-            this.lb_timkiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lb_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_timkiem.Location = new System.Drawing.Point(100, 0);
-            this.lb_timkiem.Name = "lb_timkiem";
-            this.lb_timkiem.Size = new System.Drawing.Size(95, 24);
-            this.lb_timkiem.TabIndex = 0;
-            this.lb_timkiem.Text = "Tìm kiếm";
-            this.lb_timkiem.Click += new System.EventHandler(this.Lb_timkiem_Click);
             // 
             // panel3
             // 
@@ -239,6 +198,16 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // bt_timkiem
+            // 
+            this.bt_timkiem.Location = new System.Drawing.Point(108, 12);
+            this.bt_timkiem.Name = "bt_timkiem";
+            this.bt_timkiem.Size = new System.Drawing.Size(86, 41);
+            this.bt_timkiem.TabIndex = 0;
+            this.bt_timkiem.Text = "Tìm Kiếm";
+            this.bt_timkiem.UseVisualStyleBackColor = true;
+            this.bt_timkiem.Click += new System.EventHandler(this.Bt_timkiem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,7 +227,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -276,15 +244,13 @@
         private System.Windows.Forms.Button btnSuaNhanVien;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox tb_timkiem;
-        private System.Windows.Forms.Label lb_timkiem;
-        private System.Windows.Forms.ComboBox cbTimKiem;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.TextBox txTo;
         private System.Windows.Forms.TextBox txPhong;
+        private System.Windows.Forms.Button bt_timkiem;
     }
 }
 
