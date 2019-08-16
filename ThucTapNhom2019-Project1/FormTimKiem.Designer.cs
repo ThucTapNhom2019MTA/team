@@ -33,12 +33,13 @@
             this.bt_timkiem = new System.Windows.Forms.Button();
             this.bt_back = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbTimKiem
             // 
-            this.cbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTimKiem.FormattingEnabled = true;
             this.cbTimKiem.Items.AddRange(new object[] {
             "ID",
@@ -46,16 +47,17 @@
             "Phone",
             "Address",
             "Position"});
-            this.cbTimKiem.Location = new System.Drawing.Point(54, 48);
+            this.cbTimKiem.Location = new System.Drawing.Point(54, 39);
             this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(156, 24);
+            this.cbTimKiem.Size = new System.Drawing.Size(135, 24);
             this.cbTimKiem.TabIndex = 0;
+            this.cbTimKiem.Text = "ID";
             // 
             // tb_timkiem
             // 
-            this.tb_timkiem.Location = new System.Drawing.Point(54, 160);
+            this.tb_timkiem.Location = new System.Drawing.Point(54, 207);
             this.tb_timkiem.Name = "tb_timkiem";
-            this.tb_timkiem.Size = new System.Drawing.Size(156, 22);
+            this.tb_timkiem.Size = new System.Drawing.Size(135, 22);
             this.tb_timkiem.TabIndex = 1;
             // 
             // bt_timkiem
@@ -96,11 +98,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(692, 427);
             this.dataGridView1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(54, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Tìm kiếm theo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(54, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Nhập từ khóa";
+            // 
             // FormTimKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_timkiem);
@@ -108,6 +130,7 @@
             this.Controls.Add(this.cbTimKiem);
             this.Name = "FormTimKiem";
             this.Text = "FormTimKiem";
+            this.Load += new System.EventHandler(this.FormTimKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,5 +144,7 @@
         private System.Windows.Forms.Button bt_timkiem;
         private System.Windows.Forms.Button bt_back;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

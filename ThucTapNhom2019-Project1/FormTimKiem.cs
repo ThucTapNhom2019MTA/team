@@ -39,10 +39,10 @@ namespace ThucTapNhom2019_Project1
                 da.Fill(dtDanhSach);
                 dataGridView1.DataSource = dtDanhSach;
             }
-            if (cbTimKiem.Text == "Date")
+            if (cbTimKiem.Text == "Phone")
             {
-                string Date = tb_timkiem.Text;
-                string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND NgaySinh LIKE '%" + Date + "%'";
+                string Phone = tb_timkiem.Text;
+                string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND SoDienThoai like '%" + Phone + "%'";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
@@ -74,6 +74,20 @@ namespace ThucTapNhom2019_Project1
             this.Hide();
             Form1 f1 = new Form1();
             f1.ShowDialog();
+        }
+        private void FormTimKiem_Load(object sender, EventArgs e)
+        {
+            conn.Open();
+            string strQueryDanhSach = "Select MaNhanVien as Mã, HoTen as [Họ và tên], " +
+                "NgaySinh as [Ngày Sinh], DiaChi as [Địa Chỉ], SoDienThoai as [Số Điện Thoại], Email, " +
+                "Luong as [Lương], TenChucVu AS [Tên chức vụ] from NhanVien, dbo.ChucVu " +
+                "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
+            SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            dtDanhSach = new DataTable();
+            da.Fill(dtDanhSach);
+            dataGridView1.DataSource = dtDanhSach;
+            conn.Close();
+
         }
     }
 }
