@@ -98,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ThemNv.resx">
+      <DependentUpon>ThemNv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ttNhanVien.resx">
       <DependentUpon>ttNhanVien.cs</DependentUpon>
     </EmbeddedResource>
