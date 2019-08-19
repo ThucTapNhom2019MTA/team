@@ -42,7 +42,7 @@ namespace ThucTapNhom2019_Project1
             {
                 SqlConnection conn = ConnectSQLServer.getConnection();
                 conn.Open();
-                string query = "INSERT INTO [dbo].[NhanVien] (MaNv,hoten,ngaysinh,diachi,sodienthoai,email,machucvu,luong) " +
+                string query = "INSERT INTO [dbo].[NhanVien] (MaNhanvien,hoten,ngaysinh,diachi,sodienthoai,email,machucvu,luong) " +
                     "VALUES (@MaNv,@hoten,@ngaysinh,@diachi,@sodienthoai,@email,@machucvu,@luong)";
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.Add("@manv", this.txb_Manv.Text);
@@ -56,6 +56,7 @@ namespace ThucTapNhom2019_Project1
                 command.ExecuteNonQuery();
                 conn.Close();
             }
+            this.Dispose();
         }
 
         private void ThemNv_Load(object sender, EventArgs e)

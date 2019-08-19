@@ -111,6 +111,7 @@ namespace ThucTapNhom2019_Project1
         {
             ThemNv themNv = new ThemNv();
             DialogResult dialogResult = themNv.ShowDialog();
+            ReloadForm(conn);
         }
     }
 }
