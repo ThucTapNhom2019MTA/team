@@ -16,5 +16,10 @@ namespace ThucTapNhom2019_Project1
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

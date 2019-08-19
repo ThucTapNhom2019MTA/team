@@ -36,6 +36,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txb_Diachi = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txb_Sodt = new System.Windows.Forms.TextBox();
+            this.txb_Email = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +95,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(294, 30);
             this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker1.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -110,11 +115,52 @@
             this.txb_Diachi.Size = new System.Drawing.Size(298, 30);
             this.txb_Diachi.TabIndex = 7;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(45, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 22);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Số đt";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(446, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 22);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Email";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txb_Sodt
+            // 
+            this.txb_Sodt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Sodt.Location = new System.Drawing.Point(49, 278);
+            this.txb_Sodt.Name = "txb_Sodt";
+            this.txb_Sodt.Size = new System.Drawing.Size(294, 30);
+            this.txb_Sodt.TabIndex = 10;
+            // 
+            // txb_Email
+            // 
+            this.txb_Email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Email.Location = new System.Drawing.Point(450, 278);
+            this.txb_Email.Name = "txb_Email";
+            this.txb_Email.Size = new System.Drawing.Size(294, 30);
+            this.txb_Email.TabIndex = 11;
+            // 
             // ThemNv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txb_Email);
+            this.Controls.Add(this.txb_Sodt);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txb_Diachi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
@@ -140,5 +186,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txb_Diachi;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txb_Sodt;
+        private System.Windows.Forms.TextBox txb_Email;
     }
 }
