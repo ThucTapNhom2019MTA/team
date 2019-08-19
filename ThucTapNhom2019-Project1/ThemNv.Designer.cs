@@ -33,6 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txb_Manv = new System.Windows.Forms.TextBox();
             this.txb_Hoten = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txb_Diachi = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +52,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(410, 31);
+            this.label2.Location = new System.Drawing.Point(446, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 22);
             this.label2.TabIndex = 1;
@@ -70,22 +73,51 @@
             this.txb_Manv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manv.Location = new System.Drawing.Point(49, 70);
             this.txb_Manv.Name = "txb_Manv";
-            this.txb_Manv.Size = new System.Drawing.Size(206, 30);
+            this.txb_Manv.Size = new System.Drawing.Size(294, 30);
             this.txb_Manv.TabIndex = 3;
             // 
             // txb_Hoten
             // 
             this.txb_Hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Hoten.Location = new System.Drawing.Point(414, 70);
+            this.txb_Hoten.Location = new System.Drawing.Point(450, 70);
             this.txb_Hoten.Name = "txb_Hoten";
-            this.txb_Hoten.Size = new System.Drawing.Size(206, 30);
+            this.txb_Hoten.Size = new System.Drawing.Size(298, 30);
             this.txb_Hoten.TabIndex = 4;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(49, 164);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(294, 30);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(446, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 22);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Địa chỉ";
+            // 
+            // txb_Diachi
+            // 
+            this.txb_Diachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Diachi.Location = new System.Drawing.Point(450, 167);
+            this.txb_Diachi.Name = "txb_Diachi";
+            this.txb_Diachi.Size = new System.Drawing.Size(298, 30);
+            this.txb_Diachi.TabIndex = 7;
             // 
             // ThemNv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txb_Diachi);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txb_Hoten);
             this.Controls.Add(this.txb_Manv);
             this.Controls.Add(this.label3);
@@ -105,5 +137,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txb_Manv;
         private System.Windows.Forms.TextBox txb_Hoten;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txb_Diachi;
     }
 }
