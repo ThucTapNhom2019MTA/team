@@ -106,5 +106,10 @@ namespace ThucTapNhom2019_Project1
             FormTimKiem ftk = new FormTimKiem();
             ftk.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

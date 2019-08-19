@@ -39,11 +39,11 @@
             this.btnSuaNhanVien = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_timkiem = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bt_timkiem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -154,6 +154,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -164,6 +165,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(294, 65);
             this.panel2.TabIndex = 2;
+            // 
+            // bt_timkiem
+            // 
+            this.bt_timkiem.Location = new System.Drawing.Point(108, 12);
+            this.bt_timkiem.Name = "bt_timkiem";
+            this.bt_timkiem.Size = new System.Drawing.Size(86, 41);
+            this.bt_timkiem.TabIndex = 0;
+            this.bt_timkiem.Text = "Tìm Kiếm";
+            this.bt_timkiem.UseVisualStyleBackColor = true;
+            this.bt_timkiem.Click += new System.EventHandler(this.Bt_timkiem_Click);
             // 
             // panel3
             // 
@@ -189,24 +200,14 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // bt_timkiem
-            // 
-            this.bt_timkiem.Location = new System.Drawing.Point(108, 12);
-            this.bt_timkiem.Name = "bt_timkiem";
-            this.bt_timkiem.Size = new System.Drawing.Size(86, 41);
-            this.bt_timkiem.TabIndex = 0;
-            this.bt_timkiem.Text = "Tìm Kiếm";
-            this.bt_timkiem.UseVisualStyleBackColor = true;
-            this.bt_timkiem.Click += new System.EventHandler(this.Bt_timkiem_Click);
             // 
             // Form1
             // 
