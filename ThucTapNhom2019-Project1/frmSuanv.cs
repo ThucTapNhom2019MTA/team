@@ -16,6 +16,9 @@ namespace ThucTapNhom2019_Project1
         // sua nhan vien
         public frmSuanv(string maNv,int index,DataGridView datagv)
         {
+
+
+
             InitializeComponent();
             bindingChucVuTxtBox();
             txbManv.Text = maNv;
