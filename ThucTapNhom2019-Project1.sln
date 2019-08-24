@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThucTapNhom2019-Project1", "ThucTapNhom2019-Project1\ThucTapNhom2019-Project1.csproj", "{7E517079-8F43-4B15-965C-19D7B3721CE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyNhanSu", "ThucTapNhom2019-Project1\QuanLyNhanSu.csproj", "{7E517079-8F43-4B15-965C-19D7B3721CE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLHocSinhGiaoVien", "QLHocSinhGiaoVien\QLHocSinhGiaoVien.csproj", "{C160BF3E-92A4-416F-AA4C-15E8722AC715}"
 EndProject
