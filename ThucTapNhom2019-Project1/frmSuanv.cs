@@ -13,6 +13,7 @@ namespace ThucTapNhom2019_Project1
 {
     public partial class frmSuanv : Form
     {
+        // sua nhan vien
         public frmSuanv(string maNv,int index,DataGridView datagv)
         {
             InitializeComponent();
