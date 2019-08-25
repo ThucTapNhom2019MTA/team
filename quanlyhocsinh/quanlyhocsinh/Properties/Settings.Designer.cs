@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLHocSinhGiaoVien.Properties
+namespace quanlyhocsinh.Properties
 {
 
 
