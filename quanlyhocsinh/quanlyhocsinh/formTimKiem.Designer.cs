@@ -127,7 +127,6 @@
             this.cbTimkiemSV.Items.AddRange(new object[] {
             "ID",
             "Name",
-            "Phone",
             "Address"});
             this.cbTimkiemSV.Location = new System.Drawing.Point(44, 50);
             this.cbTimkiemSV.Name = "cbTimkiemSV";

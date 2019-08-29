@@ -27,11 +27,13 @@ namespace quanlyhocsinh
             if (Form1.chooseGV_Stu == 2)
             {
                 strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
+                cbTimKiemGV.Hide();
             }
             else 
             {
                 strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
                                         ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN";
+                cbTimkiemSV.Hide();
             }
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
             dtDanhSach = new DataTable();
@@ -58,7 +60,59 @@ namespace quanlyhocsinh
 
         private void bt_timkiem_Click(object sender, EventArgs e)
         {
-
+            conn.Open();
+            if (cbTimKiemGV.Text == "ID" || cbTimkiemSV.Text == "ID")
+            {
+                string ID = tb_timkiem.Text;
+                string strQueryDanhSach;
+                if (Form1.chooseGV_Stu == 2)
+                {
+                    strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH where MAHOCSINH LIKE '%" + ID + "%'";
+                }
+                else strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
+                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN where MAHOCSINH LIKE '%" + ID + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+            }
+            //if (cbTimKiem.Text == "Name")
+            //{
+            //    string Name = tb_timkiem.Text;
+            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND HoTen LIKE N'%" + Name + "%'";
+            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            //    dtDanhSach = new DataTable();
+            //    da.Fill(dtDanhSach);
+            //    dataGridView1.DataSource = dtDanhSach;
+            //}
+            //if (cbTimKiem.Text == "Phone")
+            //{
+            //    string Phone = tb_timkiem.Text;
+            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND SoDienThoai like '%" + Phone + "%'";
+            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            //    dtDanhSach = new DataTable();
+            //    da.Fill(dtDanhSach);
+            //    dataGridView1.DataSource = dtDanhSach;
+            //}
+            //if (cbTimKiem.Text == "Address")
+            //{
+            //    string Address = tb_timkiem.Text;
+            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND DiaChi LIKE N'%" + Address + "%'";
+            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            //    dtDanhSach = new DataTable();
+            //    da.Fill(dtDanhSach);
+            //    dataGridView1.DataSource = dtDanhSach;
+            //}
+            //if (cbTimKiem.Text == "Position")
+            //{
+            //    string Position = tb_timkiem.Text;
+            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND TenChucVu LIKE N'%" + Position + "%'";
+            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            //    dtDanhSach = new DataTable();
+            //    da.Fill(dtDanhSach);
+            //    dataGridView1.DataSource = dtDanhSach;
+            //}
+            conn.Close();
         }
     }
 }
