@@ -118,7 +118,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(431, 422);
+            this.dataGridView1.Size = new System.Drawing.Size(934, 422);
             this.dataGridView1.TabIndex = 12;
             // 
             // cbTimkiemSV
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1303, 450);
             this.Controls.Add(this.cbTimkiemSV);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
