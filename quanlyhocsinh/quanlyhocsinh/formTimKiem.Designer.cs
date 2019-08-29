@@ -33,8 +33,9 @@
             this.bt_back = new System.Windows.Forms.Button();
             this.bt_timkiem = new System.Windows.Forms.Button();
             this.tb_timkiem = new System.Windows.Forms.TextBox();
-            this.cbTimKiem = new System.Windows.Forms.ComboBox();
+            this.cbTimKiemGV = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cbTimkiemSV = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,21 +87,21 @@
             this.tb_timkiem.Size = new System.Drawing.Size(151, 26);
             this.tb_timkiem.TabIndex = 7;
             // 
-            // cbTimKiem
+            // cbTimKiemGV
             // 
-            this.cbTimKiem.FormattingEnabled = true;
-            this.cbTimKiem.Items.AddRange(new object[] {
+            this.cbTimKiemGV.FormattingEnabled = true;
+            this.cbTimKiemGV.Items.AddRange(new object[] {
             "ID",
             "Name",
             "Phone",
             "Address",
-            "Position"});
-            this.cbTimKiem.Location = new System.Drawing.Point(44, 50);
-            this.cbTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(151, 28);
-            this.cbTimKiem.TabIndex = 6;
-            this.cbTimKiem.Text = "ID";
+            "Speciality"});
+            this.cbTimKiemGV.Location = new System.Drawing.Point(44, 50);
+            this.cbTimKiemGV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbTimKiemGV.Name = "cbTimKiemGV";
+            this.cbTimKiemGV.Size = new System.Drawing.Size(151, 28);
+            this.cbTimKiemGV.TabIndex = 6;
+            this.cbTimKiemGV.Text = "ID";
             // 
             // dataGridView1
             // 
@@ -118,18 +119,33 @@
             this.dataGridView1.Size = new System.Drawing.Size(431, 422);
             this.dataGridView1.TabIndex = 12;
             // 
+            // cbTimkiemSV
+            // 
+            this.cbTimkiemSV.FormattingEnabled = true;
+            this.cbTimkiemSV.Items.AddRange(new object[] {
+            "ID",
+            "Name",
+            "Phone",
+            "Address"});
+            this.cbTimkiemSV.Location = new System.Drawing.Point(44, 50);
+            this.cbTimkiemSV.Name = "cbTimkiemSV";
+            this.cbTimkiemSV.Size = new System.Drawing.Size(151, 28);
+            this.cbTimkiemSV.TabIndex = 13;
+            this.cbTimkiemSV.Text = "ID";
+            // 
             // formTimKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbTimkiemSV);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_timkiem);
             this.Controls.Add(this.tb_timkiem);
-            this.Controls.Add(this.cbTimKiem);
+            this.Controls.Add(this.cbTimKiemGV);
             this.Name = "formTimKiem";
             this.Text = "formTimKiem";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -145,7 +161,8 @@
         private System.Windows.Forms.Button bt_back;
         private System.Windows.Forms.Button bt_timkiem;
         private System.Windows.Forms.TextBox tb_timkiem;
-        private System.Windows.Forms.ComboBox cbTimKiem;
+        private System.Windows.Forms.ComboBox cbTimKiemGV;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbTimkiemSV;
     }
 }
