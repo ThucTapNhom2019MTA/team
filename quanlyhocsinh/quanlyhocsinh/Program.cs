@@ -16,7 +16,7 @@ namespace quanlyhocsinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formTimKiem());
+            Application.Run(new Form1());
         }
     }
 }

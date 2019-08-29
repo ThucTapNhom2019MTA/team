@@ -67,6 +67,7 @@
             this.bt_back.TabIndex = 9;
             this.bt_back.Text = "BACK";
             this.bt_back.UseVisualStyleBackColor = false;
+            this.bt_back.Click += new System.EventHandler(this.bt_back_Click);
             // 
             // bt_timkiem
             // 
