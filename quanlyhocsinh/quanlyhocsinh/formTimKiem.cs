@@ -44,8 +44,21 @@ namespace quanlyhocsinh
         {
             if(Form1.chooseGV_Stu == 1)
             {
-
+                Formgiaovien form = new Formgiaovien();
+                form.Show();
+                this.Hide();
             }
+            if (Form1.chooseGV_Stu == 2)
+            {
+                Formhocsinh form = new Formhocsinh();
+                form.Show();
+                this.Hide();
+            }
+        }
+
+        private void bt_timkiem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

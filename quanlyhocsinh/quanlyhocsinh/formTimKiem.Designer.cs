@@ -79,6 +79,7 @@
             this.bt_timkiem.TabIndex = 8;
             this.bt_timkiem.Text = "TÌM KIẾM";
             this.bt_timkiem.UseVisualStyleBackColor = false;
+            this.bt_timkiem.Click += new System.EventHandler(this.bt_timkiem_Click);
             // 
             // tb_timkiem
             // 
