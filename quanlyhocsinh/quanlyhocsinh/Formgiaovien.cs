@@ -29,7 +29,6 @@ namespace quanlyhocsinh
             da.Fill(dtDanhSach);
             dataGridViewGiaoVien.DataSource = dtDanhSach;
             conn.Close();
-
         }
     }
 }
