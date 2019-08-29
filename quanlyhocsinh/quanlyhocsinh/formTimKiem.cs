@@ -91,25 +91,26 @@ namespace quanlyhocsinh
                 da.Fill(dtDanhSach);
                 dataGridView1.DataSource = dtDanhSach;
             }
-            //if (cbTimKiem.Text == "Phone")
-            //{
-            //    string Phone = tb_timkiem.Text;
-            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND SoDienThoai like '%" + Phone + "%'";
-            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
-            //    dtDanhSach = new DataTable();
-            //    da.Fill(dtDanhSach);
-            //    dataGridView1.DataSource = dtDanhSach;
-            //}
+            if (cbTimKiemGV.Text == "Phone")
+            {
+                string Phone = tb_timkiem.Text;
+                string strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
+                                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN where SODIENTHOAI LIKE N'%" + Phone + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+            }
             if (cbTimKiemGV.Text == "Address" || cbTimkiemSV.Text == "Address")
             {
                 string Address = tb_timkiem.Text;
                 string strQueryDanhSach;
                 if (Form1.chooseGV_Stu == 2)
                 {
-                    strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH where NOISINH LIKE N'%" + Name + "%'";
+                    strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH where NOISINH LIKE N'%" + Address + "%'";
                 }
                 else strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
-                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN where NOISINH LIKE N'%" + Name + "%'";
+                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN where NOISINH LIKE N'%" + Address + "%'";
 
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
