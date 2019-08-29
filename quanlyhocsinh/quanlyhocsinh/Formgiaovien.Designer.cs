@@ -33,6 +33,7 @@
             this.bt_xoagv = new System.Windows.Forms.Button();
             this.bt_timkiemgv = new System.Windows.Forms.Button();
             this.dataGridViewGiaoVien = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiaoVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,11 +101,22 @@
             this.dataGridViewGiaoVien.Size = new System.Drawing.Size(904, 478);
             this.dataGridViewGiaoVien.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(74, 457);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 46);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Formgiaovien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 615);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewGiaoVien);
             this.Controls.Add(this.bt_timkiemgv);
             this.Controls.Add(this.bt_xoagv);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Button bt_xoagv;
         private System.Windows.Forms.Button bt_timkiemgv;
         private System.Windows.Forms.DataGridView dataGridViewGiaoVien;
+        private System.Windows.Forms.Button button1;
     }
 }
