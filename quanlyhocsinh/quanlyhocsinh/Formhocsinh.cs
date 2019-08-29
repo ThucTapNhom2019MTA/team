@@ -29,5 +29,12 @@ namespace quanlyhocsinh
             dataGridViewHocSinh.DataSource = dtDanhSach;
             conn.Close();
         }
+
+        private void bt_timkiemhs_Click(object sender, EventArgs e)
+        {
+            formTimKiem form = new formTimKiem();
+            form.Show();
+            this.Hide();
+        }
     }
 }
