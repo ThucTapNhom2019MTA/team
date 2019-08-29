@@ -117,15 +117,16 @@ namespace quanlyhocsinh
                 da.Fill(dtDanhSach);
                 dataGridView1.DataSource = dtDanhSach;
             }
-            //if (cbTimKiem.Text == "Position")
-            //{
-            //    string Position = tb_timkiem.Text;
-            //    string strQueryDanhSach = "SELECT HoTen, NgaySinh, DiaChi, SoDienThoai, TenChucVu, TenPhong FROM dbo.NhanVien, dbo.ChucVu, dbo.[To], dbo.Phong WHERE ChucVu.MaChucVu = NhanVien.MaChucVu AND NhanVien.MaTo =[To].MaTo AND Phong.MaPhong =[To].MaPhong AND TenChucVu LIKE N'%" + Position + "%'";
-            //    SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
-            //    dtDanhSach = new DataTable();
-            //    da.Fill(dtDanhSach);
-            //    dataGridView1.DataSource = dtDanhSach;
-            //}
+            if (cbTimKiemGV.Text == "Speciality")
+            {
+                string Speciality = tb_timkiem.Text;
+                string strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
+                                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN where CHUYENMON LIKE N'%" + Speciality + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridView1.DataSource = dtDanhSach;
+            }
             conn.Close();
         }
     }
