@@ -148,6 +148,7 @@
             this.Controls.Add(this.cbTimKiemGV);
             this.Name = "formTimKiem";
             this.Text = "formTimKiem";
+            this.Load += new System.EventHandler(this.formTimKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
