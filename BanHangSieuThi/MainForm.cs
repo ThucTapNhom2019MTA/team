@@ -32,5 +32,18 @@ namespace BanHangSieuThi
             form.ShowDialog();
             this.Show();
         }
+
+        private void btnNhapHangCu_Click(object sender, EventArgs e)
+        {
+            NhapHangCu form = new NhapHangCu();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

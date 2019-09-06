@@ -36,6 +36,7 @@
             this.btnQuanLyKH = new System.Windows.Forms.Button();
             this.btnThongKeLL = new System.Windows.Forms.Button();
             this.btnQuanLyNV = new System.Windows.Forms.Button();
+            this.btnNhapHangCu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnQuanLyND
@@ -50,11 +51,11 @@
             // 
             // btnNhapHang
             // 
-            this.btnNhapHang.Location = new System.Drawing.Point(444, 74);
+            this.btnNhapHang.Location = new System.Drawing.Point(445, 149);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.Size = new System.Drawing.Size(255, 43);
             this.btnNhapHang.TabIndex = 0;
-            this.btnNhapHang.Text = "Nhập hàng mới";
+            this.btnNhapHang.Text = "Thêm mặt hàng mới";
             this.btnNhapHang.UseVisualStyleBackColor = true;
             this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
@@ -66,10 +67,11 @@
             this.btnBanHang.TabIndex = 0;
             this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.UseVisualStyleBackColor = true;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(444, 149);
+            this.btnTimKiem.Location = new System.Drawing.Point(445, 224);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(255, 43);
             this.btnTimKiem.TabIndex = 0;
@@ -96,7 +98,7 @@
             // 
             // btnThongKeLL
             // 
-            this.btnThongKeLL.Location = new System.Drawing.Point(444, 227);
+            this.btnThongKeLL.Location = new System.Drawing.Point(445, 302);
             this.btnThongKeLL.Name = "btnThongKeLL";
             this.btnThongKeLL.Size = new System.Drawing.Size(255, 43);
             this.btnThongKeLL.TabIndex = 0;
@@ -105,12 +107,22 @@
             // 
             // btnQuanLyNV
             // 
-            this.btnQuanLyNV.Location = new System.Drawing.Point(444, 302);
+            this.btnQuanLyNV.Location = new System.Drawing.Point(445, 377);
             this.btnQuanLyNV.Name = "btnQuanLyNV";
             this.btnQuanLyNV.Size = new System.Drawing.Size(255, 43);
             this.btnQuanLyNV.TabIndex = 0;
             this.btnQuanLyNV.Text = "Quản lý nhân viên";
             this.btnQuanLyNV.UseVisualStyleBackColor = true;
+            // 
+            // btnNhapHangCu
+            // 
+            this.btnNhapHangCu.Location = new System.Drawing.Point(445, 74);
+            this.btnNhapHangCu.Name = "btnNhapHangCu";
+            this.btnNhapHangCu.Size = new System.Drawing.Size(255, 43);
+            this.btnNhapHangCu.TabIndex = 0;
+            this.btnNhapHangCu.Text = "Nhập hàng";
+            this.btnNhapHangCu.UseVisualStyleBackColor = true;
+            this.btnNhapHangCu.Click += new System.EventHandler(this.btnNhapHangCu_Click);
             // 
             // MainForm
             // 
@@ -120,6 +132,7 @@
             this.Controls.Add(this.btnQuanLyNV);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnThongKeLL);
+            this.Controls.Add(this.btnNhapHangCu);
             this.Controls.Add(this.btnNhapHang);
             this.Controls.Add(this.btnQuanLyKH);
             this.Controls.Add(this.btnBanHang);
@@ -141,5 +154,6 @@
         private System.Windows.Forms.Button btnQuanLyKH;
         private System.Windows.Forms.Button btnThongKeLL;
         private System.Windows.Forms.Button btnQuanLyNV;
+        private System.Windows.Forms.Button btnNhapHangCu;
     }
 }

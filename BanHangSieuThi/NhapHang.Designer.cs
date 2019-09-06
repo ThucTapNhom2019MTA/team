@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txbMaHang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txbTenHang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txbLoaiHang = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txbGiaTri = new System.Windows.Forms.TextBox();
+            this.txbSoLuong = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txbSoLuong = new System.Windows.Forms.TextBox();
             this.dtpHSD = new System.Windows.Forms.DateTimePicker();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.txbMaHang = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,14 +51,6 @@
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Hàng";
-            // 
-            // txbMaHang
-            // 
-            this.txbMaHang.Location = new System.Drawing.Point(149, 39);
-            this.txbMaHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbMaHang.Name = "txbMaHang";
-            this.txbMaHang.Size = new System.Drawing.Size(124, 27);
-            this.txbMaHang.TabIndex = 1;
             // 
             // label2
             // 
@@ -111,6 +103,24 @@
             this.txbGiaTri.Size = new System.Drawing.Size(124, 27);
             this.txbGiaTri.TabIndex = 1;
             // 
+            // txbSoLuong
+            // 
+            this.txbSoLuong.Location = new System.Drawing.Point(554, 154);
+            this.txbSoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbSoLuong.Name = "txbSoLuong";
+            this.txbSoLuong.Size = new System.Drawing.Size(124, 27);
+            this.txbSoLuong.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(290, 206);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(140, 37);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -129,14 +139,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Số lượng";
             // 
-            // txbSoLuong
-            // 
-            this.txbSoLuong.Location = new System.Drawing.Point(554, 154);
-            this.txbSoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbSoLuong.Name = "txbSoLuong";
-            this.txbSoLuong.Size = new System.Drawing.Size(124, 27);
-            this.txbSoLuong.TabIndex = 1;
-            // 
             // dtpHSD
             // 
             this.dtpHSD.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,15 +148,13 @@
             this.dtpHSD.Size = new System.Drawing.Size(281, 27);
             this.dtpHSD.TabIndex = 2;
             // 
-            // btnSave
+            // txbMaHang
             // 
-            this.btnSave.Location = new System.Drawing.Point(290, 206);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(140, 37);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.txbMaHang.Location = new System.Drawing.Point(149, 37);
+            this.txbMaHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbMaHang.Name = "txbMaHang";
+            this.txbMaHang.Size = new System.Drawing.Size(124, 27);
+            this.txbMaHang.TabIndex = 1;
             // 
             // NhapHang
             // 
@@ -170,14 +170,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.txbMaHang);
             this.Controls.Add(this.txbLoaiHang);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txbMaHang);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NhapHang";
-            this.Text = "Nhập Hàng Vào Kho";
+            this.Text = "Thêm mặt hàng";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,17 +186,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbMaHang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbTenHang;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbLoaiHang;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbGiaTri;
+        private System.Windows.Forms.TextBox txbSoLuong;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txbSoLuong;
         private System.Windows.Forms.DateTimePicker dtpHSD;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txbMaHang;
     }
 }
