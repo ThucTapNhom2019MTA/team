@@ -34,9 +34,9 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThongKeHang = new System.Windows.Forms.Button();
             this.btnQuanLyKH = new System.Windows.Forms.Button();
-            this.btnThongKeLL = new System.Windows.Forms.Button();
             this.btnQuanLyNV = new System.Windows.Forms.Button();
             this.btnNhapHangCu = new System.Windows.Forms.Button();
+            this.btnQlnd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnQuanLyND
@@ -45,7 +45,7 @@
             this.btnQuanLyND.Name = "btnQuanLyND";
             this.btnQuanLyND.Size = new System.Drawing.Size(255, 43);
             this.btnQuanLyND.TabIndex = 0;
-            this.btnQuanLyND.Text = "Quản lý người dùng";
+            this.btnQuanLyND.Text = "Lịch sử người dùng";
             this.btnQuanLyND.UseVisualStyleBackColor = true;
             this.btnQuanLyND.Click += new System.EventHandler(this.btnQuanLyND_Click);
             // 
@@ -87,6 +87,7 @@
             this.btnThongKeHang.TabIndex = 0;
             this.btnThongKeHang.Text = "Thống kê hàng trong kho";
             this.btnThongKeHang.UseVisualStyleBackColor = true;
+            this.btnThongKeHang.Click += new System.EventHandler(this.btnThongKeHang_Click);
             // 
             // btnQuanLyKH
             // 
@@ -96,24 +97,17 @@
             this.btnQuanLyKH.TabIndex = 0;
             this.btnQuanLyKH.Text = "Quản lý khách hàng";
             this.btnQuanLyKH.UseVisualStyleBackColor = true;
-            // 
-            // btnThongKeLL
-            // 
-            this.btnThongKeLL.Location = new System.Drawing.Point(445, 302);
-            this.btnThongKeLL.Name = "btnThongKeLL";
-            this.btnThongKeLL.Size = new System.Drawing.Size(255, 43);
-            this.btnThongKeLL.TabIndex = 0;
-            this.btnThongKeLL.Text = "Thống kê lưu lượng nhập bán";
-            this.btnThongKeLL.UseVisualStyleBackColor = true;
+            this.btnQuanLyKH.Click += new System.EventHandler(this.btnQuanLyKH_Click);
             // 
             // btnQuanLyNV
             // 
-            this.btnQuanLyNV.Location = new System.Drawing.Point(445, 377);
+            this.btnQuanLyNV.Location = new System.Drawing.Point(445, 302);
             this.btnQuanLyNV.Name = "btnQuanLyNV";
             this.btnQuanLyNV.Size = new System.Drawing.Size(255, 43);
             this.btnQuanLyNV.TabIndex = 0;
             this.btnQuanLyNV.Text = "Quản lý nhân viên";
             this.btnQuanLyNV.UseVisualStyleBackColor = true;
+            this.btnQuanLyNV.Click += new System.EventHandler(this.btnQuanLyNV_Click);
             // 
             // btnNhapHangCu
             // 
@@ -125,6 +119,16 @@
             this.btnNhapHangCu.UseVisualStyleBackColor = true;
             this.btnNhapHangCu.Click += new System.EventHandler(this.btnNhapHangCu_Click);
             // 
+            // btnQlnd
+            // 
+            this.btnQlnd.Location = new System.Drawing.Point(100, 374);
+            this.btnQlnd.Name = "btnQlnd";
+            this.btnQlnd.Size = new System.Drawing.Size(255, 43);
+            this.btnQlnd.TabIndex = 0;
+            this.btnQlnd.Text = "Quản lý người dùng";
+            this.btnQlnd.UseVisualStyleBackColor = true;
+            this.btnQlnd.Click += new System.EventHandler(this.btnQlnd_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,12 +136,12 @@
             this.ClientSize = new System.Drawing.Size(805, 450);
             this.Controls.Add(this.btnQuanLyNV);
             this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.btnThongKeLL);
             this.Controls.Add(this.btnNhapHangCu);
             this.Controls.Add(this.btnNhapHang);
             this.Controls.Add(this.btnQuanLyKH);
             this.Controls.Add(this.btnBanHang);
             this.Controls.Add(this.btnThongKeHang);
+            this.Controls.Add(this.btnQlnd);
             this.Controls.Add(this.btnQuanLyND);
             this.Name = "MainForm";
             this.Text = "Phần mềm quản lí bán hàng";
@@ -153,8 +157,8 @@
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnThongKeHang;
         private System.Windows.Forms.Button btnQuanLyKH;
-        private System.Windows.Forms.Button btnThongKeLL;
         private System.Windows.Forms.Button btnQuanLyNV;
         private System.Windows.Forms.Button btnNhapHangCu;
+        private System.Windows.Forms.Button btnQlnd;
     }
 }

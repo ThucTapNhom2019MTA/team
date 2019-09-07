@@ -42,8 +42,7 @@ namespace BanHangSieuThi
             comm.Parameters.AddWithValue("@username", txbUsername.Text);
             comm.Parameters.AddWithValue("@password", txbPassword.Text);
             MaNV = Convert.ToString(comm.ExecuteScalar()).Replace(" ","");
-                if (MaNV != null)
-                {
+            if (MaNV != null && MaNV != "" ){
                     MainForm mainform = new MainForm();
                     this.Hide();
                     mainform.ShowDialog();
@@ -57,7 +56,16 @@ namespace BanHangSieuThi
                     comm.ExecuteNonQuery();
                     this.Show();
             }
+            else
+            {
+                MessageBox.Show("Không thành công","Thông báo");
+            }
             conn.Close();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

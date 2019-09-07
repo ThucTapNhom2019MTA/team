@@ -56,5 +56,37 @@ namespace BanHangSieuThi
             form.ShowDialog();
             this.Show();
         }
+
+        private void btnThongKeHang_Click(object sender, EventArgs e)
+        {
+            ThongKe form = new ThongKe();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void btnQuanLyNV_Click(object sender, EventArgs e)
+        {
+            QuanLiNhanVien form = new QuanLiNhanVien();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void btnQlnd_Click(object sender, EventArgs e)
+        {
+            ManageAcount form = new ManageAcount();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void btnQuanLyKH_Click(object sender, EventArgs e)
+        {
+            KhachHang form = new KhachHang();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
     }
 }
