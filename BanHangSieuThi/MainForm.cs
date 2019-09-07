@@ -43,7 +43,18 @@ namespace BanHangSieuThi
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
+            BanHang form = new BanHang();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
 
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiem form = new TimKiem();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
         }
     }
 }
