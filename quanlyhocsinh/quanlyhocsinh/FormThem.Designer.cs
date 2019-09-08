@@ -28,36 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.txb_Sodt = new System.Windows.Forms.TextBox();
+            this.bt_themHS = new System.Windows.Forms.Button();
+            this.txt_noisinh = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txb_Diachi = new System.Windows.Forms.TextBox();
+            this.txt_gioitinh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txb_Hoten = new System.Windows.Forms.TextBox();
-            this.txb_Manv = new System.Windows.Forms.TextBox();
+            this.txt_hoten = new System.Windows.Forms.TextBox();
+            this.txt_mahs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button2
+            // bt_themHS
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(388, 422);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 53);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_themHS.ForeColor = System.Drawing.Color.Black;
+            this.bt_themHS.Location = new System.Drawing.Point(292, 431);
+            this.bt_themHS.Name = "bt_themHS";
+            this.bt_themHS.Size = new System.Drawing.Size(125, 53);
+            this.bt_themHS.TabIndex = 35;
+            this.bt_themHS.Text = "Thêm";
+            this.bt_themHS.UseVisualStyleBackColor = true;
+            this.bt_themHS.Click += new System.EventHandler(this.Bt_themHS_Click);
             // 
-            // txb_Sodt
+            // txt_noisinh
             // 
-            this.txb_Sodt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Sodt.Location = new System.Drawing.Point(123, 279);
-            this.txb_Sodt.Name = "txb_Sodt";
-            this.txb_Sodt.Size = new System.Drawing.Size(294, 30);
-            this.txb_Sodt.TabIndex = 28;
+            this.txt_noisinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_noisinh.Location = new System.Drawing.Point(123, 279);
+            this.txt_noisinh.Name = "txt_noisinh";
+            this.txt_noisinh.Size = new System.Drawing.Size(294, 30);
+            this.txt_noisinh.TabIndex = 28;
             // 
             // label5
             // 
@@ -65,17 +67,17 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(119, 235);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 22);
+            this.label5.Size = new System.Drawing.Size(78, 22);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Số đt";
+            this.label5.Text = "Nơi sinh";
             // 
-            // txb_Diachi
+            // txt_gioitinh
             // 
-            this.txb_Diachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Diachi.Location = new System.Drawing.Point(123, 176);
-            this.txb_Diachi.Name = "txb_Diachi";
-            this.txb_Diachi.Size = new System.Drawing.Size(298, 30);
-            this.txb_Diachi.TabIndex = 25;
+            this.txt_gioitinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gioitinh.Location = new System.Drawing.Point(123, 176);
+            this.txt_gioitinh.Name = "txt_gioitinh";
+            this.txt_gioitinh.Size = new System.Drawing.Size(298, 30);
+            this.txt_gioitinh.TabIndex = 25;
             // 
             // label4
             // 
@@ -96,21 +98,21 @@
             this.dateTimePicker1.TabIndex = 23;
             this.dateTimePicker1.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
-            // txb_Hoten
+            // txt_hoten
             // 
-            this.txb_Hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Hoten.Location = new System.Drawing.Point(526, 87);
-            this.txb_Hoten.Name = "txb_Hoten";
-            this.txb_Hoten.Size = new System.Drawing.Size(298, 30);
-            this.txb_Hoten.TabIndex = 22;
+            this.txt_hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hoten.Location = new System.Drawing.Point(526, 87);
+            this.txt_hoten.Name = "txt_hoten";
+            this.txt_hoten.Size = new System.Drawing.Size(298, 30);
+            this.txt_hoten.TabIndex = 22;
             // 
-            // txb_Manv
+            // txt_mahs
             // 
-            this.txb_Manv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Manv.Location = new System.Drawing.Point(123, 87);
-            this.txb_Manv.Name = "txb_Manv";
-            this.txb_Manv.Size = new System.Drawing.Size(294, 30);
-            this.txb_Manv.TabIndex = 21;
+            this.txt_mahs.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mahs.Location = new System.Drawing.Point(123, 87);
+            this.txt_mahs.Name = "txt_mahs";
+            this.txt_mahs.Size = new System.Drawing.Size(294, 30);
+            this.txt_mahs.TabIndex = 21;
             // 
             // label3
             // 
@@ -142,19 +144,31 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Mã học sinh";
             // 
+            // bt_back
+            // 
+            this.bt_back.ForeColor = System.Drawing.Color.Black;
+            this.bt_back.Location = new System.Drawing.Point(526, 431);
+            this.bt_back.Name = "bt_back";
+            this.bt_back.Size = new System.Drawing.Size(125, 53);
+            this.bt_back.TabIndex = 35;
+            this.bt_back.Text = "Back";
+            this.bt_back.UseVisualStyleBackColor = true;
+            this.bt_back.Click += new System.EventHandler(this.Bt_themHS_Click);
+            // 
             // FormThem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 522);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.txb_Sodt);
+            this.Controls.Add(this.bt_back);
+            this.Controls.Add(this.bt_themHS);
+            this.Controls.Add(this.txt_noisinh);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txb_Diachi);
+            this.Controls.Add(this.txt_gioitinh);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.txb_Hoten);
-            this.Controls.Add(this.txb_Manv);
+            this.Controls.Add(this.txt_hoten);
+            this.Controls.Add(this.txt_mahs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -167,16 +181,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txb_Sodt;
+        private System.Windows.Forms.Button bt_themHS;
+        private System.Windows.Forms.TextBox txt_noisinh;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txb_Diachi;
+        private System.Windows.Forms.TextBox txt_gioitinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txb_Hoten;
-        private System.Windows.Forms.TextBox txb_Manv;
+        private System.Windows.Forms.TextBox txt_hoten;
+        private System.Windows.Forms.TextBox txt_mahs;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_back;
     }
 }

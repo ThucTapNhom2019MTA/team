@@ -43,5 +43,12 @@ namespace quanlyhocsinh
             form.Show();
             this.Hide();
         }
+
+        private void Bt_themhs_Click(object sender, EventArgs e)
+        {
+            FormThem ft = new FormThem();
+            ft.Show();
+            this.Hide();
+        }
     }
 }
