@@ -11,7 +11,8 @@ namespace BanHangSieuThi
     {
         public static SqlConnection getConnection()
         {
-            string connString = @"Data Source=LAPTOP-2GH99NQG\PHAMDANSQL;Initial Catalog=QuanLiBanHang;Integrated Security=True";
+//            string connString = @"Data Source=LAPTOP-2GH99NQG\PHAMDANSQL;Initial Catalog=QuanLiBanHang;Integrated Security=True";
+            string connString = @"Data Source=DESKTOP-BBQPTV7\SQLEXPRESS;Initial Catalog=QuanLiBanHang;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }
