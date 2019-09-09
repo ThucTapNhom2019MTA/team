@@ -121,6 +121,10 @@
     <Compile Include="BUSLayer\BUS.cs" />
     <Compile Include="DataAccessLayer\DATA.cs" />
     <Compile Include="DataAccessLayer\DataProvider.cs" />
+    <Compile Include="Form Info\frm_TTTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Info\frm_TTTS.Designer.cs" />
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +133,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
     <EmbeddedResource Include="frmHome.dje.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -574,7 +579,6 @@
     <None Include="Resources\user2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Form Info\" />
     <Folder Include="GUI\" />
     <Folder Include="ValueObject\" />
   </ItemGroup>
