@@ -51,5 +51,16 @@ namespace quanlyhocsinh
             form.Show();
             this.Hide();
         }
+
+        private void Bt_suagv_Click(object sender, EventArgs e)
+        {
+            int selectRow = dataGridViewGiaoVien.SelectedRows[0].Index;
+            if (selectRow >= 0 && selectRow < dataGridViewGiaoVien.RowCount - 1)
+            {
+                string manv = dataGridViewGiaoVien.Rows[selectRow].Cells[0].Value.ToString();
+                FormSuaGV formSuanv = new FormSuaGV(manv, selectRow, dataGridViewGiaoVien);
+                formSuanv.ShowDialog();
+            }
+        }
     }
 }
