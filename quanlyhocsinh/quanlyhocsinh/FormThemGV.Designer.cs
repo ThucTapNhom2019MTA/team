@@ -55,6 +55,7 @@
             this.bt_back.TabIndex = 46;
             this.bt_back.Text = "Back";
             this.bt_back.UseVisualStyleBackColor = true;
+            this.bt_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // bt_themHS
             // 
