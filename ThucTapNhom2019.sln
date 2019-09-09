@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanHangSieuThi", "BanHangSi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quanlyhocsinh", "quanlyhocsinh\quanlyhocsinh\quanlyhocsinh.csproj", "{F0054F73-0003-485A-A644-DC2B0078307D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLThuVien", "..\QLTV\QLThuVien\QLThuVien\QLThuVien.csproj", "{2D92F1B4-EF8C-48F4-AD84-B6D7DC46B715}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLThuVien", "QLThuVien\QLThuVien\QLThuVien.csproj", "{2D92F1B4-EF8C-48F4-AD84-B6D7DC46B715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
