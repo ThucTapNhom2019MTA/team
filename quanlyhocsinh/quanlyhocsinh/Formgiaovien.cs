@@ -44,5 +44,12 @@ namespace quanlyhocsinh
             form.Show();
             this.Hide();
         }
+
+        private void Bt_themgv_Click(object sender, EventArgs e)
+        {
+            FormThemGV form = new FormThemGV();
+            form.Show();
+            this.Hide();
+        }
     }
 }
