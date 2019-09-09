@@ -146,14 +146,13 @@
             // 
             // bt_back
             // 
-            this.bt_back.ForeColor = System.Drawing.Color.Black;
             this.bt_back.Location = new System.Drawing.Point(526, 431);
             this.bt_back.Name = "bt_back";
-            this.bt_back.Size = new System.Drawing.Size(125, 53);
-            this.bt_back.TabIndex = 35;
+            this.bt_back.Size = new System.Drawing.Size(111, 53);
+            this.bt_back.TabIndex = 36;
             this.bt_back.Text = "Back";
             this.bt_back.UseVisualStyleBackColor = true;
-            this.bt_back.Click += new System.EventHandler(this.Bt_themHS_Click);
+            this.bt_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // FormThem
             // 

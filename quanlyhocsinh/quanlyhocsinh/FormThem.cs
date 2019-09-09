@@ -27,10 +27,17 @@ namespace quanlyhocsinh
             comm.Parameters.AddWithValue("@MAHOCSINH", txt_mahs.Text);
             comm.Parameters.AddWithValue("@HOTEN", txt_hoten.Text);
             comm.Parameters.AddWithValue("@GIOITINH", txt_gioitinh.Text);
-            comm.Parameters.AddWithValue("@NGAYSINH", dateTimePicker1.Text);
+            comm.Parameters.AddWithValue("@NGAYSINH", dateTimePicker1.Value.ToString());
             comm.Parameters.AddWithValue("@NOISINH", txt_noisinh.Text);
             comm.ExecuteNonQuery();
             MessageBox.Show("Thêm thành công", "Thông báo");
+        }
+
+        private void Bt_back_Click(object sender, EventArgs e)
+        {
+            FormThem ft = new FormThem();
+            ft.Show();
+            this.Hide();
         }
     }
 }
