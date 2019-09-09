@@ -17,6 +17,7 @@ namespace QuanLyKhachSan
         public frmPHONG()
         {
             InitializeComponent();
+            dgvPhong.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         BUS_Phong _phong = new BUS_Phong();
         TimKiem tk = new TimKiem();
@@ -56,8 +57,7 @@ namespace QuanLyKhachSan
         }
         private void frmPHONG_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = _phong.HienThiPhong();
+            DataTable dt = _phong.HienThiPhong();
             dgvPhong.DataSource = dt;
             KhoaDieuKhien();
         }
@@ -133,14 +133,10 @@ namespace QuanLyKhachSan
         private void dgvPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnDodung.Enabled = true;
-            try
-            {
-                txtMaphong.Text = dgvPhong.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtTenphong.Text = dgvPhong.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtLoaiphong.Text = dgvPhong.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtMaphong.Text = dgvPhong.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtTenphong.Text = dgvPhong.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtLoaiphong.Text = dgvPhong.Rows[e.RowIndex].Cells[2].Value.ToString();
 
-            }
-            catch { }
         }
     }
 }

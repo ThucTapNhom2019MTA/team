@@ -11,7 +11,6 @@ namespace QuanLyKhachSan
     public class BUS_Phong
     {
         
-
         public DataTable HienThiPhong()
         {
             string sql = "SELECT * FROM Phong";
@@ -19,6 +18,7 @@ namespace QuanLyKhachSan
             SqlConnection con = ConnectSQLServer.getConnection();
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             da.Fill(dt);
+            int m = dt.Rows.Count;
             return dt;
         }
         public DataTable HienThiPhongTrong()

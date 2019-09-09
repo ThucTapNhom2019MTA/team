@@ -75,7 +75,7 @@
             this.btnOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(38, 677);
+            this.btnOK.Location = new System.Drawing.Point(38, 600);
             this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(212, 57);
@@ -311,7 +311,7 @@
             // txtMaKH
             // 
             this.txtMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKH.Location = new System.Drawing.Point(60, 186);
+            this.txtMaKH.Location = new System.Drawing.Point(27, 159);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(218, 30);
@@ -321,7 +321,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 145);
+            this.label1.Location = new System.Drawing.Point(27, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 25);
@@ -347,7 +347,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(302, 186);
+            this.button1.Location = new System.Drawing.Point(269, 159);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 35);
@@ -362,7 +362,7 @@
             this.btnThemKhachMoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnThemKhachMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemKhachMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemKhachMoi.Location = new System.Drawing.Point(64, 48);
+            this.btnThemKhachMoi.Location = new System.Drawing.Point(31, 21);
             this.btnThemKhachMoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemKhachMoi.Name = "btnThemKhachMoi";
             this.btnThemKhachMoi.Size = new System.Drawing.Size(309, 71);
@@ -379,10 +379,10 @@
             this.Column1,
             this.Column2});
             this.dgvKhachThuePhong.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvKhachThuePhong.Location = new System.Drawing.Point(0, 262);
+            this.dgvKhachThuePhong.Location = new System.Drawing.Point(0, 318);
             this.dgvKhachThuePhong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvKhachThuePhong.Name = "dgvKhachThuePhong";
-            this.dgvKhachThuePhong.Size = new System.Drawing.Size(418, 498);
+            this.dgvKhachThuePhong.Size = new System.Drawing.Size(418, 442);
             this.dgvKhachThuePhong.TabIndex = 2;
             this.dgvKhachThuePhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachThuePhong_CellClick);
             // 
