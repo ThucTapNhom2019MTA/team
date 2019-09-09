@@ -82,6 +82,7 @@
             this.btnOK.TabIndex = 6;
             this.btnOK.Text = "Hoàn Tất Thuê";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnThemDV
             // 
@@ -96,6 +97,7 @@
             this.btnThemDV.TabIndex = 5;
             this.btnThemDV.Text = "Thêm DV Này";
             this.btnThemDV.UseVisualStyleBackColor = false;
+            this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click);
             // 
             // txtMaDV
             // 
@@ -131,6 +133,7 @@
             this.btnChonPhong.TabIndex = 2;
             this.btnChonPhong.Text = "Thuê Phòng Này";
             this.btnChonPhong.UseVisualStyleBackColor = false;
+            this.btnChonPhong.Click += new System.EventHandler(this.btnChonPhong_Click);
             // 
             // label2
             // 
@@ -210,6 +213,7 @@
             this.dgvPhongTrong.Name = "dgvPhongTrong";
             this.dgvPhongTrong.Size = new System.Drawing.Size(639, 320);
             this.dgvPhongTrong.TabIndex = 0;
+            this.dgvPhongTrong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhongTrong_CellClick);
             // 
             // groupBox3
             // 
@@ -264,6 +268,7 @@
             this.dgvDichVu.Name = "dgvDichVu";
             this.dgvDichVu.Size = new System.Drawing.Size(639, 355);
             this.dgvDichVu.TabIndex = 0;
+            this.dgvDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDichVu_CellClick);
             // 
             // groupBox4
             // 

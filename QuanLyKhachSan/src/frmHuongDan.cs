@@ -80,10 +80,5 @@ namespace QuanLyKhachSan.src
                 pictureBox1.BackgroundImage = img;
             }
         }
-
-        private void txtGioiThieu_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

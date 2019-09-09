@@ -104,6 +104,7 @@
             treeNode10});
             this.treeView1.Size = new System.Drawing.Size(256, 479);
             this.treeView1.TabIndex = 5;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trViewGioiThieu_AfterSelect);
             // 
             // frmHuongDan
             // 

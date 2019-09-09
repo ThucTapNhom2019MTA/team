@@ -44,23 +44,5 @@ namespace QuanLyKhachSan.src
             timer2.Start();
             timer3.Start();
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

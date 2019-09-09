@@ -278,6 +278,7 @@
             this.dgvDoDung.Name = "dgvDoDung";
             this.dgvDoDung.Size = new System.Drawing.Size(1268, 450);
             this.dgvDoDung.TabIndex = 3;
+            this.dgvDoDung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoDung_CellClick);
             // 
             // frmDoDungCuaKhachSan
             // 

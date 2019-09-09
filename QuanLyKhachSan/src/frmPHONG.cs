@@ -119,6 +119,17 @@ namespace QuanLyKhachSan
             dodung.Show();
         }
 
+        private void txttk_loaiphong_TextChanged(object sender, EventArgs e)
+        {
+            dgvPhong.DataSource = tk.TKPhong_LoaiPhong(txttk_loaiphong.Text);
+        }
+
+
+        private void txttk_tenphong_TextChanged(object sender, EventArgs e)
+        {
+            dgvPhong.DataSource = tk.TKPhong_TenPhong(txttk_tenphong.Text);
+        }
+
         private void dgvPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnDodung.Enabled = true;
@@ -130,17 +141,6 @@ namespace QuanLyKhachSan
 
             }
             catch { }
-        }
-
-        private void txttk_loaiphong_TextChanged(object sender, EventArgs e)
-        {
-            dgvPhong.DataSource = tk.TKPhong_LoaiPhong(txttk_loaiphong.Text);
-        }
-
-
-        private void txttk_tenphong_TextChanged(object sender, EventArgs e)
-        {
-            dgvPhong.DataSource = tk.TKPhong_TenPhong(txttk_tenphong.Text);
         }
     }
 }

@@ -122,6 +122,7 @@
             this.btnThoat.Size = new System.Drawing.Size(122, 49);
             this.btnThoat.TabIndex = 21;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangNhap
             // 
@@ -135,6 +136,7 @@
             this.btnDangNhap.Size = new System.Drawing.Size(171, 118);
             this.btnDangNhap.TabIndex = 20;
             this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // frmDangNhap
             // 
@@ -150,6 +152,7 @@
             this.Controls.Add(this.btnDangNhap);
             this.Name = "frmDangNhap";
             this.Text = "frmDangNhap";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

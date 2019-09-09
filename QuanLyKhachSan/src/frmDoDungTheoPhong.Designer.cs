@@ -211,6 +211,7 @@
             this.dgvDodung.Name = "dgvDodung";
             this.dgvDodung.Size = new System.Drawing.Size(972, 172);
             this.dgvDodung.TabIndex = 0;
+            this.dgvDodung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDodung_CellClick);
             // 
             // Column6
             // 
@@ -274,6 +275,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDoDungTheoPhong";
             this.Text = "frmDoDungTheoPhong";
+            this.Load += new System.EventHandler(this.frmDoDungTheoPhong_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDodung)).EndInit();
             this.groupBox1.ResumeLayout(false);
