@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTabControl\TabAdd.cs" />
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -570,7 +571,6 @@
     <None Include="Resources\user2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AddTabControl\" />
     <Folder Include="BUSLayer\" />
     <Folder Include="DataAccessLayer\" />
     <Folder Include="Form Info\" />
