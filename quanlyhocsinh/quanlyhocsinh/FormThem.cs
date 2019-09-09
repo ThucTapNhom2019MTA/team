@@ -27,7 +27,7 @@ namespace quanlyhocsinh
             comm.Parameters.AddWithValue("@MAHOCSINH", txt_mahs.Text);
             comm.Parameters.AddWithValue("@HOTEN", txt_hoten.Text);
             comm.Parameters.AddWithValue("@GIOITINH", txt_gioitinh.Text);
-            comm.Parameters.AddWithValue("@NGAYSINH", dateTimePicker1.Text);
+            comm.Parameters.AddWithValue("@NGAYSINH", dateTimePicker1.Value.ToString());
             comm.Parameters.AddWithValue("@NOISINH", txt_noisinh.Text);
             comm.ExecuteNonQuery();
             MessageBox.Show("Thêm thành công", "Thông báo");
