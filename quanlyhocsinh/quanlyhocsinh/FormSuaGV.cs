@@ -29,7 +29,7 @@ namespace quanlyhocsinh
             conn.Open();
             string strQueryDanhSach = "UPDATE dbo.GIAOVIEN SET HOTEN=@HOTEN,GIOITINH=@GIOITINH,NGAYSINH=@NGAYSINH,NOISINH=@NOISINH,CHUYENMON=@CHUYENMON,SODIENTHOAI=@SDT WHERE MAGIAOVIEN = @MAGV ";
             SqlCommand comm = new SqlCommand(strQueryDanhSach, conn);
-            comm.Parameters.AddWithValue("@MANV", txt_magv.Text);
+            comm.Parameters.AddWithValue("@MAGV", txt_magv.Text);
             comm.Parameters.AddWithValue("@HOTEN", txt_hoten.Text);
             comm.Parameters.AddWithValue("@GIOITINH", txt_gioitinh.Text);
             comm.Parameters.AddWithValue("@NGAYSINH", dateTimePicker1.Value.ToString("dd/MM/yyyy"));
