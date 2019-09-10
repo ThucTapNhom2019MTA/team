@@ -135,6 +135,10 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_CS.Designer.cs" />
+    <Compile Include="GUI\frm_DG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DG.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
@@ -151,6 +155,7 @@
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_CS.resx" />
+    <EmbeddedResource Include="GUI\frm_DG.resx" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
