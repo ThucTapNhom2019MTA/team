@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKho
 {
-    public partial class Form1 : Form
+    public partial class NhapHang : Form
     {
-        public Form1()
+        public NhapHang()
         {
             InitializeComponent();
-        }
-
-        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
