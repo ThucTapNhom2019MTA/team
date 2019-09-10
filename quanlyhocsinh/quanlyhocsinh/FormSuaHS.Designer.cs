@@ -53,6 +53,7 @@
             this.bt_luu.TabIndex = 90;
             this.bt_luu.Text = "Lưu";
             this.bt_luu.UseVisualStyleBackColor = true;
+            this.bt_luu.Click += new System.EventHandler(this.Bt_luu_Click);
             // 
             // txt_noisinh
             // 
