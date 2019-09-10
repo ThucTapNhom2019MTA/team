@@ -61,6 +61,7 @@
             this.bt_suagv.TabIndex = 0;
             this.bt_suagv.Text = "Sửa";
             this.bt_suagv.UseVisualStyleBackColor = false;
+            this.bt_suagv.Click += new System.EventHandler(this.Bt_suagv_Click);
             // 
             // bt_xoagv
             // 
