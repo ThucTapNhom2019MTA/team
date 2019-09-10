@@ -17,6 +17,7 @@ namespace QuanLyKhachSan.src
         public frmDoDungTheoPhong()
         {
             InitializeComponent();
+            dgvDodung.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
         public frmDoDungTheoPhong(string _ma)
         {
@@ -43,6 +44,7 @@ namespace QuanLyKhachSan.src
             txtSoLuong.Text = dgvDodung.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtDonVi.Text = dgvDodung.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtTinhTrang.Text = dgvDodung.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtMaPhong.Text = dgvDodung.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
     }
 }

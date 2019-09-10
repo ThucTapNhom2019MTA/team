@@ -129,7 +129,7 @@
             // dtpNgay
             // 
             this.dtpNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgay.Location = new System.Drawing.Point(385, 23);
+            this.dtpNgay.Location = new System.Drawing.Point(418, 19);
             this.dtpNgay.Name = "dtpNgay";
             this.dtpNgay.Size = new System.Drawing.Size(153, 26);
             this.dtpNgay.TabIndex = 25;
@@ -147,7 +147,7 @@
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(385, 58);
+            this.txtCMND.Location = new System.Drawing.Point(418, 59);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(153, 26);
             this.txtCMND.TabIndex = 23;
