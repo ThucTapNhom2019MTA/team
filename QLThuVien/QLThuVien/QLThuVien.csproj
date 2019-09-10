@@ -134,7 +134,9 @@
     <Compile Include="GUI\frm_CS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\frm_CS.Designer.cs" />
+    <Compile Include="GUI\frm_CS.designer.cs">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_DG.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,7 +156,9 @@
     <EmbeddedResource Include="frmHome.vi.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_CS.resx" />
+    <EmbeddedResource Include="GUI\frm_CS.resx">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_DG.resx" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
