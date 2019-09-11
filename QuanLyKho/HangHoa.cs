@@ -15,6 +15,12 @@ namespace QuanLyKho
         public HangHoa()
         {
             InitializeComponent();
+            
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

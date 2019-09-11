@@ -47,7 +47,7 @@ namespace ThucTapNhom2019_Project1
             this.luong = luong;
         }
 
-        public string Manv { get => manv; set => manv = value; }
+        /*public string Manv { get => manv; set => manv = value; }
         public string Hoten { get => hoten; set => hoten = value; }
         public DateTime Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
         public string Diachi { get => diachi; set => diachi = value; }
@@ -55,6 +55,6 @@ namespace ThucTapNhom2019_Project1
         public string Email { get => email; set => email = value; }
         public string To { get => to; set => to = value; }
         public string Chucvu { get => chucvu; set => chucvu = value; }
-        public int Luong { get => luong; set => luong = value; }
+        public int Luong { get => luong; set => luong = value; } */
     }
 }
