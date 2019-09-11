@@ -39,11 +39,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_luu
             // 
-            this.bt_luu.Location = new System.Drawing.Point(449, 441);
+            this.bt_luu.Location = new System.Drawing.Point(360, 441);
             this.bt_luu.Name = "bt_luu";
             this.bt_luu.Size = new System.Drawing.Size(104, 47);
             this.bt_luu.TabIndex = 90;
@@ -142,11 +143,22 @@
             this.label1.TabIndex = 77;
             this.label1.Text = "Mã học sinh";
             // 
+            // bt_back
+            // 
+            this.bt_back.Location = new System.Drawing.Point(549, 441);
+            this.bt_back.Name = "bt_back";
+            this.bt_back.Size = new System.Drawing.Size(104, 47);
+            this.bt_back.TabIndex = 90;
+            this.bt_back.Text = "Back";
+            this.bt_back.UseVisualStyleBackColor = true;
+            this.bt_back.Click += new System.EventHandler(this.Bt_luu_Click);
+            // 
             // FormSuaHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 530);
+            this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_luu);
             this.Controls.Add(this.txt_quequan);
             this.Controls.Add(this.label5);
@@ -178,5 +190,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_back;
     }
 }
