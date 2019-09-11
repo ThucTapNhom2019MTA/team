@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txt_hoten = new System.Windows.Forms.TextBox();
-            this.txt_magv = new System.Windows.Forms.TextBox();
+            this.txt_mahs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,13 +104,13 @@
             this.txt_hoten.Size = new System.Drawing.Size(298, 30);
             this.txt_hoten.TabIndex = 84;
             // 
-            // txt_magv
+            // txt_mahs
             // 
-            this.txt_magv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_magv.Location = new System.Drawing.Point(166, 80);
-            this.txt_magv.Name = "txt_magv";
-            this.txt_magv.Size = new System.Drawing.Size(294, 30);
-            this.txt_magv.TabIndex = 82;
+            this.txt_mahs.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mahs.Location = new System.Drawing.Point(166, 80);
+            this.txt_mahs.Name = "txt_mahs";
+            this.txt_mahs.Size = new System.Drawing.Size(294, 30);
+            this.txt_mahs.TabIndex = 82;
             // 
             // label3
             // 
@@ -154,7 +154,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txt_hoten);
-            this.Controls.Add(this.txt_magv);
+            this.Controls.Add(this.txt_mahs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -174,7 +174,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txt_hoten;
-        private System.Windows.Forms.TextBox txt_magv;
+        private System.Windows.Forms.TextBox txt_mahs;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

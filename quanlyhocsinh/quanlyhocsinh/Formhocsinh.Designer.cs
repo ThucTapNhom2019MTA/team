@@ -83,6 +83,7 @@
             this.bt_suahs.TabIndex = 4;
             this.bt_suahs.Text = "Sửa";
             this.bt_suahs.UseVisualStyleBackColor = false;
+            this.bt_suahs.Click += new System.EventHandler(this.Bt_suahs_Click);
             // 
             // bt_themhs
             // 
