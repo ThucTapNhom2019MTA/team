@@ -155,6 +155,12 @@
     <Compile Include="GUI\frm_KS.designer.cs">
       <DependentUpon>frm_KS.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_NCC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_NCC.designer.cs">
+      <DependentUpon>frm_NCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_KS.resx">
       <DependentUpon>frm_KS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_NCC.resx">
+      <DependentUpon>frm_NCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
