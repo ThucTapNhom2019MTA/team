@@ -35,15 +35,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txt_hoten = new System.Windows.Forms.TextBox();
-            this.txt_magv = new System.Windows.Forms.TextBox();
+            this.txt_mahs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_luu
             // 
-            this.bt_luu.Location = new System.Drawing.Point(449, 441);
+            this.bt_luu.Location = new System.Drawing.Point(360, 441);
             this.bt_luu.Name = "bt_luu";
             this.bt_luu.Size = new System.Drawing.Size(104, 47);
             this.bt_luu.TabIndex = 90;
@@ -104,13 +105,13 @@
             this.txt_hoten.Size = new System.Drawing.Size(298, 30);
             this.txt_hoten.TabIndex = 84;
             // 
-            // txt_magv
+            // txt_mahs
             // 
-            this.txt_magv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_magv.Location = new System.Drawing.Point(166, 80);
-            this.txt_magv.Name = "txt_magv";
-            this.txt_magv.Size = new System.Drawing.Size(294, 30);
-            this.txt_magv.TabIndex = 82;
+            this.txt_mahs.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mahs.Location = new System.Drawing.Point(166, 80);
+            this.txt_mahs.Name = "txt_mahs";
+            this.txt_mahs.Size = new System.Drawing.Size(294, 30);
+            this.txt_mahs.TabIndex = 82;
             // 
             // label3
             // 
@@ -142,11 +143,22 @@
             this.label1.TabIndex = 77;
             this.label1.Text = "Mã học sinh";
             // 
+            // bt_back
+            // 
+            this.bt_back.Location = new System.Drawing.Point(549, 441);
+            this.bt_back.Name = "bt_back";
+            this.bt_back.Size = new System.Drawing.Size(104, 47);
+            this.bt_back.TabIndex = 90;
+            this.bt_back.Text = "Back";
+            this.bt_back.UseVisualStyleBackColor = true;
+            this.bt_back.Click += new System.EventHandler(this.Bt_luu_Click);
+            // 
             // FormSuaHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 530);
+            this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_luu);
             this.Controls.Add(this.txt_quequan);
             this.Controls.Add(this.label5);
@@ -154,7 +166,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txt_hoten);
-            this.Controls.Add(this.txt_magv);
+            this.Controls.Add(this.txt_mahs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -174,9 +186,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txt_hoten;
-        private System.Windows.Forms.TextBox txt_magv;
+        private System.Windows.Forms.TextBox txt_mahs;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_back;
     }
 }

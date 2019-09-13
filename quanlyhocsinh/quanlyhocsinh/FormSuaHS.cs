@@ -13,7 +13,7 @@ namespace quanlyhocsinh
 {
     public partial class FormSuaHS : Form
     {
-        public FormSuaHS(string manv, int index, DataGridView datagv)
+        public FormSuaHS(string mahs, int index, DataGridView datagv)
         {
             InitializeComponent();
             InitializeComponent();
