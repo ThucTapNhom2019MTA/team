@@ -64,6 +64,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -402,6 +403,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.progressBar1);
             this.tabPage4.Controls.Add(this.pictureBox2);
             this.tabPage4.Controls.Add(this.dateTimePicker1);
             this.tabPage4.Controls.Add(this.label13);
@@ -418,7 +420,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(47, 38);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 169);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -442,9 +444,16 @@
             // 
             this.pictureBox2.Location = new System.Drawing.Point(693, 51);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(197, 87);
+            this.pictureBox2.Size = new System.Drawing.Size(197, 156);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(319, 38);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(209, 23);
+            this.progressBar1.TabIndex = 4;
             // 
             // QuanLiNhanVien
             // 
@@ -508,5 +517,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
