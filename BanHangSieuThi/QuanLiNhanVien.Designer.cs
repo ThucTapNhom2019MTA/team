@@ -79,6 +79,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.label21 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -418,6 +420,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.listView1);
             this.tabPage4.Controls.Add(this.textBox6);
             this.tabPage4.Controls.Add(this.textBox3);
             this.tabPage4.Controls.Add(this.textBox5);
@@ -427,6 +430,7 @@
             this.tabPage4.Controls.Add(this.label20);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.label21);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.label15);
@@ -598,6 +602,24 @@
             this.textBox6.Size = new System.Drawing.Size(100, 22);
             this.textBox6.TabIndex = 8;
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(693, 333);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(197, 161);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(695, 299);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(34, 17);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "Like";
+            // 
             // QuanLiNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -676,5 +698,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label label21;
     }
 }
