@@ -48,6 +48,9 @@
             this.cbbMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dtpNgay = new System.Windows.Forms.DateTimePicker();
+            this.txbTGKT = new System.Windows.Forms.TextBox();
+            this.txbTGBD = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.cbbState = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -56,14 +59,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cbbMNV = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txbTGKT = new System.Windows.Forms.TextBox();
-            this.txbTGBD = new System.Windows.Forms.TextBox();
-            this.dtpNgay = new System.Windows.Forms.DateTimePicker();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -71,6 +76,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -285,6 +291,29 @@
             this.tabPage3.Text = "Thêm ngày công";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dtpNgay
+            // 
+            this.dtpNgay.Location = new System.Drawing.Point(300, 287);
+            this.dtpNgay.Name = "dtpNgay";
+            this.dtpNgay.Size = new System.Drawing.Size(267, 28);
+            this.dtpNgay.TabIndex = 7;
+            // 
+            // txbTGKT
+            // 
+            this.txbTGKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTGKT.Location = new System.Drawing.Point(300, 226);
+            this.txbTGKT.Name = "txbTGKT";
+            this.txbTGKT.Size = new System.Drawing.Size(267, 30);
+            this.txbTGKT.TabIndex = 6;
+            // 
+            // txbTGBD
+            // 
+            this.txbTGBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTGBD.Location = new System.Drawing.Point(300, 141);
+            this.txbTGBD.Name = "txbTGBD";
+            this.txbTGBD.Size = new System.Drawing.Size(267, 30);
+            this.txbTGBD.TabIndex = 6;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,28 +397,34 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "Mã nhân viên";
             // 
-            // txbTGKT
+            // tabPage4
             // 
-            this.txbTGKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTGKT.Location = new System.Drawing.Point(300, 226);
-            this.txbTGKT.Name = "txbTGKT";
-            this.txbTGKT.Size = new System.Drawing.Size(267, 30);
-            this.txbTGKT.TabIndex = 6;
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.pictureBox1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(917, 504);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Nghiệp vụ khác";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // txbTGBD
+            // pictureBox1
             // 
-            this.txbTGBD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTGBD.Location = new System.Drawing.Point(300, 141);
-            this.txbTGBD.Name = "txbTGBD";
-            this.txbTGBD.Size = new System.Drawing.Size(267, 30);
-            this.txbTGBD.TabIndex = 6;
+            this.pictureBox1.Location = new System.Drawing.Point(47, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 100);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // dtpNgay
+            // label13
             // 
-            this.dtpNgay.Location = new System.Drawing.Point(300, 287);
-            this.dtpNgay.Name = "dtpNgay";
-            this.dtpNgay.Size = new System.Drawing.Size(267, 28);
-            this.dtpNgay.TabIndex = 7;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(58, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 17);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "User image";
             // 
             // QuanLiNhanVien
             // 
@@ -407,6 +442,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -444,5 +482,8 @@
         private System.Windows.Forms.DateTimePicker dtpNgay;
         private System.Windows.Forms.TextBox txbTGKT;
         private System.Windows.Forms.TextBox txbTGBD;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
