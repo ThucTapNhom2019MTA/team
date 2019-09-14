@@ -94,6 +94,23 @@ namespace BanHangSieuThi
             txbCvu.Text = Convert.ToString(comm.ExecuteScalar());
             conn.Close();
         }
+        private void getProfileNhanVien(string maNV)
+        {
+            SqlConnection conn = ConnectDB.getConnection();
+            // them nhan vien
+            conn.Open();
+            string query = "SELECT TenNV FROM dbo.NHANVIEN WHERE MaNV=@maNV";
+            SqlCommand comm = new SqlCommand(query, conn);
+            comm.Parameters.AddWithValue("@maNV", maNV);
+            txbTenNhanVien.Text = Convert.ToString(comm.ExecuteScalar());
+            conn.Close();
+            conn.Open();
+            query = "SELECT ChucVu FROM dbo.NHANVIEN WHERE MaNV=@maNV";
+            comm = new SqlCommand(query, conn);
+            comm.Parameters.AddWithValue("@maNV", maNV);
+            txbCvu.Text = Convert.ToString(comm.ExecuteScalar());
+            conn.Close();
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
