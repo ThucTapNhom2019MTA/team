@@ -71,6 +71,7 @@
             this.bt_xoahs.TabIndex = 3;
             this.bt_xoahs.Text = "Xóa";
             this.bt_xoahs.UseVisualStyleBackColor = false;
+            this.bt_xoahs.Click += new System.EventHandler(this.Bt_xoahs_Click);
             // 
             // bt_suahs
             // 

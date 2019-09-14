@@ -74,6 +74,7 @@
             this.bt_xoagv.TabIndex = 0;
             this.bt_xoagv.Text = "Xóa";
             this.bt_xoagv.UseVisualStyleBackColor = false;
+            this.bt_xoagv.Click += new System.EventHandler(this.Bt_xoagv_Click);
             // 
             // bt_timkiemgv
             // 

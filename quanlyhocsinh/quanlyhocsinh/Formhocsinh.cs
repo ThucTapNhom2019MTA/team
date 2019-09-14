@@ -61,5 +61,10 @@ namespace quanlyhocsinh
                 formSuahs.ShowDialog();
             }
         }
+
+        private void Bt_xoahs_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

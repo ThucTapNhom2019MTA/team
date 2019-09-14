@@ -62,5 +62,10 @@ namespace quanlyhocsinh
                 formSuagv.ShowDialog();
             }
         }
+
+        private void Bt_xoagv_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
