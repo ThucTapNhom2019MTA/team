@@ -67,6 +67,12 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -406,6 +412,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.label15);
             this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.progressBar1);
@@ -478,6 +490,60 @@
             this.dataGridView1.Size = new System.Drawing.Size(529, 217);
             this.dataGridView1.TabIndex = 6;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(45, 303);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(75, 17);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "user name";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(45, 338);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 17);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "gender";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(44, 378);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 17);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "age";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(326, 303);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 17);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "pass word";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(326, 338);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 17);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "position";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(325, 378);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(77, 17);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "experience";
+            // 
             // QuanLiNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -544,5 +610,11 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
     }
 }
