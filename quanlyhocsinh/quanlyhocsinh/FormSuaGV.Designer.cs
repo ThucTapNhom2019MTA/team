@@ -185,13 +185,13 @@
             // 
             // bt_back
             // 
-            this.bt_back.Location = new System.Drawing.Point(532, 428);
+            this.bt_back.Location = new System.Drawing.Point(561, 428);
             this.bt_back.Name = "bt_back";
-            this.bt_back.Size = new System.Drawing.Size(104, 47);
-            this.bt_back.TabIndex = 75;
-            this.bt_back.Text = "Back";
+            this.bt_back.Size = new System.Drawing.Size(102, 47);
+            this.bt_back.TabIndex = 76;
+            this.bt_back.Text = "back";
             this.bt_back.UseVisualStyleBackColor = true;
-            this.bt_back.Click += new System.EventHandler(this.Bt_luu_Click);
+            this.bt_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // FormSuaGV
             // 

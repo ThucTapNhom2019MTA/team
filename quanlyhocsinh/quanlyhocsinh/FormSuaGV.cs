@@ -41,5 +41,10 @@ namespace quanlyhocsinh
             MessageBox.Show("Sửa thành công!", "Thông báo!");
             this.Close();
         }
+
+        private void Bt_back_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

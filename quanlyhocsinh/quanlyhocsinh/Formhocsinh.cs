@@ -56,9 +56,9 @@ namespace quanlyhocsinh
             int selectRow = dataGridViewHocSinh.SelectedRows[0].Index;
             if (selectRow >= 0 && selectRow < dataGridViewHocSinh.RowCount - 1)
             {
-                string manv = dataGridViewHocSinh.Rows[selectRow].Cells[0].Value.ToString();
-                FormSuaGV formSuanv = new FormSuaGV(manv, selectRow, dataGridViewHocSinh);
-                formSuanv.ShowDialog();
+                string mahs = dataGridViewHocSinh.Rows[selectRow].Cells[0].Value.ToString();
+                FormSuaGV formSuahs = new FormSuaGV(mahs, selectRow, dataGridViewHocSinh);
+                formSuahs.ShowDialog();
             }
         }
     }
