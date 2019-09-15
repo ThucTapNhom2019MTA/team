@@ -46,6 +46,7 @@
             this.dataGridViewHocSinh.RowTemplate.Height = 24;
             this.dataGridViewHocSinh.Size = new System.Drawing.Size(795, 382);
             this.dataGridViewHocSinh.TabIndex = 6;
+            this.dataGridViewHocSinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewHocSinh_CellClick);
             // 
             // bt_timkiemhs
             // 
