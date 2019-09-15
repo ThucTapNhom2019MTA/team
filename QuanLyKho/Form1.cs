@@ -33,6 +33,46 @@ namespace QuanLyKho
             new Form1().Visible = true;
         }
 
+        private void dMHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new HangHoa().ShowDialog();
+        }
+
+        private void dMNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new NhaCungCap().ShowDialog();
+        }
+
+        private void dMKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new KhachHang().ShowDialog();
+        }
+
+        private void nhậpKhoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new NhapHang().ShowDialog();
+        }
+
+        private void xuấtKhoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new XuatHang().ShowDialog();
+        }
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

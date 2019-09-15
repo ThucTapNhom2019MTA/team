@@ -106,18 +106,21 @@
             this.dMHàngHóaToolStripMenuItem.Name = "dMHàngHóaToolStripMenuItem";
             this.dMHàngHóaToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.dMHàngHóaToolStripMenuItem.Text = "DM Hàng Hóa";
+            this.dMHàngHóaToolStripMenuItem.Click += new System.EventHandler(this.dMHàngHóaToolStripMenuItem_Click);
             // 
             // dMNhàCungCấpToolStripMenuItem
             // 
             this.dMNhàCungCấpToolStripMenuItem.Name = "dMNhàCungCấpToolStripMenuItem";
             this.dMNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.dMNhàCungCấpToolStripMenuItem.Text = "DM Nhà Cung Cấp";
+            this.dMNhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.dMNhàCungCấpToolStripMenuItem_Click);
             // 
             // dMKháchHàngToolStripMenuItem
             // 
             this.dMKháchHàngToolStripMenuItem.Name = "dMKháchHàngToolStripMenuItem";
             this.dMKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.dMKháchHàngToolStripMenuItem.Text = "DM Khách Hàng";
+            this.dMKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.dMKháchHàngToolStripMenuItem_Click);
             // 
             // báoCáoToolStripMenuItem
             // 
@@ -132,14 +135,16 @@
             // nhậpKhoToolStripMenuItem1
             // 
             this.nhậpKhoToolStripMenuItem1.Name = "nhậpKhoToolStripMenuItem1";
-            this.nhậpKhoToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.nhậpKhoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.nhậpKhoToolStripMenuItem1.Text = "Nhập Kho";
+            this.nhậpKhoToolStripMenuItem1.Click += new System.EventHandler(this.nhậpKhoToolStripMenuItem1_Click);
             // 
             // xuấtKhoToolStripMenuItem1
             // 
             this.xuấtKhoToolStripMenuItem1.Name = "xuấtKhoToolStripMenuItem1";
-            this.xuấtKhoToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.xuấtKhoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.xuấtKhoToolStripMenuItem1.Text = "Xuất Kho";
+            this.xuấtKhoToolStripMenuItem1.Click += new System.EventHandler(this.xuấtKhoToolStripMenuItem1_Click);
             // 
             // báoCáoToolStripMenuItem1
             // 
