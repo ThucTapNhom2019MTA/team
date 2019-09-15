@@ -67,6 +67,25 @@ namespace quanlyhocsinh
 
         private void Bt_xoahs_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = constringsql.getConnection();
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tenhocsinh, "Xóa học sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                conn.Open();
+                string query = "DELETE FROM [dbo].[HOCSINH] WHERE MAHOCSINH = " + "'" + mahocsinh + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                sda.SelectCommand.ExecuteNonQuery();
+
+                string strQueryDanhSach = "Select MAHOCSINH as Mã, HOTEN as [Họ và tên], " +
+                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại], Email, " +
+                    "Luong as [Lương], TenChucVu AS [Tên chức vụ] from HOCSINH, dbo.ChucVu " +
+                    "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridViewHocSinh.DataSource = dtDanhSach;
+                conn.Close();
+            }
         }
 
         private void DataGridViewHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
