@@ -21,5 +21,18 @@ namespace QuanLyKho
         {
 
         }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
+
     }
 }

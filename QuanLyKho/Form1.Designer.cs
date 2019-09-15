@@ -82,12 +82,14 @@
             this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
             this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // danhMụcToolStripMenuItem
             // 
