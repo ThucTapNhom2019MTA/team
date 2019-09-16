@@ -95,11 +95,6 @@ namespace quanlyhocsinh
                 string mahs = dataGridViewHocSinh.Rows[e.RowIndex].Cells[0].Value.ToString();
                 tenhocsinh = dataGridViewHocSinh.Rows[e.RowIndex].Cells[1].Value.ToString();
                 mahocsinh = mahs;
-                string strQuery = "SELECT a.TenTo, b.TenPhong FROM (SELECT TenTo,MaNhanVien FROM [dbo].[To], dbo.NhanVien WHERE NhanVien.MaTo = [To].MaTo) AS a," +
-            "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = b.MaNhanVien and a.MaNhanVien = " + "'" + mahocsinh + "'";
-                SqlDataAdapter da1 = new SqlDataAdapter(strQuery, conn);
-                DataSet ds1 = new DataSet();
-                da1.Fill(ds1);
             }
             conn.Close();
         }
