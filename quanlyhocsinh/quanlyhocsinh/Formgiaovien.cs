@@ -13,6 +13,9 @@ namespace quanlyhocsinh
 {
     public partial class Formgiaovien : Form
     {
+        DataTable dtDanhSach;
+        string magiaovien;
+        string tengiaovien;
         public Formgiaovien()
         {
             InitializeComponent();
@@ -65,7 +68,23 @@ namespace quanlyhocsinh
 
         private void Bt_xoagv_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = constringsql.getConnection();
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tengiaovien, "Xóa học sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                conn.Open();
+                string query = "DELETE FROM [dbo].[HOCSINH] WHERE MAHOCSINH = " + "'" + magiaovien + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                sda.SelectCommand.ExecuteNonQuery();
 
+                string strQueryDanhSach = "Select MAGIAOVIEN as Mã, HOTEN as [Họ và tên], " +
+                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại] from GIAOVIEN";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridViewGiaoVien.DataSource = dtDanhSach;
+                conn.Close();
+            }
         }
     }
 }
