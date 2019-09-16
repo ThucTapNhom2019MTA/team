@@ -161,6 +161,24 @@
     <Compile Include="GUI\frm_NCC.designer.cs">
       <DependentUpon>frm_NCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_NXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_NXB.designer.cs">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PM.designer.cs">
+      <DependentUpon>frm_PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PN.designer.cs">
+      <DependentUpon>frm_PN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
@@ -190,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_NCC.resx">
       <DependentUpon>frm_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_NXB.resx">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PM.resx">
+      <DependentUpon>frm_PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PN.resx">
+      <DependentUpon>frm_PN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
