@@ -186,6 +186,7 @@
             this.btnthoat.TabIndex = 3;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnhuy
             // 
@@ -213,6 +214,7 @@
             this.btxoa.TabIndex = 2;
             this.btxoa.Text = "Xóa";
             this.btxoa.UseVisualStyleBackColor = true;
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // btsua
             // 

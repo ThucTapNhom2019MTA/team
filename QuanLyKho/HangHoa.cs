@@ -52,6 +52,38 @@ namespace QuanLyKho
             fieldTenHH.Enabled = true;
         }
 
+        private bool validate()
+        {
+            if (fieldDonViTinh.Text == "" || fieldSL.Text == "" || fieldTenHH.Text == "")
+            {
+                MessageBox.Show("Bạn phải điền đầy đủ các trường !");
+                return false;
+            }
+            return true;
+        }
+
+        private void hien()
+        {
+            string sql = @"SELECT * FROM DMHangHoa";
+
+            dataGridView1.DataSource = Database.getTable(sql);
+        }
+
+        private void binding()
+        {
+            fieldDonViTinh.DataBindings.Clear();
+            fieldMaHH.DataBindings.Clear();
+            fieldNgayNhap.DataBindings.Clear();
+            fieldSL.DataBindings.Clear();
+            fieldTenHH.DataBindings.Clear();
+
+
+            fieldDonViTinh.DataBindings.Add("Text", dataGridView1.DataSource, "donvitinh");
+            fieldMaHH.DataBindings.Add("Text", dataGridView1.DataSource, "mahh");
+            fieldNgayNhap.DataBindings.Add("value", dataGridView1.DataSource, "ngaynhap");
+            fieldSL.DataBindings.Add("Text", dataGridView1.DataSource, "soluong");
+            fieldTenHH.DataBindings.Add("Text", dataGridView1.DataSource, "tenhh");
+        }
         private void dongtxt()
         {
             fieldDonViTinh.Enabled = false;
@@ -84,6 +116,22 @@ namespace QuanLyKho
             motxt();
             dongbtn();
             state = "insert";
+        }
+
+
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "delete";
+            binding();
         }
     }
 }
