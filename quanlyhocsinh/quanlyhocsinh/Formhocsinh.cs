@@ -77,9 +77,7 @@ namespace quanlyhocsinh
                 sda.SelectCommand.ExecuteNonQuery();
 
                 string strQueryDanhSach = "Select MAHOCSINH as Mã, HOTEN as [Họ và tên], " +
-                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại], Email, " +
-                    "Luong as [Lương], TenChucVu AS [Tên chức vụ] from HOCSINH, dbo.ChucVu " +
-                    "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
+                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại] from HOCSINH";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
