@@ -41,13 +41,6 @@ namespace quanlyhocsinh
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 form = new Form1();
-            form.Show();
-            this.Hide();
-        }
-
         private void Bt_themgv_Click(object sender, EventArgs e)
         {
             FormThemGV form = new FormThemGV();
@@ -73,7 +66,7 @@ namespace quanlyhocsinh
             if (dialogResult == DialogResult.Yes)
             {
                 conn.Open();
-                string query = "DELETE FROM [dbo].[HOCSINH] WHERE MAHOCSINH = " + "'" + magiaovien + "'";
+                string query = "DELETE FROM [dbo].[GIAOVIEN] WHERE MAGIAOVIEN = " + "'" + magiaovien + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 sda.SelectCommand.ExecuteNonQuery();
 
@@ -85,6 +78,13 @@ namespace quanlyhocsinh
                 dataGridViewGiaoVien.DataSource = dtDanhSach;
                 conn.Close();
             }
+        }
+
+        private void Bt_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }
