@@ -98,6 +98,7 @@
             this.dataGridViewGiaoVien.RowTemplate.Height = 24;
             this.dataGridViewGiaoVien.Size = new System.Drawing.Size(804, 382);
             this.dataGridViewGiaoVien.TabIndex = 1;
+            this.dataGridViewGiaoVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewGiaoVien_CellClick);
             // 
             // bt_back
             // 

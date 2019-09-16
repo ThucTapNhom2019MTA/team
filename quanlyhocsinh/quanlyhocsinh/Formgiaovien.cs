@@ -86,5 +86,18 @@ namespace quanlyhocsinh
             Form1 f1 = new Form1();
             f1.Show();
         }
+
+        private void DataGridViewGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SqlConnection conn = constringsql.getConnection();
+            conn.Open();
+            if (e.RowIndex < 6 && e.RowIndex >= 0)
+            {
+                string magv = dataGridViewGiaoVien.Rows[e.RowIndex].Cells[0].Value.ToString();
+                tengiaovien = dataGridViewGiaoVien.Rows[e.RowIndex].Cells[1].Value.ToString();
+                magiaovien = magv;
+            }
+            conn.Close();
+        }
     }
 }
