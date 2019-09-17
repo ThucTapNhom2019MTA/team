@@ -62,7 +62,7 @@ namespace quanlyhocsinh
         private void Bt_xoagv_Click(object sender, EventArgs e)
         {
             SqlConnection conn = constringsql.getConnection();
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tengiaovien, "Xóa học sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa giáo viên : " + tengiaovien, "Xóa giáo viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
                 conn.Open();
@@ -71,7 +71,7 @@ namespace quanlyhocsinh
                 sda.SelectCommand.ExecuteNonQuery();
 
                 string strQueryDanhSach = "Select MAGIAOVIEN as Mã, HOTEN as [Họ và tên], " +
-                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại] from GIAOVIEN";
+                    "NGAYSINH as [Ngày Sinh], CHUYENMON as [Chuyên Môn], SODIENTHOAI as [Số Điện Thoại] from GIAOVIEN";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
