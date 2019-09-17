@@ -44,7 +44,7 @@
             this.dataGridViewHocSinh.Name = "dataGridViewHocSinh";
             this.dataGridViewHocSinh.RowHeadersWidth = 51;
             this.dataGridViewHocSinh.RowTemplate.Height = 24;
-            this.dataGridViewHocSinh.Size = new System.Drawing.Size(795, 382);
+            this.dataGridViewHocSinh.Size = new System.Drawing.Size(851, 382);
             this.dataGridViewHocSinh.TabIndex = 6;
             this.dataGridViewHocSinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewHocSinh_CellClick);
             // 
@@ -102,7 +102,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button1.Location = new System.Drawing.Point(71, 342);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 517);
+            this.ClientSize = new System.Drawing.Size(1113, 517);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewHocSinh);
             this.Controls.Add(this.bt_timkiemhs);

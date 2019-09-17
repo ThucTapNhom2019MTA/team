@@ -70,8 +70,8 @@ namespace quanlyhocsinh
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 sda.SelectCommand.ExecuteNonQuery();
 
-                string strQueryDanhSach = "Select MAGIAOVIEN as Mã, HOTEN as [Họ và tên], " +
-                    "NGAYSINH as [Ngày Sinh], CHUYENMON as [Chuyên Môn], SODIENTHOAI as [Số Điện Thoại] from GIAOVIEN";
+                string strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
+                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);

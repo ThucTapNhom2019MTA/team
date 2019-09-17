@@ -96,13 +96,13 @@
             this.dataGridViewGiaoVien.Name = "dataGridViewGiaoVien";
             this.dataGridViewGiaoVien.RowHeadersWidth = 51;
             this.dataGridViewGiaoVien.RowTemplate.Height = 24;
-            this.dataGridViewGiaoVien.Size = new System.Drawing.Size(804, 382);
+            this.dataGridViewGiaoVien.Size = new System.Drawing.Size(921, 382);
             this.dataGridViewGiaoVien.TabIndex = 1;
             this.dataGridViewGiaoVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewGiaoVien_CellClick);
             // 
             // bt_back
             // 
-            this.bt_back.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_back.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
             this.bt_back.ForeColor = System.Drawing.Color.Navy;
             this.bt_back.Location = new System.Drawing.Point(66, 337);
             this.bt_back.Name = "bt_back";
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 492);
+            this.ClientSize = new System.Drawing.Size(1149, 492);
             this.Controls.Add(this.bt_back);
             this.Controls.Add(this.dataGridViewGiaoVien);
             this.Controls.Add(this.bt_timkiemgv);
