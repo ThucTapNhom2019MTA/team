@@ -35,6 +35,7 @@ namespace quanlyhocsinh
 
         private void Bt_back_Click(object sender, EventArgs e)
         {
+
             FormThem ft = new FormThem();
             ft.Show();
             this.Hide();

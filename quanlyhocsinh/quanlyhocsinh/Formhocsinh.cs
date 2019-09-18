@@ -76,10 +76,7 @@ namespace quanlyhocsinh
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 sda.SelectCommand.ExecuteNonQuery();
 
-                string strQueryDanhSach = "Select MAHOCSINH as Mã, HOTEN as [Họ và tên], " +
-                    "NGAYSINH as [Ngày Sinh], DIACHI as [Địa Chỉ], SODIENTHOAI as [Số Điện Thoại], Email, " +
-                    "Luong as [Lương], TenChucVu AS [Tên chức vụ] from HOCSINH, dbo.ChucVu " +
-                    "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
+                string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
@@ -97,11 +94,6 @@ namespace quanlyhocsinh
                 string mahs = dataGridViewHocSinh.Rows[e.RowIndex].Cells[0].Value.ToString();
                 tenhocsinh = dataGridViewHocSinh.Rows[e.RowIndex].Cells[1].Value.ToString();
                 mahocsinh = mahs;
-                string strQuery = "SELECT a.TenTo, b.TenPhong FROM (SELECT TenTo,MaNhanVien FROM [dbo].[To], dbo.NhanVien WHERE NhanVien.MaTo = [To].MaTo) AS a," +
-            "(SELECT TenPhong, MaNhanVien FROM[To], Phong, dbo.NhanVien WHERE Phong.MaPhong = [To].MaPhong AND dbo.NhanVien.MaTo = [To].MaTo) AS b WHERE a.MaNhanVien = b.MaNhanVien and a.MaNhanVien = " + "'" + mahocsinh + "'";
-                SqlDataAdapter da1 = new SqlDataAdapter(strQuery, conn);
-                DataSet ds1 = new DataSet();
-                da1.Fill(ds1);
             }
             conn.Close();
         }

@@ -13,6 +13,9 @@ namespace quanlyhocsinh
 {
     public partial class Formgiaovien : Form
     {
+        DataTable dtDanhSach;
+        string magiaovien;
+        string tengiaovien;
         public Formgiaovien()
         {
             InitializeComponent();
@@ -38,13 +41,6 @@ namespace quanlyhocsinh
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 form = new Form1();
-            form.Show();
-            this.Hide();
-        }
-
         private void Bt_themgv_Click(object sender, EventArgs e)
         {
             FormThemGV form = new FormThemGV();
@@ -65,7 +61,43 @@ namespace quanlyhocsinh
 
         private void Bt_xoagv_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = constringsql.getConnection();
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa giáo viên : " + tengiaovien, "Xóa giáo viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                conn.Open();
+                string query = "DELETE FROM [dbo].[GIAOVIEN] WHERE MAGIAOVIEN = " + "'" + magiaovien + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                sda.SelectCommand.ExecuteNonQuery();
 
+                string strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
+                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridViewGiaoVien.DataSource = dtDanhSach;
+                conn.Close();
+            }
+        }
+
+        private void Bt_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+
+        private void DataGridViewGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SqlConnection conn = constringsql.getConnection();
+            conn.Open();
+            if (e.RowIndex < 6 && e.RowIndex >= 0)
+            {
+                string magv = dataGridViewGiaoVien.Rows[e.RowIndex].Cells[0].Value.ToString();
+                tengiaovien = dataGridViewGiaoVien.Rows[e.RowIndex].Cells[1].Value.ToString();
+                magiaovien = magv;
+            }
+            conn.Close();
         }
     }
 }

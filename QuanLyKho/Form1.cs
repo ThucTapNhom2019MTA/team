@@ -24,7 +24,16 @@ namespace QuanLyKho
 
         private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (Class1.role == "A")
+            {
+
+                this.Visible = false;
+                new QuanLyTaiKhoan().ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chỉ admin mới có thể quản lý tài khoản");
+            }
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
