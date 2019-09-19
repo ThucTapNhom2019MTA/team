@@ -185,6 +185,12 @@
     <Compile Include="GUI\frm_TG.designer.cs">
       <DependentUpon>frm_TG.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_TK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TK.designer.cs">
+      <DependentUpon>frm_TK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TG.resx">
       <DependentUpon>frm_TG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TK.resx">
+      <DependentUpon>frm_TK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
