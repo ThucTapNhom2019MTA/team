@@ -127,6 +127,74 @@
             this.button6 = new System.Windows.Forms.Button();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.label32 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.listView4 = new System.Windows.Forms.ListView();
+            this.button7 = new System.Windows.Forms.Button();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker15 = new System.Windows.Forms.DateTimePicker();
+            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
+            this.dateTimePicker16 = new System.Windows.Forms.DateTimePicker();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -140,6 +208,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -470,71 +544,139 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.checkedListBox10);
             this.tabPage4.Controls.Add(this.checkedListBox4);
+            this.tabPage4.Controls.Add(this.checkedListBox9);
             this.tabPage4.Controls.Add(this.checkedListBox2);
+            this.tabPage4.Controls.Add(this.checkedListBox8);
+            this.tabPage4.Controls.Add(this.checkedListBox5);
+            this.tabPage4.Controls.Add(this.checkedListBox7);
             this.tabPage4.Controls.Add(this.checkedListBox3);
+            this.tabPage4.Controls.Add(this.checkedListBox6);
             this.tabPage4.Controls.Add(this.checkedListBox1);
+            this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Controls.Add(this.button6);
+            this.tabPage4.Controls.Add(this.button9);
             this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.linkLabel4);
             this.tabPage4.Controls.Add(this.linkLabel2);
+            this.tabPage4.Controls.Add(this.groupBox4);
             this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Controls.Add(this.linkLabel3);
+            this.tabPage4.Controls.Add(this.flowLayoutPanel4);
             this.tabPage4.Controls.Add(this.linkLabel1);
+            this.tabPage4.Controls.Add(this.groupBox3);
             this.tabPage4.Controls.Add(this.flowLayoutPanel2);
+            this.tabPage4.Controls.Add(this.domainUpDown4);
             this.tabPage4.Controls.Add(this.groupBox1);
+            this.tabPage4.Controls.Add(this.flowLayoutPanel3);
             this.tabPage4.Controls.Add(this.domainUpDown2);
+            this.tabPage4.Controls.Add(this.dateTimePicker16);
             this.tabPage4.Controls.Add(this.flowLayoutPanel1);
+            this.tabPage4.Controls.Add(this.domainUpDown3);
             this.tabPage4.Controls.Add(this.dateTimePicker8);
+            this.tabPage4.Controls.Add(this.dateTimePicker15);
             this.tabPage4.Controls.Add(this.domainUpDown1);
+            this.tabPage4.Controls.Add(this.dateTimePicker14);
             this.tabPage4.Controls.Add(this.dateTimePicker7);
+            this.tabPage4.Controls.Add(this.dateTimePicker13);
             this.tabPage4.Controls.Add(this.dateTimePicker4);
+            this.tabPage4.Controls.Add(this.dateTimePicker12);
             this.tabPage4.Controls.Add(this.dateTimePicker6);
+            this.tabPage4.Controls.Add(this.checkBox4);
             this.tabPage4.Controls.Add(this.dateTimePicker3);
+            this.tabPage4.Controls.Add(this.dateTimePicker11);
             this.tabPage4.Controls.Add(this.checkBox2);
+            this.tabPage4.Controls.Add(this.button8);
             this.tabPage4.Controls.Add(this.dateTimePicker2);
+            this.tabPage4.Controls.Add(this.checkBox3);
             this.tabPage4.Controls.Add(this.button5);
+            this.tabPage4.Controls.Add(this.button7);
             this.tabPage4.Controls.Add(this.checkBox1);
+            this.tabPage4.Controls.Add(this.listView4);
             this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.listView2);
+            this.tabPage4.Controls.Add(this.textBox24);
             this.tabPage4.Controls.Add(this.pictureBox3);
+            this.tabPage4.Controls.Add(this.listView3);
             this.tabPage4.Controls.Add(this.textBox12);
+            this.tabPage4.Controls.Add(this.textBox23);
             this.tabPage4.Controls.Add(this.listView1);
+            this.tabPage4.Controls.Add(this.textBox22);
             this.tabPage4.Controls.Add(this.textBox11);
+            this.tabPage4.Controls.Add(this.textBox21);
             this.tabPage4.Controls.Add(this.textBox6);
+            this.tabPage4.Controls.Add(this.textBox20);
             this.tabPage4.Controls.Add(this.textBox10);
+            this.tabPage4.Controls.Add(this.textBox19);
             this.tabPage4.Controls.Add(this.textBox3);
+            this.tabPage4.Controls.Add(this.textBox18);
             this.tabPage4.Controls.Add(this.textBox9);
+            this.tabPage4.Controls.Add(this.textBox17);
             this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.textBox16);
             this.tabPage4.Controls.Add(this.textBox8);
+            this.tabPage4.Controls.Add(this.textBox15);
             this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.textBox14);
             this.tabPage4.Controls.Add(this.textBox7);
+            this.tabPage4.Controls.Add(this.label48);
             this.tabPage4.Controls.Add(this.textBox2);
+            this.tabPage4.Controls.Add(this.textBox13);
             this.tabPage4.Controls.Add(this.label30);
+            this.tabPage4.Controls.Add(this.label47);
             this.tabPage4.Controls.Add(this.textBox1);
+            this.tabPage4.Controls.Add(this.label46);
             this.tabPage4.Controls.Add(this.label29);
+            this.tabPage4.Controls.Add(this.label45);
             this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.label44);
             this.tabPage4.Controls.Add(this.label28);
+            this.tabPage4.Controls.Add(this.label43);
             this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label42);
             this.tabPage4.Controls.Add(this.label27);
+            this.tabPage4.Controls.Add(this.label41);
             this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.label40);
             this.tabPage4.Controls.Add(this.label26);
+            this.tabPage4.Controls.Add(this.label39);
             this.tabPage4.Controls.Add(this.label21);
+            this.tabPage4.Controls.Add(this.label38);
             this.tabPage4.Controls.Add(this.label25);
+            this.tabPage4.Controls.Add(this.label37);
             this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label36);
             this.tabPage4.Controls.Add(this.label24);
+            this.tabPage4.Controls.Add(this.dataGridView4);
             this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.label35);
             this.tabPage4.Controls.Add(this.dataGridView2);
+            this.tabPage4.Controls.Add(this.label34);
             this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.dataGridView3);
             this.tabPage4.Controls.Add(this.label23);
+            this.tabPage4.Controls.Add(this.progressBar4);
             this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.label33);
             this.tabPage4.Controls.Add(this.progressBar2);
+            this.tabPage4.Controls.Add(this.pictureBox9);
             this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.progressBar3);
             this.tabPage4.Controls.Add(this.pictureBox5);
+            this.tabPage4.Controls.Add(this.dateTimePicker10);
             this.tabPage4.Controls.Add(this.progressBar1);
+            this.tabPage4.Controls.Add(this.pictureBox8);
             this.tabPage4.Controls.Add(this.dateTimePicker5);
+            this.tabPage4.Controls.Add(this.label32);
             this.tabPage4.Controls.Add(this.pictureBox2);
+            this.tabPage4.Controls.Add(this.dateTimePicker9);
             this.tabPage4.Controls.Add(this.label22);
+            this.tabPage4.Controls.Add(this.pictureBox7);
             this.tabPage4.Controls.Add(this.dateTimePicker1);
+            this.tabPage4.Controls.Add(this.label31);
             this.tabPage4.Controls.Add(this.pictureBox4);
+            this.tabPage4.Controls.Add(this.pictureBox6);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.pictureBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -1094,6 +1236,562 @@
             this.checkedListBox4.Size = new System.Drawing.Size(120, 89);
             this.checkedListBox4.TabIndex = 20;
             // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Location = new System.Drawing.Point(151, 153);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox5.TabIndex = 20;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(12, 57);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(105, 246);
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(23, 37);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(80, 17);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "User image";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(14, 57);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(105, 246);
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // dateTimePicker9
+            // 
+            this.dateTimePicker9.Location = new System.Drawing.Point(655, 32);
+            this.dateTimePicker9.Name = "dateTimePicker9";
+            this.dateTimePicker9.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker9.TabIndex = 2;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(25, 37);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(80, 17);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "User image";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(658, 70);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(197, 233);
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // dateTimePicker10
+            // 
+            this.dateTimePicker10.Location = new System.Drawing.Point(657, 32);
+            this.dateTimePicker10.Name = "dateTimePicker10";
+            this.dateTimePicker10.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker10.TabIndex = 2;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(284, 57);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(209, 23);
+            this.progressBar3.TabIndex = 4;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(660, 70);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(197, 233);
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(341, 37);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(103, 17);
+            this.label33.TabIndex = 5;
+            this.label33.Text = "Processing bar";
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(286, 57);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(209, 23);
+            this.progressBar4.TabIndex = 4;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(123, 86);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(529, 217);
+            this.dataGridView3.TabIndex = 6;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(343, 37);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(103, 17);
+            this.label34.TabIndex = 5;
+            this.label34.Text = "Processing bar";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(10, 322);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(75, 17);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "user name";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(125, 86);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(529, 217);
+            this.dataGridView4.TabIndex = 6;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(10, 357);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(53, 17);
+            this.label36.TabIndex = 7;
+            this.label36.Text = "gender";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(12, 322);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(75, 17);
+            this.label37.TabIndex = 7;
+            this.label37.Text = "user name";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(291, 322);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(72, 17);
+            this.label38.TabIndex = 7;
+            this.label38.Text = "pass word";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(12, 357);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(53, 17);
+            this.label39.TabIndex = 7;
+            this.label39.Text = "gender";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(660, 318);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(34, 17);
+            this.label40.TabIndex = 7;
+            this.label40.Text = "Like";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(293, 322);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(72, 17);
+            this.label41.TabIndex = 7;
+            this.label41.Text = "pass word";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(291, 357);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(57, 17);
+            this.label42.TabIndex = 7;
+            this.label42.Text = "position";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(662, 318);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(34, 17);
+            this.label43.TabIndex = 7;
+            this.label43.Text = "Like";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(9, 397);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(32, 17);
+            this.label44.TabIndex = 7;
+            this.label44.Text = "age";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(293, 357);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(57, 17);
+            this.label45.TabIndex = 7;
+            this.label45.Text = "position";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(290, 397);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(77, 17);
+            this.label46.TabIndex = 7;
+            this.label46.Text = "experience";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(11, 397);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(32, 17);
+            this.label47.TabIndex = 7;
+            this.label47.Text = "age";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(108, 320);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 22);
+            this.textBox13.TabIndex = 8;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(292, 397);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(77, 17);
+            this.label48.TabIndex = 7;
+            this.label48.Text = "experience";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(108, 354);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 22);
+            this.textBox14.TabIndex = 8;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(110, 320);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 22);
+            this.textBox15.TabIndex = 8;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(393, 318);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(100, 22);
+            this.textBox16.TabIndex = 8;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(110, 354);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 22);
+            this.textBox17.TabIndex = 8;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(393, 352);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 22);
+            this.textBox18.TabIndex = 8;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(395, 318);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 22);
+            this.textBox19.TabIndex = 8;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(108, 394);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(100, 22);
+            this.textBox20.TabIndex = 8;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(395, 352);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(100, 22);
+            this.textBox21.TabIndex = 8;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(393, 392);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(100, 22);
+            this.textBox22.TabIndex = 8;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(110, 394);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(100, 22);
+            this.textBox23.TabIndex = 8;
+            // 
+            // listView3
+            // 
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(658, 352);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(197, 161);
+            this.listView3.TabIndex = 9;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(395, 392);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(100, 22);
+            this.textBox24.TabIndex = 8;
+            // 
+            // listView4
+            // 
+            this.listView4.HideSelection = false;
+            this.listView4.Location = new System.Drawing.Point(694, 323);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(197, 161);
+            this.listView4.TabIndex = 9;
+            this.listView4.UseCompatibleStateImageBehavior = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(69, 69);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 11;
+            this.button7.Text = "button3";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(119, 141);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(98, 21);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.Text = "checkBox1";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(105, 40);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 11;
+            this.button8.Text = "button3";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker11
+            // 
+            this.dateTimePicker11.Location = new System.Drawing.Point(21, 313);
+            this.dateTimePicker11.Name = "dateTimePicker11";
+            this.dateTimePicker11.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker11.TabIndex = 13;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(121, 141);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(98, 21);
+            this.checkBox4.TabIndex = 12;
+            this.checkBox4.Text = "checkBox1";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker12
+            // 
+            this.dateTimePicker12.Location = new System.Drawing.Point(132, 252);
+            this.dateTimePicker12.Name = "dateTimePicker12";
+            this.dateTimePicker12.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker12.TabIndex = 14;
+            // 
+            // dateTimePicker13
+            // 
+            this.dateTimePicker13.Location = new System.Drawing.Point(57, 284);
+            this.dateTimePicker13.Name = "dateTimePicker13";
+            this.dateTimePicker13.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker13.TabIndex = 13;
+            // 
+            // dateTimePicker14
+            // 
+            this.dateTimePicker14.Location = new System.Drawing.Point(187, 379);
+            this.dateTimePicker14.Name = "dateTimePicker14";
+            this.dateTimePicker14.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker14.TabIndex = 14;
+            // 
+            // dateTimePicker15
+            // 
+            this.dateTimePicker15.Location = new System.Drawing.Point(134, 252);
+            this.dateTimePicker15.Name = "dateTimePicker15";
+            this.dateTimePicker15.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker15.TabIndex = 14;
+            // 
+            // domainUpDown3
+            // 
+            this.domainUpDown3.Location = new System.Drawing.Point(24, 379);
+            this.domainUpDown3.Name = "domainUpDown3";
+            this.domainUpDown3.Size = new System.Drawing.Size(120, 22);
+            this.domainUpDown3.TabIndex = 15;
+            this.domainUpDown3.Text = "domainUpDown1";
+            // 
+            // dateTimePicker16
+            // 
+            this.dateTimePicker16.Location = new System.Drawing.Point(223, 350);
+            this.dateTimePicker16.Name = "dateTimePicker16";
+            this.dateTimePicker16.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker16.TabIndex = 14;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(465, 174);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel3.TabIndex = 16;
+            // 
+            // domainUpDown4
+            // 
+            this.domainUpDown4.Location = new System.Drawing.Point(60, 350);
+            this.domainUpDown4.Name = "domainUpDown4";
+            this.domainUpDown4.Size = new System.Drawing.Size(120, 22);
+            this.domainUpDown4.TabIndex = 15;
+            this.domainUpDown4.Text = "domainUpDown1";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(337, 102);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox1";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(467, 174);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel4.TabIndex = 16;
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(370, 335);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(72, 17);
+            this.linkLabel3.TabIndex = 18;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "linkLabel1";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(339, 102);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(200, 100);
+            this.groupBox4.TabIndex = 17;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "groupBox1";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(372, 335);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(72, 17);
+            this.linkLabel4.TabIndex = 18;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "linkLabel1";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(41, 139);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 19;
+            this.button9.Text = "button4";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(77, 110);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 19;
+            this.button10.Text = "button4";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox6
+            // 
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.Location = new System.Drawing.Point(54, 203);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox6.TabIndex = 20;
+            // 
+            // checkedListBox7
+            // 
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.Location = new System.Drawing.Point(90, 174);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox7.TabIndex = 20;
+            // 
+            // checkedListBox8
+            // 
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.Location = new System.Drawing.Point(132, 168);
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox8.TabIndex = 20;
+            // 
+            // checkedListBox9
+            // 
+            this.checkedListBox9.FormattingEnabled = true;
+            this.checkedListBox9.Location = new System.Drawing.Point(481, 297);
+            this.checkedListBox9.Name = "checkedListBox9";
+            this.checkedListBox9.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox9.TabIndex = 20;
+            // 
+            // checkedListBox10
+            // 
+            this.checkedListBox10.FormattingEnabled = true;
+            this.checkedListBox10.Location = new System.Drawing.Point(517, 268);
+            this.checkedListBox10.Name = "checkedListBox10";
+            this.checkedListBox10.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox10.TabIndex = 20;
+            // 
             // QuanLiNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1119,6 +1817,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1224,5 +1928,73 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.CheckedListBox checkedListBox10;
+        private System.Windows.Forms.CheckedListBox checkedListBox9;
+        private System.Windows.Forms.CheckedListBox checkedListBox8;
+        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.CheckedListBox checkedListBox7;
+        private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DomainUpDown domainUpDown4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker16;
+        private System.Windows.Forms.DomainUpDown domainUpDown3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker15;
+        private System.Windows.Forms.DateTimePicker dateTimePicker14;
+        private System.Windows.Forms.DateTimePicker dateTimePicker13;
+        private System.Windows.Forms.DateTimePicker dateTimePicker12;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker11;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker10;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.DateTimePicker dateTimePicker9;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
