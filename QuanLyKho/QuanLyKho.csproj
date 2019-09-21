@@ -104,6 +104,9 @@
     <EmbeddedResource Include="HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhaCungCap.resx">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhapHang.resx">
       <DependentUpon>NhapHang.cs</DependentUpon>
     </EmbeddedResource>

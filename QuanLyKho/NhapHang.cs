@@ -50,7 +50,7 @@ namespace QuanLyKho
 
 
             //Gán datasource của datagridview = dữ liệu lệnh được từ câu lệnh sql trên
-            dataGridView1.DataSource = DbHelper.getTable(sql);
+            dataGridView1.DataSource = Database.getTable(sql);
         }
 
         private void binding()  //hàm đưa dữ liệu từ datagridview lên textbox(binding)
