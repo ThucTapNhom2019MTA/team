@@ -44,7 +44,9 @@ namespace quanlyhocsinh
 
         private void Bt_back_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Formgiaovien fgv = new Formgiaovien();
+            this.ShowDialog();
         }
     }
 }

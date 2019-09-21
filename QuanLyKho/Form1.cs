@@ -21,5 +21,67 @@ namespace QuanLyKho
         {
 
         }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Class1.role == "A")
+            {
+
+                this.Visible = false;
+                new QuanLyTaiKhoan().ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chỉ admin mới có thể quản lý tài khoản");
+            }
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
+        private void dMHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new HangHoa().ShowDialog();
+        }
+
+        private void dMNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new NhaCungCap().ShowDialog();
+        }
+
+        private void dMKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new KhachHang().ShowDialog();
+        }
+
+        private void nhậpKhoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new NhapHang().ShowDialog();
+        }
+
+        private void xuấtKhoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new XuatHang().ShowDialog();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

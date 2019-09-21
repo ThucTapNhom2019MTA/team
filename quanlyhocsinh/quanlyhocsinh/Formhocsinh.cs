@@ -13,6 +13,9 @@ namespace quanlyhocsinh
 {
     public partial class Formhocsinh : Form
     {
+        DataTable dtDanhSach;
+        string mahocsinh;
+        string tenhocsinh;
         public Formhocsinh()
         {
             InitializeComponent();
@@ -60,6 +63,39 @@ namespace quanlyhocsinh
                 FormSuaGV formSuahs = new FormSuaGV(mahs, selectRow, dataGridViewHocSinh);
                 formSuahs.ShowDialog();
             }
+        }
+
+        private void Bt_xoahs_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = constringsql.getConnection();
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tenhocsinh, "Xóa học sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                conn.Open();
+                string query = "DELETE FROM [dbo].[HOCSINH] WHERE MAHOCSINH = " + "'" + mahocsinh + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                sda.SelectCommand.ExecuteNonQuery();
+
+                string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
+                SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+                dtDanhSach = new DataTable();
+                da.Fill(dtDanhSach);
+                dataGridViewHocSinh.DataSource = dtDanhSach;
+                conn.Close();
+            }
+        }
+
+        private void DataGridViewHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SqlConnection conn = constringsql.getConnection();
+            conn.Open();
+            if (e.RowIndex < 6 && e.RowIndex >= 0)
+            {
+                string mahs = dataGridViewHocSinh.Rows[e.RowIndex].Cells[0].Value.ToString();
+                tenhocsinh = dataGridViewHocSinh.Rows[e.RowIndex].Cells[1].Value.ToString();
+                mahocsinh = mahs;
+            }
+            conn.Close();
         }
     }
 }
