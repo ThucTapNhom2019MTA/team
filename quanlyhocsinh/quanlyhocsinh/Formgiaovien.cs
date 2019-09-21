@@ -19,6 +19,7 @@ namespace quanlyhocsinh
         public Formgiaovien()
         {
             InitializeComponent();
+            dataGridViewGiaoVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Formgiaovien_Load(object sender, EventArgs e)
@@ -62,7 +63,8 @@ namespace quanlyhocsinh
         private void Bt_xoagv_Click(object sender, EventArgs e)
         {
             SqlConnection conn = constringsql.getConnection();
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa giáo viên : " + tengiaovien, "Xóa giáo viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa giáo viên : " + tengiaovien, "Xóa giáo viên",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
                 conn.Open();
@@ -71,7 +73,7 @@ namespace quanlyhocsinh
                 sda.SelectCommand.ExecuteNonQuery();
 
                 string strQueryDanhSach = "SELECT MAGIAOVIEN AS [MÃ GIÁO VIÊN], HOTEN AS [HỌ TÊN], SODIENTHOAI AS [ĐIỆN THOẠI]" +
-                                        ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN";
+                                            ", CHUYENMON AS[MÔN HỌC], GIOITINH AS[GIỚI TÍNH], NOISINH AS[NƠI SINH]  FROM dbo.GIAOVIEN";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);

@@ -18,12 +18,14 @@ namespace quanlyhocsinh
             InitializeComponent();
         }
 
-        private void Bt_themHS_Click(object sender, EventArgs e)
+        private void Bt_themGV_Click(object sender, EventArgs e)
         {
             SqlConnection conn = constringsql.getConnection();
             conn.Open();
-            string query = "INSERT INTO dbo.GIAOVIEN ( MAGIAOVIEN, HOTEN, GIOITINH, NGAYSINH, NOISINH, CHUYENMON, SODIENTHOAI ) VALUES (@MAHOCSINH, @HOTEN, @GIOITINH, @NGAYSINH, @NOISINH, @CHUYENMON, @SODIENTHOAI )";
-            SqlCommand comm = new SqlCommand(query, conn);
+            string query = "INSERT INTO dbo.GIAOVIEN ( MAGIAOVIEN, HOTEN, GIOITINH, NGAYSINH, NOISINH, CHUYENMON, SODIENTHOAI ) " +
+                "VALUES (@MAHOCSINH, @HOTEN, @GIOITINH, @NGAYSINH, @NOISINH, @CHUYENMON, @SODIENTHOAI )";
+            SqlCommand comm = new SqlCommand(query,conn);
+//            comm.Connection = conn;
             comm.Parameters.AddWithValue("@MAHOCSINH", txt_magv.Text);
             comm.Parameters.AddWithValue("@HOTEN", txt_hoten.Text);
             comm.Parameters.AddWithValue("@GIOITINH", txt_gioitinh.Text);

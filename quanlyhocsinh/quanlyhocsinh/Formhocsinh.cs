@@ -19,13 +19,15 @@ namespace quanlyhocsinh
         public Formhocsinh()
         {
             InitializeComponent();
+            dataGridViewHocSinh.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Formhocsinh_Load(object sender, EventArgs e)
         {
             SqlConnection conn = constringsql.getConnection();
             conn.Open();
-            string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
+            string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH]," +
+                " NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
             SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
             DataTable dtDanhSach = new DataTable();
             da.Fill(dtDanhSach);
@@ -59,16 +61,17 @@ namespace quanlyhocsinh
             int selectRow = dataGridViewHocSinh.SelectedRows[0].Index;
             if (selectRow >= 0 && selectRow < dataGridViewHocSinh.RowCount - 1)
             {
-                string mahs = dataGridViewHocSinh.Rows[selectRow].Cells[0].Value.ToString();
-                FormSuaGV formSuahs = new FormSuaGV(mahs, selectRow, dataGridViewHocSinh);
-                formSuahs.ShowDialog();
+                string mahocsinh = dataGridViewHocSinh.Rows[selectRow].Cells[0].Value.ToString();
+                FormSuaHS FSuaHS = new FormSuaHS(mahocsinh, selectRow, dataGridViewHocSinh);
+                FSuaHS.ShowDialog();
             }
         }
 
         private void Bt_xoahs_Click(object sender, EventArgs e)
         {
             SqlConnection conn = constringsql.getConnection();
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tenhocsinh, "Xóa học sinh", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn xóa học sinh : " + tenhocsinh, "Xóa học sinh", 
+                                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
                 conn.Open();
@@ -76,7 +79,8 @@ namespace quanlyhocsinh
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 sda.SelectCommand.ExecuteNonQuery();
 
-                string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
+                string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], " +
+                    "NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
                 dtDanhSach = new DataTable();
                 da.Fill(dtDanhSach);
