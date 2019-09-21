@@ -129,6 +129,129 @@ namespace QuanLyKho
             dataGridView1.DataSource = data;  //gán giá trị vào datagridview
         }
 
+        private void btthem_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "insert";
+        }
+
+        private void btsua_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "update";
+            binding();
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "delete";
+            binding();
+        }
+
+        private void btluu_Click(object sender, EventArgs e)
+        {
+            if (validate())  //kiểm tra trường k rỗng thì:
+            {
+
+
+
+                if (state == "insert")  //sự kiện nút thêm
+                {
+                    //MessageBox.Show("INSERT INTO PhieuNhap(MaPhieuNhap, TenNCC, TenMH, SoLuongNhap,GiaNhap,TienDaThanhToan,NgayThanhToan) VALUES (" + Convert.ToInt32(txtMaPhieuNhap.Text) + ",N'" + txtTenNCC.Text + "',N'" + txtTenMH.Text + "'," + Convert.ToInt32(txtSoLuongNhap.Text) + "," + Convert.ToInt32(txtGiaNhap.Text) + "," + Convert.ToInt32(txtTienDaThanhToan.Text) + ",'"+txtNgayThanhToan.Value.ToShortDateString().ToString() +"')");
+                    string sql = @"INSERT INTO [QLKhoHang].[dbo].[PhieuNhap]
+                    ([NgayNhap]
+                    ,[NguoiNhap]
+                    ,[MaNCC]
+                    ,[SoLuongNhap]
+                    ,[MaHH])
+                    VALUES
+                    ('" + fieldNgayNhap.Value.ToString("yyyy/MM/dd") + @"'
+                    ,N'" + fieldNguoiNhap.Text + @"'
+                    ," + fieldMaNCC.SelectedValue + @"
+                    ," + Convert.ToInt64(fieldSoLuong.Text) + @"
+                    ," + fieldMAHH.SelectedValue + @"
+                    )";
+
+
+                    if (Database.Query(sql) != -1)  //hàm thực hiện lênh sql, trả về giá trị là -1 khi không có dòng nào bị ảnh hưởng (k có dòng nào thay đổi)
+                    {
+                        MessageBox.Show("Thêm thành công !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Có lỗi trong quá trình thêm");
+                    }
+                }
+                //end add
+                else if (state == "update")  //tương tự nút thêm
+                {
+                    string sql = @"UPDATE [QLKhoHang].[dbo].[PhieuNhap]
+                    SET [NgayNhap] = '" + fieldNgayNhap.Value.ToString("yyyy/MM/dd") + @"'
+                    ,[NguoiNhap] = N'" + fieldNguoiNhap.Text + @"'
+                    ,[MaNCC] = " + fieldMaNCC.SelectedValue + @"
+                    ,[SoLuongNhap] = " + Convert.ToInt64(fieldSoLuong.Text) + @"
+                    ,[MaHH] = " + fieldMAHH.SelectedValue + @"
+                    WHERE MaPNK=" + Convert.ToInt64(fieldMaPNK.Text);
+
+
+
+                    if (Database.Query(sql) != -1)
+                    {
+                        MessageBox.Show("Sửa thành công !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Có lỗi trong quá trình Sửa");
+                    }
+
+                }
+
+                hien();
+                dongtxt();
+                mobtn();
+            }//end validate
+            if (state == "delete" && validate()) //tương tự nút thêm
+            {
+                string sql = @"DELETE FROM [QLKhoHang].[dbo].[PhieuNhap]
+                WHERE MaPNK=" + Convert.ToInt64(fieldMaPNK.Text);
+
+
+                if (Database.Query(sql) != -1)
+                {
+                    MessageBox.Show("Xóa thành công !");
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi trong quá trình Xóa");
+                }
+
+                hien();
+                dongtxt();
+                mobtn();
+            }
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Database.ExportExcel(dataGridView1);
+        }
+
 
     }
 }

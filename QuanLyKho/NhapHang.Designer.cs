@@ -90,6 +90,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "In";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnthoat
             // 
@@ -99,6 +100,7 @@
             this.btnthoat.TabIndex = 13;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnhuy
             // 
@@ -108,6 +110,7 @@
             this.btnhuy.TabIndex = 14;
             this.btnhuy.Text = "Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // btluu
             // 
@@ -117,6 +120,7 @@
             this.btluu.TabIndex = 15;
             this.btluu.Text = "Lưu";
             this.btluu.UseVisualStyleBackColor = true;
+            this.btluu.Click += new System.EventHandler(this.btluu_Click);
             // 
             // btxoa
             // 
@@ -126,6 +130,7 @@
             this.btxoa.TabIndex = 12;
             this.btxoa.Text = "Xóa";
             this.btxoa.UseVisualStyleBackColor = true;
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // btsua
             // 
@@ -135,6 +140,7 @@
             this.btsua.TabIndex = 11;
             this.btsua.Text = "Sửa";
             this.btsua.UseVisualStyleBackColor = true;
+            this.btsua.Click += new System.EventHandler(this.btsua_Click);
             // 
             // btthem
             // 
@@ -144,6 +150,7 @@
             this.btthem.TabIndex = 10;
             this.btthem.Text = "Thêm";
             this.btthem.UseVisualStyleBackColor = true;
+            this.btthem.Click += new System.EventHandler(this.btthem_Click);
             // 
             // groupBox2
             // 
