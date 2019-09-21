@@ -33,7 +33,7 @@ namespace QuanLyKho
             }
             return connect; //trả về biến kết nối
         }
-
+        
 
         //hàm lấy tất cả dữ liệu từ 1 hoặc nhiều bảng trong CSDL trả về là dữ liệu dạng bảng (DataTable)
         public static DataTable getTable(string sql)

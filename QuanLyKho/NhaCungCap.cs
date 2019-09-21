@@ -231,6 +231,41 @@ namespace QuanLyKho
             }
         }
 
+        private void btsua_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "update";
+            binding();
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "delete";
+            binding();
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
+        }
+
+        private void btthem_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "insert";
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
 
     }
 }

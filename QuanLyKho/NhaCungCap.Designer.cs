@@ -174,6 +174,7 @@
             this.btnthoat.TabIndex = 7;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // btnhuy
             // 
@@ -183,6 +184,7 @@
             this.btnhuy.TabIndex = 8;
             this.btnhuy.Text = "Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // btluu
             // 
@@ -202,6 +204,7 @@
             this.btxoa.TabIndex = 6;
             this.btxoa.Text = "Xóa";
             this.btxoa.UseVisualStyleBackColor = true;
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // btsua
             // 
@@ -211,6 +214,7 @@
             this.btsua.TabIndex = 5;
             this.btsua.Text = "Sửa";
             this.btsua.UseVisualStyleBackColor = true;
+            this.btsua.Click += new System.EventHandler(this.btsua_Click);
             // 
             // btthem
             // 
@@ -220,6 +224,7 @@
             this.btthem.TabIndex = 4;
             this.btthem.Text = "Thêm";
             this.btthem.UseVisualStyleBackColor = true;
+            this.btthem.Click += new System.EventHandler(this.btthem_Click);
             // 
             // panel1
             // 
