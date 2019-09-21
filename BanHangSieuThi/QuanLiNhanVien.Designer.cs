@@ -1580,7 +1580,7 @@
             // listView4
             // 
             this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(694, 323);
+            this.listView4.Location = new System.Drawing.Point(585, 69);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(197, 161);
             this.listView4.TabIndex = 9;
