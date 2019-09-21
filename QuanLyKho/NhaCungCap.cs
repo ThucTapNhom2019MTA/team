@@ -76,5 +76,80 @@ namespace QuanLyKho
 
             dataGridView1.DataSource = data;  //gán giá trị vào datagridview
         }
+
+        private void NhaCungCap_Load(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
+            hien();
+        }
+
+        private bool validate()
+        {
+            if (fieldDiaChi.Text == "" || fieldEmail.Text == "" || fieldSDT.Text == "" || fieldTenNCC.Text == "")
+            {
+                MessageBox.Show("Bạn phải điền đầy đủ các trường !");
+                return false;
+            }
+            return true;
+        }
+
+        private void hien()
+        {
+            string sql = @"SELECT * FROM DMNhaCungCap";
+
+            dataGridView1.DataSource = DbHelper.getTable(sql);
+        }
+
+        private void binding()
+        {
+            fieldDiaChi.DataBindings.Clear();
+            fieldEmail.DataBindings.Clear();
+            fieldMaNCC.DataBindings.Clear();
+            fieldSDT.DataBindings.Clear();
+            fieldTenNCC.DataBindings.Clear();
+
+            fieldDiaChi.DataBindings.Add("Text", dataGridView1.DataSource, "diachincc");
+            fieldEmail.DataBindings.Add("Text", dataGridView1.DataSource, "emailncc");
+            fieldMaNCC.DataBindings.Add("Text", dataGridView1.DataSource, "mancc");
+            fieldSDT.DataBindings.Add("Text", dataGridView1.DataSource, "sdtncc");
+            fieldTenNCC.DataBindings.Add("Text", dataGridView1.DataSource, "tenncc");
+        }
+        private void motxt()
+        {
+            fieldTenNCC.Enabled = true;
+            fieldSDT.Enabled = true;
+            fieldEmail.Enabled = true;
+            fieldDiaChi.Enabled = true;
+        }
+
+        private void dongtxt()
+        {
+            fieldMaNCC.Enabled = false;
+            fieldTenNCC.Enabled = false;
+            fieldSDT.Enabled = false;
+            fieldEmail.Enabled = false;
+            fieldDiaChi.Enabled = false;
+        }
+
+        private void mobtn()
+        {
+            btluu.Enabled = false;
+            btnhuy.Enabled = false;
+            btthem.Enabled = true;
+            btsua.Enabled = true;
+            btxoa.Enabled = true;
+        }
+
+        private void dongbtn()
+        {
+            btluu.Enabled = true;
+            btnhuy.Enabled = true;
+            btthem.Enabled = false;
+            btsua.Enabled = false;
+            btxoa.Enabled = false;
+        }
+
+        string state = "";
     }
 }

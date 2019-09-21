@@ -333,6 +333,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "NhaCungCap";
             this.Text = "NhaCungCap";
+            this.Load += new System.EventHandler(this.NhaCungCap_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
