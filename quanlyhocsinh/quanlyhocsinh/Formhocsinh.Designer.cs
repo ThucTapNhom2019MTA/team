@@ -53,9 +53,9 @@
             this.bt_timkiemhs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_timkiemhs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_timkiemhs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bt_timkiemhs.Location = new System.Drawing.Point(71, 263);
+            this.bt_timkiemhs.Location = new System.Drawing.Point(60, 263);
             this.bt_timkiemhs.Name = "bt_timkiemhs";
-            this.bt_timkiemhs.Size = new System.Drawing.Size(98, 37);
+            this.bt_timkiemhs.Size = new System.Drawing.Size(109, 37);
             this.bt_timkiemhs.TabIndex = 2;
             this.bt_timkiemhs.Text = "Tìm Kiếm";
             this.bt_timkiemhs.UseVisualStyleBackColor = false;
@@ -66,9 +66,9 @@
             this.bt_xoahs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_xoahs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoahs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bt_xoahs.Location = new System.Drawing.Point(71, 181);
+            this.bt_xoahs.Location = new System.Drawing.Point(60, 181);
             this.bt_xoahs.Name = "bt_xoahs";
-            this.bt_xoahs.Size = new System.Drawing.Size(98, 37);
+            this.bt_xoahs.Size = new System.Drawing.Size(109, 37);
             this.bt_xoahs.TabIndex = 3;
             this.bt_xoahs.Text = "Xóa";
             this.bt_xoahs.UseVisualStyleBackColor = false;
@@ -79,9 +79,9 @@
             this.bt_suahs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_suahs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_suahs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bt_suahs.Location = new System.Drawing.Point(71, 106);
+            this.bt_suahs.Location = new System.Drawing.Point(60, 106);
             this.bt_suahs.Name = "bt_suahs";
-            this.bt_suahs.Size = new System.Drawing.Size(98, 37);
+            this.bt_suahs.Size = new System.Drawing.Size(109, 37);
             this.bt_suahs.TabIndex = 4;
             this.bt_suahs.Text = "Sửa";
             this.bt_suahs.UseVisualStyleBackColor = false;
@@ -92,9 +92,9 @@
             this.bt_themhs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_themhs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_themhs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bt_themhs.Location = new System.Drawing.Point(71, 40);
+            this.bt_themhs.Location = new System.Drawing.Point(60, 40);
             this.bt_themhs.Name = "bt_themhs";
-            this.bt_themhs.Size = new System.Drawing.Size(98, 37);
+            this.bt_themhs.Size = new System.Drawing.Size(109, 37);
             this.bt_themhs.TabIndex = 5;
             this.bt_themhs.Text = "Thêm";
             this.bt_themhs.UseVisualStyleBackColor = false;
@@ -104,10 +104,10 @@
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.Location = new System.Drawing.Point(71, 342);
+            this.button1.Location = new System.Drawing.Point(60, 342);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 36);
+            this.button1.Size = new System.Drawing.Size(109, 36);
             this.button1.TabIndex = 7;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;

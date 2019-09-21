@@ -60,7 +60,7 @@ namespace quanlyhocsinh
             if (selectRow >= 0 && selectRow < dataGridViewHocSinh.RowCount - 1)
             {
                 string mahs = dataGridViewHocSinh.Rows[selectRow].Cells[0].Value.ToString();
-                FormSuaGV formSuahs = new FormSuaGV(mahs, selectRow, dataGridViewHocSinh);
+                FormSuaHS formSuahs = new FormSuaHS(mahs, selectRow, dataGridViewHocSinh);
                 formSuahs.ShowDialog();
             }
         }

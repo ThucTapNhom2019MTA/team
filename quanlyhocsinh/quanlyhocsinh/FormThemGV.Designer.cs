@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.bt_back = new System.Windows.Forms.Button();
-            this.bt_themHS = new System.Windows.Forms.Button();
+            this.bt_themGV = new System.Windows.Forms.Button();
             this.txt_noisinh = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_gioitinh = new System.Windows.Forms.TextBox();
@@ -57,16 +57,16 @@
             this.bt_back.UseVisualStyleBackColor = true;
             this.bt_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
-            // bt_themHS
+            // bt_themGV
             // 
-            this.bt_themHS.ForeColor = System.Drawing.Color.Black;
-            this.bt_themHS.Location = new System.Drawing.Point(318, 412);
-            this.bt_themHS.Name = "bt_themHS";
-            this.bt_themHS.Size = new System.Drawing.Size(125, 53);
-            this.bt_themHS.TabIndex = 47;
-            this.bt_themHS.Text = "Thêm";
-            this.bt_themHS.UseVisualStyleBackColor = true;
-            this.bt_themHS.Click += new System.EventHandler(this.Bt_themHS_Click);
+            this.bt_themGV.ForeColor = System.Drawing.Color.Black;
+            this.bt_themGV.Location = new System.Drawing.Point(318, 412);
+            this.bt_themGV.Name = "bt_themGV";
+            this.bt_themGV.Size = new System.Drawing.Size(125, 53);
+            this.bt_themGV.TabIndex = 47;
+            this.bt_themGV.Text = "Thêm";
+            this.bt_themGV.UseVisualStyleBackColor = true;
+            this.bt_themGV.Click += new System.EventHandler(this.Bt_themGV_Click);
             // 
             // txt_noisinh
             // 
@@ -201,7 +201,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 495);
             this.Controls.Add(this.bt_back);
-            this.Controls.Add(this.bt_themHS);
+            this.Controls.Add(this.bt_themGV);
             this.Controls.Add(this.txt_noisinh);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_gioitinh);
@@ -226,7 +226,7 @@
         #endregion
 
         private System.Windows.Forms.Button bt_back;
-        private System.Windows.Forms.Button bt_themHS;
+        private System.Windows.Forms.Button bt_themGV;
         private System.Windows.Forms.TextBox txt_noisinh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_gioitinh;
