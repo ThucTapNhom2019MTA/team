@@ -192,6 +192,7 @@
             this.btluu.TabIndex = 9;
             this.btluu.Text = "Lưu";
             this.btluu.UseVisualStyleBackColor = true;
+            this.btluu.Click += new System.EventHandler(this.btluu_Click);
             // 
             // btxoa
             // 
