@@ -197,6 +197,12 @@
     <Compile Include="GUI\frm_TT.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="GUI\frm_TTDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TTTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
