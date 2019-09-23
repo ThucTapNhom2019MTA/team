@@ -65,6 +65,7 @@
             this.Controls.Add(this.pb_gv);
             this.Name = "Form1";
             this.Text = "QUẢN LÝ HỌC SINH";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_gv)).EndInit();
             this.ResumeLayout(false);

@@ -36,5 +36,10 @@ namespace quanlyhocsinh
             Formhocsinh fhs = new Formhocsinh();
             fhs.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

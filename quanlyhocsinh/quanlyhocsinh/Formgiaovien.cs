@@ -21,6 +21,20 @@ namespace quanlyhocsinh
             InitializeComponent();
             dataGridViewGiaoVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
+        public void ReloadForm(SqlConnection conn)
+        {
+            conn = constringsql.getConnection();
+            conn.Open();
+            string strQueryDanhSach = "Select MaNhanVien as Mã, HoTen as [Họ và tên], " +
+                "NgaySinh as [Ngày Sinh], DiaChi as [Địa Chỉ], SoDienThoai as [Số Điện Thoại], Email, " +
+                "Luong as [Lương], TenChucVu AS [Tên chức vụ] from NhanVien, dbo.ChucVu " +
+                "WHERE ChucVu.MaChucVu = NhanVien.MaChucVu";
+            SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
+            dtDanhSach = new DataTable();
+            da.Fill(dtDanhSach);
+            dataGridViewGiaoVien.DataSource = dtDanhSach;
+            conn.Close();
+        }
 
         private void Formgiaovien_Load(object sender, EventArgs e)
         {
