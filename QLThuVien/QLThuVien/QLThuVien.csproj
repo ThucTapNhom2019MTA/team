@@ -119,6 +119,9 @@
   <ItemGroup>
     <Compile Include="AddTabControl\TabAdd.cs" />
     <Compile Include="BUSLayer\BUS.cs" />
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataAccessLayer\DATA.cs" />
     <Compile Include="DataAccessLayer\DataProvider.cs" />
     <Compile Include="Form Info\frm_TTTS.cs">
@@ -130,6 +133,9 @@
     </Compile>
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CS.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_CS.cs">
       <SubType>UserControl</SubType>
