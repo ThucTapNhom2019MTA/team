@@ -72,5 +72,19 @@ namespace BanHangSieuThi
             MessageBox.Show("Xóa thành công", "Thông báo");
             conn.Close();
         }
+
+        private void Connect()
+        {
+            SqlConnection conn = ConnectDB.getConnection();
+            // xoa tai khoan
+            conn.Open();
+            string query = "DELETE FROM dbo.ACOUNT WHERE UserName=@UserName AND Password= @Password ";
+            SqlCommand comm = new SqlCommand(query, conn);
+            comm.Parameters.AddWithValue("@UserName", txbXoaTenTK.Text);
+            comm.Parameters.AddWithValue("@Password", txbXoaMK.Text);
+            comm.ExecuteNonQuery();
+            MessageBox.Show("Xóa thành công", "Thông báo");
+            conn.Close();
+        }
     }
 }
