@@ -152,6 +152,7 @@ namespace BanHangSieuThi
         }
         public void alert(string message,string caption)
         {
+            // alert when need to use
             MessageBox.Show(message, caption);
         }
     }
