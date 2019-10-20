@@ -196,6 +196,7 @@
             this.btnhuy.TabIndex = 3;
             this.btnhuy.Text = "Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // btluu
             // 
@@ -205,6 +206,7 @@
             this.btluu.TabIndex = 3;
             this.btluu.Text = "Lưu";
             this.btluu.UseVisualStyleBackColor = true;
+            this.btluu.Click += new System.EventHandler(this.btluu_Click);
             // 
             // btxoa
             // 

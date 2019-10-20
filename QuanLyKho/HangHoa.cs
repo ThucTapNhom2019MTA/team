@@ -41,7 +41,10 @@ namespace QuanLyKho
 
         private void btsua_Click(object sender, EventArgs e)
         {
-
+            motxt();
+            dongbtn();
+            state = "update";
+            binding();
         }
 
         private void motxt()
@@ -132,6 +135,88 @@ namespace QuanLyKho
             dongbtn();
             state = "delete";
             binding();
+        }
+
+        private void btluu_Click(object sender, EventArgs e)
+        {
+            if (validate())
+            {
+                if (state == "insert")
+                {
+                    //MessageBox.Show("INSERT INTO PhieuNhap(MaPhieuNhap, TenNCC, TenMH, SoLuongNhap,GiaNhap,TienDaThanhToan,NgayThanhToan) VALUES (" + Convert.ToInt32(txtMaPhieuNhap.Text) + ",N'" + txtTenNCC.Text + "',N'" + txtTenMH.Text + "'," + Convert.ToInt32(txtSoLuongNhap.Text) + "," + Convert.ToInt32(txtGiaNhap.Text) + "," + Convert.ToInt32(txtTienDaThanhToan.Text) + ",'"+txtNgayThanhToan.Value.ToShortDateString().ToString() +"')");
+                    string sql = @"INSERT INTO [QLKhoHang].[dbo].[DMHangHoa]
+                    ([tenhh]
+                    ,[soluong]
+                    ,[donvitinh]
+                    ,[ngaynhap])
+                    VALUES
+                    (N'" + fieldTenHH.Text + @"'
+                    ," + Convert.ToInt64(fieldSL.Text) + @"
+                    ,N'" + fieldDonViTinh.Text + @"'
+                    ,'" + fieldNgayNhap.Value.ToString("yyyy/MM/dd") + @"'
+                    )";
+
+                    if (Database.Query(sql) != -1)
+                    {
+                        MessageBox.Show("Thêm thành công !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Có lỗi trong quá trình thêm");
+                    }
+                }
+                //end add
+                else if (state == "update")
+                {
+                    string sql = @"UPDATE [QLKhoHang].[dbo].[DMHangHoa]
+                    SET [tenhh] = N'" + fieldTenHH.Text + @"'
+                    ,[soluong] = " + Convert.ToInt64(fieldSL.Text) + @"
+                    ,[donvitinh] = N'" + fieldDonViTinh.Text + @"'
+                    ,[ngaynhap] = '" + fieldNgayNhap.Value.ToString("yyyy/MM/dd") + @"'
+                    WHERE mahh = " + Convert.ToInt64(fieldMaHH.Text);
+
+
+
+                    if (Database.Query(sql) != -1)
+                    {
+                        MessageBox.Show("Sửa thành công !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Có lỗi trong quá trình Sửa");
+                    }
+
+                }
+
+                hien();
+                dongtxt();
+                mobtn();
+            }//end validate
+            if (state == "delete" && validate())
+            {
+                string sql = @"DELETE [QLKhoHang].[dbo].[DMHangHoa]
+                WHERE mahh = " + Convert.ToInt64(fieldMaHH.Text);
+
+
+                if (Database.Query(sql) != -1)
+                {
+                    MessageBox.Show("Xóa thành công !");
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi trong quá trình Xóa");
+                }
+
+                hien();
+                dongtxt();
+                mobtn();
+            }
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
         }
     }
 }
