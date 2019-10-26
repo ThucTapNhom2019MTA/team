@@ -74,5 +74,10 @@ namespace QuanLyKho
                 }
             }
         }
+
+        private void QuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
+            hien();
+        }
     }
 }
