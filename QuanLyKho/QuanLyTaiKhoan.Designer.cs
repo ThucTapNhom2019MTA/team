@@ -73,6 +73,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -206,6 +207,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "QuanLyTaiKhoan";
             this.Text = "QuanLyTaiKhoan";
+            this.Load += new System.EventHandler(this.QuanLyTaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
