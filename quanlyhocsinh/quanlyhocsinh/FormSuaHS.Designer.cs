@@ -29,38 +29,36 @@
         private void InitializeComponent()
         {
             this.bt_luu = new System.Windows.Forms.Button();
-            this.txt_noisinh = new System.Windows.Forms.TextBox();
+            this.txt_quequan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_gioitinh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txt_chuyenmon = new System.Windows.Forms.TextBox();
             this.txt_hoten = new System.Windows.Forms.TextBox();
-            this.txt_sdt = new System.Windows.Forms.TextBox();
-            this.txt_magv = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txt_mahs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_luu
             // 
-            this.bt_luu.Location = new System.Drawing.Point(449, 441);
+            this.bt_luu.Location = new System.Drawing.Point(360, 441);
             this.bt_luu.Name = "bt_luu";
             this.bt_luu.Size = new System.Drawing.Size(104, 47);
             this.bt_luu.TabIndex = 90;
             this.bt_luu.Text = "Lưu";
             this.bt_luu.UseVisualStyleBackColor = true;
+            this.bt_luu.Click += new System.EventHandler(this.Bt_luu_Click);
             // 
-            // txt_noisinh
+            // txt_quequan
             // 
-            this.txt_noisinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_noisinh.Location = new System.Drawing.Point(166, 272);
-            this.txt_noisinh.Name = "txt_noisinh";
-            this.txt_noisinh.Size = new System.Drawing.Size(294, 30);
-            this.txt_noisinh.TabIndex = 89;
+            this.txt_quequan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_quequan.Location = new System.Drawing.Point(166, 272);
+            this.txt_quequan.Name = "txt_quequan";
+            this.txt_quequan.Size = new System.Drawing.Size(294, 30);
+            this.txt_quequan.TabIndex = 89;
             // 
             // label5
             // 
@@ -68,9 +66,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(162, 228);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 22);
+            this.label5.Size = new System.Drawing.Size(84, 22);
             this.label5.TabIndex = 88;
-            this.label5.Text = "Nơi sinh";
+            this.label5.Text = "Quê quán";
             // 
             // txt_gioitinh
             // 
@@ -99,14 +97,6 @@
             this.dateTimePicker1.TabIndex = 85;
             this.dateTimePicker1.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
-            // txt_chuyenmon
-            // 
-            this.txt_chuyenmon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_chuyenmon.Location = new System.Drawing.Point(569, 266);
-            this.txt_chuyenmon.Name = "txt_chuyenmon";
-            this.txt_chuyenmon.Size = new System.Drawing.Size(298, 30);
-            this.txt_chuyenmon.TabIndex = 83;
-            // 
             // txt_hoten
             // 
             this.txt_hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,31 +105,13 @@
             this.txt_hoten.Size = new System.Drawing.Size(298, 30);
             this.txt_hoten.TabIndex = 84;
             // 
-            // txt_sdt
+            // txt_mahs
             // 
-            this.txt_sdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sdt.Location = new System.Drawing.Point(166, 373);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(294, 30);
-            this.txt_sdt.TabIndex = 81;
-            // 
-            // txt_magv
-            // 
-            this.txt_magv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_magv.Location = new System.Drawing.Point(166, 80);
-            this.txt_magv.Name = "txt_magv";
-            this.txt_magv.Size = new System.Drawing.Size(294, 30);
-            this.txt_magv.TabIndex = 82;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(565, 228);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 22);
-            this.label7.TabIndex = 78;
-            this.label7.Text = "Chuyên môn";
+            this.txt_mahs.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mahs.Location = new System.Drawing.Point(166, 80);
+            this.txt_mahs.Name = "txt_mahs";
+            this.txt_mahs.Size = new System.Drawing.Size(294, 30);
+            this.txt_mahs.TabIndex = 82;
             // 
             // label3
             // 
@@ -150,16 +122,6 @@
             this.label3.Size = new System.Drawing.Size(88, 22);
             this.label3.TabIndex = 80;
             this.label3.Text = "Ngày sinh";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(162, 335);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 22);
-            this.label6.TabIndex = 76;
-            this.label6.Text = "Số điện thoại";
             // 
             // label2
             // 
@@ -181,24 +143,31 @@
             this.label1.TabIndex = 77;
             this.label1.Text = "Mã học sinh";
             // 
+            // bt_back
+            // 
+            this.bt_back.Location = new System.Drawing.Point(569, 441);
+            this.bt_back.Name = "bt_back";
+            this.bt_back.Size = new System.Drawing.Size(95, 47);
+            this.bt_back.TabIndex = 91;
+            this.bt_back.Text = "back";
+            this.bt_back.UseVisualStyleBackColor = true;
+            this.bt_back.Click += new System.EventHandler(this.Bt_back_Click);
+            // 
             // FormSuaHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 530);
+            this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_luu);
-            this.Controls.Add(this.txt_noisinh);
+            this.Controls.Add(this.txt_quequan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_gioitinh);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.txt_chuyenmon);
             this.Controls.Add(this.txt_hoten);
-            this.Controls.Add(this.txt_sdt);
-            this.Controls.Add(this.txt_magv);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_mahs);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormSuaHS";
@@ -211,19 +180,16 @@
         #endregion
 
         private System.Windows.Forms.Button bt_luu;
-        private System.Windows.Forms.TextBox txt_noisinh;
+        private System.Windows.Forms.TextBox txt_quequan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_gioitinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox txt_chuyenmon;
         private System.Windows.Forms.TextBox txt_hoten;
-        private System.Windows.Forms.TextBox txt_sdt;
-        private System.Windows.Forms.TextBox txt_magv;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_mahs;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bt_back;
     }
 }

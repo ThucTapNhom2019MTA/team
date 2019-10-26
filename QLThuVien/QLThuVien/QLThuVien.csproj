@@ -134,7 +134,63 @@
     <Compile Include="GUI\frm_CS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\frm_CS.Designer.cs" />
+    <Compile Include="GUI\frm_CS.designer.cs">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_DG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DG.designer.cs">
+      <DependentUpon>frm_DG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_GT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_GT.designer.cs">
+      <DependentUpon>frm_GT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_KS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_KS.designer.cs">
+      <DependentUpon>frm_KS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_NCC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_NCC.designer.cs">
+      <DependentUpon>frm_NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_NXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_NXB.designer.cs">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PM.designer.cs">
+      <DependentUpon>frm_PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PN.designer.cs">
+      <DependentUpon>frm_PN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TG.designer.cs">
+      <DependentUpon>frm_TG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TK.designer.cs">
+      <DependentUpon>frm_TK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
@@ -150,7 +206,36 @@
     <EmbeddedResource Include="frmHome.vi.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_CS.resx" />
+    <EmbeddedResource Include="GUI\frm_CS.resx">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DG.resx">
+      <DependentUpon>frm_DG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_GT.resx">
+      <DependentUpon>frm_GT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_KS.resx">
+      <DependentUpon>frm_KS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_NCC.resx">
+      <DependentUpon>frm_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_NXB.resx">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PM.resx">
+      <DependentUpon>frm_PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PN.resx">
+      <DependentUpon>frm_PN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TG.resx">
+      <DependentUpon>frm_TG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TK.resx">
+      <DependentUpon>frm_TK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
