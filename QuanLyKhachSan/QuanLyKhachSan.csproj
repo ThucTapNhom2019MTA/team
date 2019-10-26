@@ -190,6 +190,7 @@
     <Content Include="Resources\login-button-png-3.png" />
     <Content Include="Resources\pinkbutt.png" />
     <Content Include="Resources\yeallowbutton.jpg" />
+    <Content Include="sql\quanlykhachsan.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
