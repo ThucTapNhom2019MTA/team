@@ -82,24 +82,7 @@ namespace QuanLyKho
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (validate())
-            {
-                string sql = @"UPDATE [QLKhoHang].[dbo].[TaiKhoanNV]
-                               SET [TenTK] = '" + fieldTenDN.Text + @"'
-                                  ,[Role] = 'N'
-                                  ,[MKTK] = '" + fieldMatKhau.Text + @"'
-                             WHERE MaTK = " + Convert.ToInt64(fieldMaTK.Text);
-
-                if (Database.Query(sql) == -1)
-                {
-                    MessageBox.Show("Có lỗi trong quá trình sửa !");
-                }
-                else
-                {
-                    MessageBox.Show("Sửa thành công !");
-                    hien();
-                }
-            }
+            
         }
     }
 }
