@@ -148,6 +148,12 @@ namespace BanHangSieuThi
             txbTongTien.Visible = true;
             btnThem.Visible = false;
             btnInHoaDon.Visible = false;
+            
+        }
+        public void alert(string message,string caption)
+        {
+            // alert when need to use
+            MessageBox.Show(message, caption);
         }
     }
 }

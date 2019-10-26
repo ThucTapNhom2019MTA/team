@@ -30,6 +30,8 @@ namespace QuanLyKhachSan.src
                 GetFileAll("GioiThieuChung.txt");
                 Image img = Image.FromFile(@"khachsan.jpg");
                 pictureBox1.BackgroundImage = img;
+
+
             }
             else if (e.Node.Name == "gtDangNhap")
             {
