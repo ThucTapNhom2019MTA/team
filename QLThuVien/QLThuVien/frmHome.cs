@@ -71,7 +71,7 @@ namespace QLThuVien
         private void btn_DG_ItemClick(object sender, ItemClickEventArgs e)
         {
             TestTab("Thông tin Độc giả", new GUI.frm_DG());
-            
+            //abc
         }
 
         private void btn_NXB_ItemClick(object sender, ItemClickEventArgs e)
