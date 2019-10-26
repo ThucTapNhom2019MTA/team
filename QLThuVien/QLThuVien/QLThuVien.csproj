@@ -122,6 +122,9 @@
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DangNhap.designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataAccessLayer\DATA.cs" />
     <Compile Include="DataAccessLayer\DataProvider.cs" />
     <Compile Include="Form Info\frm_TTTS.cs">
@@ -133,9 +136,6 @@
     </Compile>
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_CS.cs">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_CS.cs">
       <SubType>UserControl</SubType>
@@ -200,17 +200,45 @@
     <Compile Include="GUI\frm_TS.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="GUI\frm_TS.designer.cs">
+      <DependentUpon>frm_TS.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TT.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TT.designer.cs">
+      <DependentUpon>frm_TT.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_TTDG.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUI\frm_TTDG.designer.cs">
+      <DependentUpon>frm_TTDG.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TTTT.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUI\frm_TTTT.designer.cs">
+      <DependentUpon>frm_TTTT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObject\ChiTietMuon.cs" />
+    <Compile Include="ValueObject\ChiTietNhap.cs" />
+    <Compile Include="ValueObject\CuonSach.cs" />
+    <Compile Include="ValueObject\DocGia.cs" />
+    <Compile Include="ValueObject\KeSach.cs" />
+    <Compile Include="ValueObject\NCC.cs" />
+    <Compile Include="ValueObject\NXB.cs" />
+    <Compile Include="ValueObject\PhieuMuonTra.cs" />
+    <Compile Include="ValueObject\PhieuNhap.cs" />
+    <Compile Include="ValueObject\TacGia.cs" />
+    <Compile Include="ValueObject\ThuThu.cs" />
+    <Compile Include="ValueObject\TuaSach.cs" />
+    <Compile Include="ValueObject\Viet.cs" />
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Info\frm_TTTS.resx" />
     <EmbeddedResource Include="frmHome.dje.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -253,6 +281,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TK.resx">
       <DependentUpon>frm_TK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TS.resx">
+      <DependentUpon>frm_TS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TT.resx">
+      <DependentUpon>frm_TT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TTDG.resx">
+      <DependentUpon>frm_TTDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TTTT.resx">
+      <DependentUpon>frm_TTTT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -686,9 +726,7 @@
   <ItemGroup>
     <None Include="Resources\user2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValueObject\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
