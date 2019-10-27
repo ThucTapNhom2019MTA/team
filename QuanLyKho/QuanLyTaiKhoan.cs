@@ -74,5 +74,57 @@ namespace QuanLyKho
                 }
             }
         }
+
+        private void QuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
+            hien();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (validate())
+            {
+                string sql = @"UPDATE [QLKhoHang].[dbo].[TaiKhoanNV]
+                               SET [TenTK] = '" + fieldTenDN.Text + @"'
+                                  ,[Role] = 'N'
+                                  ,[MKTK] = '" + fieldMatKhau.Text + @"'
+                             WHERE MaTK = " + Convert.ToInt64(fieldMaTK.Text);
+
+                if (Database.Query(sql) == -1)
+                {
+                    MessageBox.Show("Có lỗi trong quá trình sửa !");
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thành công !");
+                    hien();
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (validate())
+            {
+                string sql = @"DELETE FROM [QLKhoHang].[dbo].[TaiKhoanNV]
+                             WHERE MaTK = " + Convert.ToInt64(fieldMaTK.Text);
+
+                if (Database.Query(sql) == -1)
+                {
+                    MessageBox.Show("Có lỗi trong quá trình xóa !");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thành công !");
+                    hien();
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
     }
 }

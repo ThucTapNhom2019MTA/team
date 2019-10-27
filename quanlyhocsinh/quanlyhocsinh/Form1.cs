@@ -12,6 +12,7 @@ namespace quanlyhocsinh
 {
     public partial class Form1 : Form
     {
+	// comment
         //kiem tra dang su dung form giao vien hay hocsinh
         public static int chooseGV_Stu = 0;
         // gv =1; hs=2

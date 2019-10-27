@@ -17,6 +17,7 @@ using QLThuVien.DataAccessLayer;
 
 namespace QLThuVien
 {
+    //test
     public partial class DangNhap : DevExpress.XtraEditors.XtraForm
     {
         public DangNhap login;
