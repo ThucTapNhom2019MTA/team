@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lớp_BUS;
+using Lớp_DAL;
+using Lớp_Entites;
 
 namespace QuanLyKho
 {
@@ -15,6 +18,15 @@ namespace QuanLyKho
         public KhachHang()
         {
             InitializeComponent();
+        }
+
+        BUS_tblKhachHang bus = new BUS_tblKhachHang();
+        EC_tblKhachHang ec = new EC_tblKhachHang();
+        bool themmoi;
+
+        void hienthi(string DieuKien)
+        {
+            dataGridView1.DataSource = bus.taobang(DieuKien);
         }
 
         private bool validate()
@@ -198,6 +210,13 @@ namespace QuanLyKho
         {
             this.Close();
             new Form1().Visible = true;
+        }
+
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
+            hien();
         }
     }
 }

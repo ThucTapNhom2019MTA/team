@@ -338,6 +338,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "KhachHang";
             this.Text = "KhachHang";
+            this.Load += new System.EventHandler(this.KhachHang_Load);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
