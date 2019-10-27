@@ -164,24 +164,60 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="help\b5 ChoThuePhong.png" />
-    <Content Include="help\b5 dang nhap.png" />
-    <Content Include="help\b5 DoDungCuaKhachSan.png" />
-    <Content Include="help\b5 DoDungTheoPhong.png" />
-    <Content Include="help\b5 KhachThue.png" />
-    <Content Include="help\b5 main.png" />
-    <Content Include="help\b5 Phong.png" />
-    <Content Include="help\b5 TraPhong.png" />
-    <Content Include="help\GioithieuChung.txt" />
-    <Content Include="help\khachsan.jpg" />
-    <Content Include="help\PhanChoThuePhong.txt" />
-    <Content Include="help\PhanDangNhap.txt" />
-    <Content Include="help\PhanDoDungCuaKhachSan.txt" />
-    <Content Include="help\PhanDoDungTheoPhong.txt" />
-    <Content Include="help\PhanKhachThue.txt" />
-    <Content Include="help\PhanMain.txt" />
-    <Content Include="help\PhanPhong.txt" />
-    <Content Include="help\PhanTraPhong.txt" />
+    <Content Include="help\b5 ChoThuePhong.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 dang nhap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 DoDungCuaKhachSan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 DoDungTheoPhong.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 KhachThue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 main.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 Phong.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\b5 TraPhong.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\GioithieuChung.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\khachsan.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanChoThuePhong.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanDangNhap.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanDoDungCuaKhachSan.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanDoDungTheoPhong.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanKhachThue.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanMain.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanPhong.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\PhanTraPhong.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\1.jpg" />
     <Content Include="Resources\5895d2d1cba9841eabab6077.png" />
     <Content Include="Resources\bluebut.png" />

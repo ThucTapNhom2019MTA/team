@@ -18,7 +18,8 @@ namespace QuanLyKhachSan.src
         }
         private void GetFileAll(string tenfile)
         {
-            StreamReader doc = File.OpenText(tenfile);
+            string path = "help\\" + tenfile;
+            StreamReader doc = File.OpenText( path);
             string s = doc.ReadToEnd();
             txtGioiThieu.Text = s;
         }
@@ -28,7 +29,7 @@ namespace QuanLyKhachSan.src
             if (e.Node.Name == "gtPhanMem")
             {
                 GetFileAll("GioiThieuChung.txt");
-                Image img = Image.FromFile(@"khachsan.jpg");
+                Image img = Image.FromFile(@"help\\khachsan.jpg");
                 pictureBox1.BackgroundImage = img;
 
 
@@ -36,49 +37,49 @@ namespace QuanLyKhachSan.src
             else if (e.Node.Name == "gtDangNhap")
             {
                 GetFileAll("PhanDangNhap.txt");
-                Image img = Image.FromFile(@"b5 dang nhap.png");
+                Image img = Image.FromFile(@"help\\b5 dang nhap.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtManHinhChinh")
             {
                 GetFileAll("PhanMain.txt");
-                Image img = Image.FromFile(@"b5 main.png");
+                Image img = Image.FromFile(@"help\\b5 main.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtPhong")
             {
                 GetFileAll("PhanPhong.txt");
-                Image img = Image.FromFile(@"b5 Phong.png");
+                Image img = Image.FromFile(@"help\\b5 Phong.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtChoThuePhong")
             {
                 GetFileAll("PhanChoThuePhong.txt");
-                Image img = Image.FromFile(@"b5 ChoThuePhong.png");
+                Image img = Image.FromFile(@"help\\b5 ChoThuePhong.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtDoDungCuaKhachSan")
             {
                 GetFileAll("PhanDoDungCuaKhachSan.txt");
-                Image img = Image.FromFile(@"b5 DoDungCuaKhachSan.png");
+                Image img = Image.FromFile(@"help\\b5 DoDungCuaKhachSan.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtDoDungTheoPhong")
             {
                 GetFileAll("PhanDoDungTheoPhong.txt");
-                Image img = Image.FromFile(@"b5 DoDungTheoPhong.png");
+                Image img = Image.FromFile(@"help\\b5 DoDungTheoPhong.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtKhachThue")
             {
                 GetFileAll("PhanKhachThue.txt");
-                Image img = Image.FromFile(@"b5 KhachThue.png");
+                Image img = Image.FromFile(@"help\\b5 KhachThue.png");
                 pictureBox1.BackgroundImage = img;
             }
             else if (e.Node.Name == "gtTraPhong")
             {
                 GetFileAll("PhanTraPhong.txt");
-                Image img = Image.FromFile(@"b5 TraPhong.png");
+                Image img = Image.FromFile(@"help\\b5 TraPhong.png");
                 pictureBox1.BackgroundImage = img;
             }
         }
