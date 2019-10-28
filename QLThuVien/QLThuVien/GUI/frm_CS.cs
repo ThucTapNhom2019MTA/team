@@ -19,6 +19,7 @@ namespace QLThuVien.GUI
     {
         private int currenRowIndex;
         DataTable dt = BUS.Select_CS();
+
         private readonly CuonSach cs;
        
         public frm_CS()
