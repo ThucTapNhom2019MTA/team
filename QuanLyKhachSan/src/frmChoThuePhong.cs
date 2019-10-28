@@ -5,15 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace QuanLyKhachSan.src
 {
     public partial class frmChoThuePhong : Form
     {
+        //khởi tạo
         string MaHD = "";
         BUS_KhachThuePhong kh = new BUS_KhachThuePhong();
         BUS_ThuePhong ThuePhong = new BUS_ThuePhong();
@@ -55,7 +54,7 @@ namespace QuanLyKhachSan.src
             }
             catch
             {
-
+                //return something
             }
         }
 
