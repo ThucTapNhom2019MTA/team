@@ -22,7 +22,7 @@ namespace QuanLyKho
         {
 
         }
-
+        //tim kiem
         private void button1_Click(object sender, EventArgs e)
         {
             string sql = @"SELECT * FROM DMHangHoa";
@@ -37,6 +37,7 @@ namespace QuanLyKho
             }
 
             dataGridView1.DataSource = data;  //gán giá trị vào datagridview
+
         }
 
         private void btsua_Click(object sender, EventArgs e)
