@@ -35,7 +35,7 @@ namespace QuanLyKho
                       PhieuXuat ON DMHangHoa.mahh = PhieuXuat.MaHH INNER JOIN
                       DMKhachHang ON PhieuXuat.MaKH = DMKhachHang.makh";
 
-            dataGridView1.DataSource = DbHelper.getTable(sql);
+            dataGridView1.DataSource = Database.getTable(sql);
         }
 
         private void binding()
@@ -92,5 +92,30 @@ namespace QuanLyKho
         }
 
         string state = "";
+
+        private void XuatHang_Load(object sender, EventArgs e)
+        {
+            string sql = @"SELECT * FROM DMKhachHang";
+
+            fieldMaKH.DataSource = Database.getTable(sql);
+
+            fieldMaKH.DisplayMember = "tenkh";
+
+            fieldMaKH.ValueMember = "makh";
+
+
+            string sql1 = @"SELECT * FROM DMHangHoa";
+
+            fieldMaHH.DataSource = Database.getTable(sql1);
+
+            fieldMaHH.DisplayMember = "tenhh";
+
+            fieldMaHH.ValueMember = "mahh";
+
+
+            mobtn();
+            dongtxt();
+            hien();
+        }
     }
 }

@@ -398,6 +398,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "XuatHang";
             this.Text = "XuatHang";
+            this.Load += new System.EventHandler(this.XuatHang_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
