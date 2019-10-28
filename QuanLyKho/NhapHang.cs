@@ -19,7 +19,7 @@ namespace QuanLyKho
 
         private void NhapHang_Load(object sender, EventArgs e)
         {
-
+            // for something load
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -37,6 +37,7 @@ namespace QuanLyKho
         {   //hàm kiểm tra hợp lệ dữ liệu
             if (fieldMAHH.Text == "" || fieldMaNCC.Text == "" || fieldNgayNhap.Text == "" || fieldNguoiNhap.Text == "" || fieldSoLuong.Text == "")
             {
+                // thông báo lỗi
                 MessageBox.Show("Bạn phải điền đầy đủ các trường !");
                 return false;
             }
@@ -156,9 +157,6 @@ namespace QuanLyKho
         {
             if (validate())  //kiểm tra trường k rỗng thì:
             {
-
-
-
                 if (state == "insert")  //sự kiện nút thêm
                 {
                     //MessageBox.Show("INSERT INTO PhieuNhap(MaPhieuNhap, TenNCC, TenMH, SoLuongNhap,GiaNhap,TienDaThanhToan,NgayThanhToan) VALUES (" + Convert.ToInt32(txtMaPhieuNhap.Text) + ",N'" + txtTenNCC.Text + "',N'" + txtTenMH.Text + "'," + Convert.ToInt32(txtSoLuongNhap.Text) + "," + Convert.ToInt32(txtGiaNhap.Text) + "," + Convert.ToInt32(txtTienDaThanhToan.Text) + ",'"+txtNgayThanhToan.Value.ToShortDateString().ToString() +"')");
