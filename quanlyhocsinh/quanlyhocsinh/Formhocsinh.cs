@@ -78,7 +78,7 @@ namespace quanlyhocsinh
                 string query = "DELETE FROM [dbo].[HOCSINH] WHERE MAHOCSINH = " + "'" + mahocsinh + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 sda.SelectCommand.ExecuteNonQuery();
-
+                //open connect
                 string strQueryDanhSach = "SELECT MAHOCSINH AS [MÃ HỌC SINH], HOTEN AS [HỌ TÊN], GIOITINH AS [GIỚI TÍNH], " +
                     "NGAYSINH AS [NGÀY SINH], NOISINH AS [QUÊ QUÁN] FROM dbo.HOCSINH";
                 SqlDataAdapter da = new SqlDataAdapter(strQueryDanhSach, conn);
