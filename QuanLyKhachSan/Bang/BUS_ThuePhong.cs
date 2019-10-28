@@ -19,11 +19,11 @@ namespace QuanLyKhachSan
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaKH", MaKH);
+
             cmd.Parameters.AddWithValue("@NguoiLap", NguoiLap);
             cmd.Parameters.AddWithValue("@TGMuon", TGMuon);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
-
             return dt;
         }
         public DataTable ThemCTHoaDon(string MaHD, string MaPhong, string MaDV)
@@ -52,6 +52,7 @@ namespace QuanLyKhachSan
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        //them dich vu
         public void ThemDV(string MaHD, string MaPhong, string MaDV)
         {
             try
@@ -64,7 +65,8 @@ namespace QuanLyKhachSan
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
-            catch { }
+            catch {
+            }
         }
     }
 }
