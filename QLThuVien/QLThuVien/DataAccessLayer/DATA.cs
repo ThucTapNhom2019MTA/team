@@ -114,7 +114,7 @@ namespace QLThuVien.DataAccessLayer
             return DataProvider.GetData("Select_NXB");
         }
 
-
+        //Them NXB
         public static int Insert_NXB(NXB a)
         {
             SqlParameter[] para = new SqlParameter[]
@@ -129,7 +129,7 @@ namespace QLThuVien.DataAccessLayer
             return DataProvider.ExecuteNonQuery("Insert_NXB", para);
         }
 
-
+        //Cap nhat NXB
         public static int Update_NXB(NXB a)
         {
             SqlParameter[] para = new SqlParameter[]
