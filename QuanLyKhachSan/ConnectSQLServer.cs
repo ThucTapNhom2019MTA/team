@@ -12,7 +12,7 @@ namespace QuanLyKhachSan
         
         public static SqlConnection getConnection()
         {
-            string connString = @"Data Source= . ;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
+            string connString = @"Data Source=DESKTOP-BBQPTV7\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }
