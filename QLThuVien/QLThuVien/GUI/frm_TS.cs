@@ -113,7 +113,6 @@ namespace QLThuVien.GUI
             txt_MaTS.Text = ""; txt_TenTS.Text = ""; txt_TL.Text = ""; txt_XB.Text = "";
             cmb_TG.Text = ""; txt_SL.Text = ""; txt_ST.Text = ""; cmb_KS.Text = "";
             cmb_NXB.Text = "";
-
         }
 
         private void btn_update_Click(object sender, EventArgs e)
