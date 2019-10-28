@@ -112,6 +112,7 @@ namespace QLThuVien.BUSLayer
         {
             return DAO.Select_TS();
         }
+        //them sach
         public static int Insert_TS(TuaSach a)
         {
             return DAO.Insert_TS(a);

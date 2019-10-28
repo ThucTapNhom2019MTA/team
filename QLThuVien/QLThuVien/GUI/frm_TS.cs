@@ -122,14 +122,13 @@ namespace QLThuVien.GUI
             update = true; btn_cancel.Enabled = true;
             insert = false;
         }
-
         private void btn_save_Click(object sender, EventArgs e)
         {
             TuaSach ts2 = new TuaSach();
             ts2.MaTS = txt_MaTS.Text; ts2.TenTS = txt_TenTS.Text;
-            ts2.NamXB = int.Parse( txt_XB.Text) ; ts2.TheLoai = txt_TL.Text;
+            ts2.NamXB = int.Parse(txt_XB.Text); ts2.TheLoai = txt_TL.Text;
             ts2.MaNXB = cmb_NXB.SelectedValue.ToString(); ts2.MaKe = cmb_KS.Text;
-            ts2.SoLuong=txt_SL.Text;
+            ts2.SoLuong = txt_SL.Text;
             Viet v = new Viet();
             v.MaTS = txt_MaTS.Text;
             v.MaTG = cmb_TG.SelectedValue.ToString();
@@ -148,7 +147,7 @@ namespace QLThuVien.GUI
                         MessageBox.Show("Đã tồn tại " + txt_MaTS.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
                     {
-                       
+
                         BUS.Insert_TS(ts2);
                         BUS.Insert_Viet(v);
                         MessageBox.Show("Đã lưu thành công");
