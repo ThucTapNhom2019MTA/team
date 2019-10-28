@@ -61,6 +61,7 @@ namespace QuanLyKho
         {
             dataGridView1.DataSource = bus.taobang(DieuKien);
         }
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             string sql = @"SELECT * FROM DMNhaCungCap";
@@ -76,6 +77,8 @@ namespace QuanLyKho
 
             dataGridView1.DataSource = data;  //gán giá trị vào datagridview
         }
+=======
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
 
         private void NhaCungCap_Load(object sender, EventArgs e)
         {
@@ -84,6 +87,10 @@ namespace QuanLyKho
             hien();
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         private bool validate()
         {
             if (fieldDiaChi.Text == "" || fieldEmail.Text == "" || fieldSDT.Text == "" || fieldTenNCC.Text == "")
@@ -152,6 +159,32 @@ namespace QuanLyKho
 
         string state = "";
 
+<<<<<<< HEAD
+=======
+        private void btthem_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "insert";
+        }
+
+        private void btsua_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "update";
+            binding();
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+            motxt();
+            dongbtn();
+            state = "delete";
+            binding();
+        }
+
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         private void btluu_Click(object sender, EventArgs e)
         {
             if (validate())
@@ -163,6 +196,7 @@ namespace QuanLyKho
                 {
                     //MessageBox.Show("INSERT INTO PhieuNhap(MaPhieuNhap, TenNCC, TenMH, SoLuongNhap,GiaNhap,TienDaThanhToan,NgayThanhToan) VALUES (" + Convert.ToInt32(txtMaPhieuNhap.Text) + ",N'" + txtTenNCC.Text + "',N'" + txtTenMH.Text + "'," + Convert.ToInt32(txtSoLuongNhap.Text) + "," + Convert.ToInt32(txtGiaNhap.Text) + "," + Convert.ToInt32(txtTienDaThanhToan.Text) + ",'"+txtNgayThanhToan.Value.ToShortDateString().ToString() +"')");
                     string sql = @"INSERT INTO [QLKhoHang].[dbo].[DMNhaCungCap]
+<<<<<<< HEAD
                     ([tenncc]
                     ,[sdtncc]
                     ,[emailncc]
@@ -172,6 +206,17 @@ namespace QuanLyKho
                     ," + Convert.ToInt64(fieldSDT.Text) + @"
                     ,N'" + fieldEmail.Text + @"'
                     ,N'" + fieldDiaChi.Text + @"'
+=======
+                               ([tenncc]
+                               ,[sdtncc]
+                               ,[emailncc]
+                               ,[diachincc])
+                         VALUES
+                               (N'" + fieldTenNCC.Text + @"'
+                               ," + Convert.ToInt64(fieldSDT.Text) + @"
+                               ,N'" + fieldEmail.Text + @"'
+                               ,N'" + fieldDiaChi.Text + @"'
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
                     )";
 
                     if (Database.Query(sql) != -1)
@@ -187,11 +232,19 @@ namespace QuanLyKho
                 else if (state == "update")
                 {
                     string sql = @"UPDATE [QLKhoHang].[dbo].[DMNhaCungCap]
+<<<<<<< HEAD
                     SET [tenncc] = N'" + fieldTenNCC.Text + @"'
                     ,[sdtncc] = " + Convert.ToInt64(fieldSDT.Text) + @"
                     ,[emailncc] = N'" + fieldEmail.Text + @"'
                     ,[diachincc] = N'" + fieldDiaChi.Text + @"'
                     WHERE mancc =" + Convert.ToInt64(fieldMaNCC.Text);
+=======
+                           SET [tenncc] = N'" + fieldTenNCC.Text + @"'
+                              ,[sdtncc] = " + Convert.ToInt64(fieldSDT.Text) + @"
+                              ,[emailncc] = N'" + fieldEmail.Text + @"'
+                              ,[diachincc] = N'" + fieldDiaChi.Text + @"'
+                         WHERE mancc =" + Convert.ToInt64(fieldMaNCC.Text);
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
 
 
 
@@ -213,7 +266,11 @@ namespace QuanLyKho
             if (state == "delete" && validate())
             {
                 string sql = @"DELETE [QLKhoHang].[dbo].[DMNhaCungCap]
+<<<<<<< HEAD
                 WHERE mancc =" + Convert.ToInt64(fieldMaNCC.Text);
+=======
+                            WHERE mancc =" + Convert.ToInt64(fieldMaNCC.Text);
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
 
 
                 if (Database.Query(sql) != -1)
@@ -231,6 +288,7 @@ namespace QuanLyKho
             }
         }
 
+<<<<<<< HEAD
         private void btsua_Click(object sender, EventArgs e)
         {
             motxt();
@@ -247,12 +305,15 @@ namespace QuanLyKho
             binding();
         }
 
+=======
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         private void btnhuy_Click(object sender, EventArgs e)
         {
             mobtn();
             dongtxt();
         }
 
+<<<<<<< HEAD
         private void btthem_Click(object sender, EventArgs e)
         {
             motxt();
@@ -260,12 +321,40 @@ namespace QuanLyKho
             state = "insert";
         }
 
+=======
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         private void btnthoat_Click(object sender, EventArgs e)
         {
             this.Close();
             new Form1().Visible = true;
         }
 
+<<<<<<< HEAD
+=======
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = @"SELECT * FROM DMNhaCungCap";
+            DataTable data = Database.getTable(sql);  //lấy dữ liệu từ bảng KhachHang
+            if (fieldTim.Text != "")
+            {
+                data.DefaultView.RowFilter = "tenncc LIKE '%" + fieldTim.Text + "%' ";  //filter lọc dữ liệu
+            }
+            else
+            {
+                data.DefaultView.RowFilter = "";
+            }
+
+            dataGridView1.DataSource = data;  //gán giá trị vào datagridview
+        }
+
+
+        
+
+
+
+
+
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
 
     }
 }

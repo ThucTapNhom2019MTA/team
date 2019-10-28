@@ -5,15 +5,23 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+<<<<<<< HEAD
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
+=======
+using System.Windows.Forms;
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
 using System.Data.SqlClient;
 
 namespace QuanLyKhachSan.src
 {
     public partial class frmChoThuePhong : Form
     {
+<<<<<<< HEAD
+=======
+        //khởi tạo
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         string MaHD = "";
         BUS_KhachThuePhong kh = new BUS_KhachThuePhong();
         BUS_ThuePhong ThuePhong = new BUS_ThuePhong();
@@ -55,7 +63,11 @@ namespace QuanLyKhachSan.src
             }
             catch
             {
+<<<<<<< HEAD
 
+=======
+                //return something
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
             }
         }
 

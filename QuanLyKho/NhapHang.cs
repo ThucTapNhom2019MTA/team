@@ -19,7 +19,11 @@ namespace QuanLyKho
 
         private void NhapHang_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
+=======
+            // for something load
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -37,6 +41,10 @@ namespace QuanLyKho
         {   //hàm kiểm tra hợp lệ dữ liệu
             if (fieldMAHH.Text == "" || fieldMaNCC.Text == "" || fieldNgayNhap.Text == "" || fieldNguoiNhap.Text == "" || fieldSoLuong.Text == "")
             {
+<<<<<<< HEAD
+=======
+                // thông báo lỗi
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
                 MessageBox.Show("Bạn phải điền đầy đủ các trường !");
                 return false;
             }
@@ -156,9 +164,12 @@ namespace QuanLyKho
         {
             if (validate())  //kiểm tra trường k rỗng thì:
             {
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
                 if (state == "insert")  //sự kiện nút thêm
                 {
                     //MessageBox.Show("INSERT INTO PhieuNhap(MaPhieuNhap, TenNCC, TenMH, SoLuongNhap,GiaNhap,TienDaThanhToan,NgayThanhToan) VALUES (" + Convert.ToInt32(txtMaPhieuNhap.Text) + ",N'" + txtTenNCC.Text + "',N'" + txtTenMH.Text + "'," + Convert.ToInt32(txtSoLuongNhap.Text) + "," + Convert.ToInt32(txtGiaNhap.Text) + "," + Convert.ToInt32(txtTienDaThanhToan.Text) + ",'"+txtNgayThanhToan.Value.ToShortDateString().ToString() +"')");

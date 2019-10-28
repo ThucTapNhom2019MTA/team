@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lớp BUS">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp BUS.dll</HintPath>
+    </Reference>
+    <Reference Include="Lớp DAL">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Lớp Entites">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp Entites.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -110,6 +119,12 @@
     <EmbeddedResource Include="HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
     <EmbeddedResource Include="NhaCungCap.resx">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +144,12 @@
     <EmbeddedResource Include="QuanLyTaiSan.resx">
       <DependentUpon>QuanLyTaiSan.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="XuatHang.resx">
+      <DependentUpon>XuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

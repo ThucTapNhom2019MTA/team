@@ -19,11 +19,18 @@ namespace QuanLyKhachSan
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaKH", MaKH);
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
             cmd.Parameters.AddWithValue("@NguoiLap", NguoiLap);
             cmd.Parameters.AddWithValue("@TGMuon", TGMuon);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
             return dt;
         }
         public DataTable ThemCTHoaDon(string MaHD, string MaPhong, string MaDV)
@@ -52,6 +59,10 @@ namespace QuanLyKhachSan
             cmd.ExecuteNonQuery();
             con.Close();
         }
+<<<<<<< HEAD
+=======
+        //them dich vu
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         public void ThemDV(string MaHD, string MaPhong, string MaDV)
         {
             try
@@ -64,7 +75,12 @@ namespace QuanLyKhachSan
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
+<<<<<<< HEAD
             catch { }
+=======
+            catch {
+            }
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         }
     }
 }

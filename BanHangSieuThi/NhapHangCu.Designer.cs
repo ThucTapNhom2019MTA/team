@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 71);
+            this.label1.Location = new System.Drawing.Point(54, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 25);
@@ -52,13 +52,13 @@
             this.cbbMaHang.FormattingEnabled = true;
             this.cbbMaHang.Location = new System.Drawing.Point(177, 63);
             this.cbbMaHang.Name = "cbbMaHang";
-            this.cbbMaHang.Size = new System.Drawing.Size(296, 33);
+            this.cbbMaHang.Size = new System.Drawing.Size(304, 33);
             this.cbbMaHang.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 148);
+            this.label2.Location = new System.Drawing.Point(56, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 25);
@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 211);
+            this.label3.Location = new System.Drawing.Point(47, 211);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 25);
@@ -79,14 +79,14 @@
             // 
             this.txbSoLuong.Location = new System.Drawing.Point(177, 145);
             this.txbSoLuong.Name = "txbSoLuong";
-            this.txbSoLuong.Size = new System.Drawing.Size(296, 30);
+            this.txbSoLuong.Size = new System.Drawing.Size(304, 30);
             this.txbSoLuong.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(263, 268);
+            this.button1.Location = new System.Drawing.Point(232, 268);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 40);
+            this.button1.Size = new System.Drawing.Size(151, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "Nhập kho";
             this.button1.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             // 
             this.dtpHSD.Location = new System.Drawing.Point(177, 211);
             this.dtpHSD.Name = "dtpHSD";
-            this.dtpHSD.Size = new System.Drawing.Size(296, 30);
+            this.dtpHSD.Size = new System.Drawing.Size(304, 30);
             this.dtpHSD.TabIndex = 4;
             // 
             // NhapHangCu

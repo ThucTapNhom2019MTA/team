@@ -114,7 +114,11 @@ namespace QLThuVien.DataAccessLayer
             return DataProvider.GetData("Select_NXB");
         }
 
+<<<<<<< HEAD
 
+=======
+        //Them NXB
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         public static int Insert_NXB(NXB a)
         {
             SqlParameter[] para = new SqlParameter[]
@@ -129,7 +133,11 @@ namespace QLThuVien.DataAccessLayer
             return DataProvider.ExecuteNonQuery("Insert_NXB", para);
         }
 
+<<<<<<< HEAD
 
+=======
+        //Cap nhat NXB
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         public static int Update_NXB(NXB a)
         {
             SqlParameter[] para = new SqlParameter[]

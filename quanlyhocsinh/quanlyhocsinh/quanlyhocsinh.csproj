@@ -151,5 +151,8 @@
   <ItemGroup>
     <None Include="Resources\hocsinh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="sql\quanlihocsinh.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

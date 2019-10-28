@@ -35,6 +35,7 @@ namespace BanHangSieuThi
             }
         }
 
+        //them thong tin khach hang
         private void btnThem_Click(object sender, EventArgs e)
         {
             int index = dgvHienThi.Rows.Add();
@@ -54,6 +55,7 @@ namespace BanHangSieuThi
             return price;
         }
 
+        //them hoa don
         private void insertChiTietHoaDon(SqlConnection conn,string MaHang,int GiaTri,string MaHoaDon)
         {
             conn.Open();
@@ -61,13 +63,13 @@ namespace BanHangSieuThi
             SqlCommand comm = new SqlCommand(query, conn);
             comm.Parameters.AddWithValue("@MaCTHD ", Form1.CreatePassword(10));
             comm.Parameters.AddWithValue("@MaHang", MaHang);
-            comm.Parameters.AddWithValue("@GiaTri", ""+GiaTri);
+            comm.Parameters.AddWithValue("@GiaTri", "" + GiaTri);
             comm.Parameters.AddWithValue("@MaHoaDon", MaHoaDon);
             comm.ExecuteNonQuery();
             conn.Close();
         }
 
-
+        //in hoa don
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
             SqlConnection conn = ConnectDB.getConnection();

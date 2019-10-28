@@ -729,7 +729,13 @@
   <ItemGroup>
     <None Include="Resources\user2.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+  <ItemGroup>
+    <Content Include="SQL\QLTV.sql" />
+  </ItemGroup>
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

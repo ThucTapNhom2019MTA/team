@@ -37,6 +37,10 @@ namespace QuanLyKhachSan.src
                 this.Close();
         }
 
+<<<<<<< HEAD
+=======
+        //common 
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             SetStyle(ControlStyles.ResizeRedraw, true);

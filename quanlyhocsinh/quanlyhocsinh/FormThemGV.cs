@@ -22,8 +22,15 @@ namespace quanlyhocsinh
         {
             SqlConnection conn = constringsql.getConnection();
             conn.Open();
+<<<<<<< HEAD
             string query = "INSERT INTO dbo.GIAOVIEN ( MAGIAOVIEN, HOTEN, GIOITINH, NGAYSINH, NOISINH, CHUYENMON, SODIENTHOAI ) " +
                 "VALUES (@MAHOCSINH, @HOTEN, @GIOITINH, @NGAYSINH, @NOISINH, @CHUYENMON, @SODIENTHOAI )";
+=======
+
+            string query = "INSERT INTO dbo.GIAOVIEN ( MAGIAOVIEN, HOTEN, GIOITINH, NGAYSINH, NOISINH, CHUYENMON, SODIENTHOAI ) " +
+                "VALUES (@MAHOCSINH, @HOTEN, @GIOITINH, @NGAYSINH, @NOISINH, @CHUYENMON, @SODIENTHOAI )";
+            
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
             SqlCommand comm = new SqlCommand(query,conn);
 //            comm.Connection = conn;
             comm.Parameters.AddWithValue("@MAHOCSINH", txt_magv.Text);
@@ -34,7 +41,12 @@ namespace quanlyhocsinh
             comm.Parameters.AddWithValue("@CHUYENMON", txt_chuyenmon.Text);
             comm.Parameters.AddWithValue("@SODIENTHOAI", txt_sdt.Text);
             comm.ExecuteNonQuery();
+<<<<<<< HEAD
             MessageBox.Show("Thêm thành công", "Thông báo");
+=======
+
+            MessageBox.Show("Thêm giao vien thành công", "Thông báo");
+>>>>>>> f2abc71dc8bd6270e71659bbe7cdf2a5541c9b96
         }
 
         private void Bt_back_Click(object sender, EventArgs e)
