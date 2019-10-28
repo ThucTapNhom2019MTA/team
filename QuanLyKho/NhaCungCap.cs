@@ -240,6 +240,38 @@ namespace QuanLyKho
             }
         }
 
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            mobtn();
+            dongtxt();
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Form1().Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = @"SELECT * FROM DMNhaCungCap";
+            DataTable data = Database.getTable(sql);  //lấy dữ liệu từ bảng KhachHang
+            if (fieldTim.Text != "")
+            {
+                data.DefaultView.RowFilter = "tenncc LIKE '%" + fieldTim.Text + "%' ";  //filter lọc dữ liệu
+            }
+            else
+            {
+                data.DefaultView.RowFilter = "";
+            }
+
+            dataGridView1.DataSource = data;  //gán giá trị vào datagridview
+        }
+
+
+        
+
+
 
 
 
