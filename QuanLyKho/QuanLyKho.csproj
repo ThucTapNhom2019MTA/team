@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lớp BUS">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp BUS.dll</HintPath>
+    </Reference>
+    <Reference Include="Lớp DAL">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Lớp Entites">
+      <HintPath>E:\download\QuanLyKho1\CNPM nhóm 1\bin\Debug\Lớp Entites.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -109,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhaCungCap.resx">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
